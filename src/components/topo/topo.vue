@@ -1,0 +1,37 @@
+
+<template>
+  <!-- 网络拓扑图 -->
+  <!-- 主视图展示操作部分 -->
+  <div class="Qtopo-wrap">
+    <p>拓扑图</p>
+    <div>
+      <img src="../../../static/images/topo/topo.jpg" alt>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "topo"
+};
+</script>
+
+<style scoped>
+.Qtopo-wrap {
+  padding-left: 6px;
+  padding-right: 20px;
+}
+.Qtopo-wrap p {
+  padding-left: 40px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #303740;
+}
+.Qtopo-wrap img {
+  width: 100%;
+  height: 100%;
+}
+/* .el-container{
+  width: 1753px;
+} */
+</style>

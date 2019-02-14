@@ -1,0 +1,80 @@
+// 文本颜色
+@text-color: #929BA6;
+// 饼图背景色
+@pie-color: #24292F;
+// 背景色
+@background-color: #212429;
+// 悬停颜色
+@hover-color :#2A84F6;
+.powerManage-span {
+  color: @text-color;
+  margin-left: 18px;
+}
+
+// powerManage组件
+.powerManage {
+  margin-left: 7px; // 头部菜单部分
+  .powerManage-header {
+    margin-left: -18px;
+    background-color: @background-color;
+    height: 60px;
+    line-height: 60px;
+    .powerManage-el-button {
+      // 三个按钮
+      position: relative;
+      padding: 0 0 0 22px; //修改默认样式
+      margin-left: 2px;
+      border-radius: 3px;
+      font-size: 14px;
+      width: 70px;
+      height: 35px;
+      line-height: 35px;
+      background-color: @background-color;
+      border: 1px solid#535960;
+      color: #fff;
+      .powerManage-el-button-circle {
+        // 按钮圆点
+        position: absolute;
+        left: 16px;
+        top: 8px;
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        border: 2px solid #aaa;
+        background-color: @text-color;
+        cursor: pointer;
+      }
+    }
+  } // 下拉框
+  .powerManage-item-ipt {
+    margin-left: 4px;
+    width: 200px;
+    height: 24px;
+    background-color: @background-color;
+    color: @text-color;
+    border-radius: 3px;
+    border: 1px solid @text-color;
+  }
+} // 饼图和数据table部分
+.powerManage-pie-table {
+  //饼图部分
+  .powerManage-pie {
+    height: 432px;
+    background-color: @pie-color;
+    #powerManage-ve-pie {
+      margin-top: -40px;
+    } // 饼图头部
+    .powerManage-pie-header {
+      padding: 0 20px 0 40px;
+      overflow: hidden;
+      height: 70px;
+      line-height: 70px;
+      background-color: @pie-color;
+      span {
+        color: @text-color;
+      }
+    }
+  } // !--能耗同比 条形图和折线图
+  .powerManage-bar-line {}
+}

@@ -1,0 +1,996 @@
+<!-- 电力监控主页面-电路图页面 -->
+<template>
+<div class="left dianlu1 newDL1" style="width:1645px;min-height:1810px;margin-top:5px;">
+    <div style="padding-left:10px;">
+        <!-- 电路图上半部分 -->
+        <div class="clearfix whgc1IE7" style="width:1644px;margin-top:60px;">
+            <!-- 变压器 -->
+            <div class="left hcfs4" style="position:relative; ">
+                <div class="left jinxian2Position" style="width:195px;">
+                    <div class="clearfix">
+                        <div class="left hcfsModel1Station">       
+                            <p>
+                                <img src="../../../static/images/dianli/whgcImg1.png" alt="">
+                            </p>
+                            <ul class="whswcInfor whgcHeight">
+                                <li>变压器</li>
+                            </ul>
+                            <ul class="lwm2Group whgcW2">
+                                <li class="clearfix">
+                                    <span class="kdDT-title">Ta</span>
+                                    <span  class="lwmData">0</span>
+                                    <span class="kdDT whgcDw1">°C</span>
+                                </li>
+                                <li class="clearfix">
+                                    <span class="kdDT-title">Tb</span>
+                                    <span  class="lwmData">0</span>
+                                    <span class="kdDT whgcDw1">°C</span>
+                                </li>
+                                <li class="clearfix">
+                                    <span class="kdDT-title">Tc</span>
+                                    <span class="lwmData">0</span>
+                                    <span class="kdDT whgcDw1">°C</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>       
+            </div>
+            <!-- 进线柜 -->
+            <div class="left whswcBlock1" style="width:210px;height:960px;">
+                <div class="whswcBlock1">
+                    <p class="minHaiLT2 kdImg1DataTit whgcT1">1AA1</p>
+                    <img class="kaidiPin1" src="../../../static/images/dianli/whgcImg2.png" alt="">
+                    <span id="a1_b1_kgzt3" class="OC1 cursor_pointer cursor_pointer newDianLu1C whgcOCP1"></span>    
+                </div>
+                <ul class="whswcInfor whgcHeight">
+                    <li>进线柜</li>
+                </ul>
+                <ul class="lwm2Group whgcW2" style="margin-bottom:95px;">
+                  <li class="clearfix">
+                        <span class="kdDT-title">Ua</span>
+                        <span id="CH3_dev1_ua" class="lwmData" style="color: rgb(255, 255, 0);">231.2</span>
+                        <span class="kdDT whgcDw1">V</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="kdDT-title">Ub</span>
+                        <span id="CH3_dev1_ub" class="lwmData" style="color: rgb(255, 255, 0);">231</span>
+                        <span class="kdDT whgcDw1">V</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="kdDT-title">Uc</span>
+                        <span id="CH3_dev1_uc" class="lwmData" style="color: rgb(255, 255, 0);">230.5</span>
+                        <span class="kdDT whgcDw1">V</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="kdDT-title">Uab</span>
+                        <span id="CH3_dev1_uab" class="lwmData" style="color: rgb(255, 255, 0);">884.5</span>
+                        <span class="kdDT whgcDw1">V</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="kdDT-title">Ubc</span>
+                        <span id="CH3_dev1_ubc" class="lwmData" style="color: rgb(255, 255, 0);">826</span>
+                        <span class="kdDT whgcDw1">V</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="kdDT-title">Uca</span>
+                        <span id="CH3_dev1_uca" class="lwmData" style="color: rgb(255, 255, 0);">885.5</span>
+                        <span class="kdDT whgcDw1">V</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="kdDT-title">Ia</span>
+                        <span id="CH3_dev1_ia" class="lwmData" style="color: rgb(255, 255, 0);">593650</span>
+                        <span class="kdDT whgcDw1">A</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="kdDT-title">Ib</span>
+                        <span id="CH3_dev1_ib" class="lwmData" style="color: rgb(255, 255, 0);">53450</span>
+                        <span class="kdDT whgcDw1">A</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="kdDT-title">Ic</span>
+                        <span id="CH3_dev1_ic" class="lwmData" style="color: rgb(255, 255, 0);">596000</span>
+                        <span class="kdDT whgcDw1">A</span>
+                    </li>
+                    
+                    <li class="clearfix">
+                        <span class="kdDT-title">P</span>
+                        <span id="CH3_dev1_p" class="lwmData" style="color: rgb(255, 255, 0);">4127525.4</span>
+                        <span class="kdDT whgcDw1">kw</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="kdDT-title">Q</span>
+                        <span id="CH3_dev1_q" class="lwmData" style="color: rgb(255, 255, 0);">996033.3</span>
+                        <span class="kdDT whgcDw1">kw</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="kdDT-title">Pf</span>
+                        <span id="CH3_dev1_pf" class="lwmData">1.0</span>
+                        <span class="kdDT whgcDw1"></span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="kdDT-title">Pa</span>
+                        <span id="CH3_dev1_pa" class="lwmData">50.00</span>
+                        <span class="kdDT whgcDw1">kw</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="kdDT-title">Pb</span>
+                        <span id="CH3_dev1_pb" class="lwmData" style="color: rgb(255, 255, 0);">48</span>
+                        <span class="kdDT whgcDw1">kw</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="kdDT-title">Pc</span>
+                        <span id="CH3_dev1_pc" class="lwmData" style="color: rgb(255, 255, 0);">1.6</span>
+                        <span class="kdDT whgcDw1">kw</span>
+                        </li>
+                    <li class="clearfix">
+                        <span class="kdDT-title">F</span>
+                        <span id="CH3_dev1_f" class="lwmData" style="color: rgb(255, 255, 0);">2.3</span>
+                        <span class="kdDT whgcDw1">Hz</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="kdDT-title">Ep</span>
+                        <span id="CH3_dev1_ep" class="lwmData" style="color: rgb(255, 255, 0);">1.8</span>
+                        <span class="kdDT whgcDw1">kwh</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="kdDT-title">Eq</span>
+                        <span id="CH3_dev1_eq" class="lwmData" style="color: rgb(255, 255, 0);">8</span>
+                        <span class="kdDT whgcDw1">kwh</span>
+                    </li>
+                    <!-- <li class="clearfix">
+                        <span class="kdDT-title">THD-Ib</span>
+                        <span id="a1_b1_g1_thd-ib" class="lwmData" style="color: rgb(255, 255, 0);">9.8</span>
+                        <span class="kdDT whgcDw1">%</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="kdDT-title">THD-Ic</span>
+                        <span id="a1_b1_g1_thd-ic" class="lwmData" style="color: rgb(255, 255, 0);">9.9</span>
+                        <span class="kdDT whgcDw1">%</span>
+                    </li> -->
+
+                </ul>
+            </div>
+            <!-- 电容柜 -->
+            <div class="left whswcBlock1" style="width:200px;margin-left:-10px;">
+                <div class="whswcBlock1">
+                    <p class="minHaiLT2 kdImg1DataTit whgcT2">1AA2</p>
+                    <img class="kaidiPin1" src="../../../static/images/dianli/whgcImg3.png" alt="">
+                    <span id="a1_b2_kgzt3" class="OC1 cursor_pointer cursor_pointer newDianLu1C whgcOCP2"></span>      
+                </div>
+                <ul class="whswcInfor whgcHeight">
+                    <li>电容柜</li>
+                </ul>           
+                <ul class="lwm2Group whgcW2">
+                    <li class="clearfix">
+                        <span class="kdDT-title">Ua</span>
+                        <span id="CH3_dev2_ua" class="lwmData" style="color: rgb(255, 255, 0);">231.2</span>
+                        <span class="kdDT whgcDw1">V</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="kdDT-title">Ub</span>
+                        <span id="CH3_dev2_ub" class="lwmData" style="color: rgb(255, 255, 0);">231</span>
+                        <span class="kdDT whgcDw1">V</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="kdDT-title">Uc</span>
+                        <span id="CH3_dev2_uc" class="lwmData" style="color: rgb(255, 255, 0);">230.5</span>
+                        <span class="kdDT whgcDw1">V</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="kdDT-title">Uab</span>
+                        <span id="CH3_dev2_uab" class="lwmData" style="color: rgb(255, 255, 0);">884.5</span>
+                        <span class="kdDT whgcDw1">V</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="kdDT-title">Ubc</span>
+                        <span id="CH3_dev2_ubc" class="lwmData" style="color: rgb(255, 255, 0);">826</span>
+                        <span class="kdDT whgcDw1">V</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="kdDT-title">Uca</span>
+                        <span id="CH3_dev2_uca" class="lwmData" style="color: rgb(255, 255, 0);">885.5</span>
+                        <span class="kdDT whgcDw1">V</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="kdDT-title">Ia</span>
+                        <span id="CH3_dev2_ia" class="lwmData" style="color: rgb(255, 255, 0);">593650</span>
+                        <span class="kdDT whgcDw1">A</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="kdDT-title">Ib</span>
+                        <span id="CH3_dev2_ib" class="lwmData" style="color: rgb(255, 255, 0);">53450</span>
+                        <span class="kdDT whgcDw1">A</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="kdDT-title">Ic</span>
+                        <span id="CH3_dev2_ic" class="lwmData" style="color: rgb(255, 255, 0);">596000</span>
+                        <span class="kdDT whgcDw1">A</span>
+                    </li>
+                    
+                    <li class="clearfix">
+                        <span class="kdDT-title">P</span>
+                        <span id="CH3_dev2_p" class="lwmData" style="color: rgb(255, 255, 0);">4127525.4</span>
+                        <span class="kdDT whgcDw1">kw</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="kdDT-title">Q</span>
+                        <span id="CH3_dev2_q" class="lwmData" style="color: rgb(255, 255, 0);">996033.3</span>
+                        <span class="kdDT whgcDw1">kw</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="kdDT-title">Pf</span>
+                        <span id="CH3_dev2_pf" class="lwmData">1.0</span>
+                        <span class="kdDT whgcDw1"></span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="kdDT-title">Pa</span>
+                        <span id="CH3_dev2_pa" class="lwmData">50.00</span>
+                        <span class="kdDT whgcDw1">kw</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="kdDT-title">Pb</span>
+                        <span id="CH3_dev2_pb" class="lwmData" style="color: rgb(255, 255, 0);">48</span>
+                        <span class="kdDT whgcDw1">kw</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="kdDT-title">Pc</span>
+                        <span id="CH3_dev2_pc" class="lwmData" style="color: rgb(255, 255, 0);">1.6</span>
+                        <span class="kdDT whgcDw1">kw</span>
+                        </li>
+                    <li class="clearfix">
+                        <span class="kdDT-title">F</span>
+                        <span id="CH3_dev2_f" class="lwmData" style="color: rgb(255, 255, 0);">2.3</span>
+                        <span class="kdDT whgcDw1">Hz</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="kdDT-title">Ep</span>
+                        <span id="CH3_dev2_ep" class="lwmData" style="color: rgb(255, 255, 0);">1.8</span>
+                        <span class="kdDT whgcDw1">kwh</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="kdDT-title">Eq</span>
+                        <span id="CH3_dev2_eq" class="lwmData" style="color: rgb(255, 255, 0);">8</span>
+                        <span class="kdDT whgcDw1">kwh</span>
+                    </li>
+                </ul>
+            </div>
+            <!-- 有源滤波柜 -->
+            <div class="left whswcBlock1" style="width:200px;">
+                <div class="whswcBlock1">
+                    <p class="minHaiLT2 kdImg1DataTit  whgcT2">1AA3</p>
+                    <img id="c7_b1_di3" class="kaidiPin1" src="../../../static/images/dianli/whgcImg4_new_open.png" alt="">
+                    <span id="c7_b1_di1" class="OC1 cursor_pointer cursor_pointer newDianLu1C whgcOCP2"></span>               
+                </div>
+                <ul class="whswcInfor whgcHeight">
+                    <li>有源滤波柜</li>
+                </ul>            
+                <ul class="lwm2Group whgcW2">
+                    <li class="clearfix">
+                        <span class="kdDT-title">Ua</span>
+                        <span id="CH3_dev3_ua" class="lwmData" style="color: rgb(255, 255, 0);">231.2</span>
+                        <span class="kdDT whgcDw1">V</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="kdDT-title">Ub</span>
+                        <span id="CH3_dev3_ub" class="lwmData" style="color: rgb(255, 255, 0);">231</span>
+                        <span class="kdDT whgcDw1">V</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="kdDT-title">Uc</span>
+                        <span id="CH3_dev3_uc" class="lwmData" style="color: rgb(255, 255, 0);">230.5</span>
+                        <span class="kdDT whgcDw1">V</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="kdDT-title">Uab</span>
+                        <span id="CH3_dev3_uab" class="lwmData" style="color: rgb(255, 255, 0);">884.5</span>
+                        <span class="kdDT whgcDw1">V</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="kdDT-title">Ubc</span>
+                        <span id="CH3_dev3_ubc" class="lwmData" style="color: rgb(255, 255, 0);">826</span>
+                        <span class="kdDT whgcDw1">V</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="kdDT-title">Uca</span>
+                        <span id="CH3_dev3_uca" class="lwmData" style="color: rgb(255, 255, 0);">885.5</span>
+                        <span class="kdDT whgcDw1">V</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="kdDT-title">Ia</span>
+                        <span id="CH3_dev3_ia" class="lwmData" style="color: rgb(255, 255, 0);">593650</span>
+                        <span class="kdDT whgcDw1">A</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="kdDT-title">Ib</span>
+                        <span id="CH3_dev3_ib" class="lwmData" style="color: rgb(255, 255, 0);">53450</span>
+                        <span class="kdDT whgcDw1">A</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="kdDT-title">Ic</span>
+                        <span id="CH3_dev3_ic" class="lwmData" style="color: rgb(255, 255, 0);">596000</span>
+                        <span class="kdDT whgcDw1">A</span>
+                    </li>
+                    
+                    <li class="clearfix">
+                        <span class="kdDT-title">P</span>
+                        <span id="CH3_dev3_p" class="lwmData" style="color: rgb(255, 255, 0);">4127525.4</span>
+                        <span class="kdDT whgcDw1">kw</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="kdDT-title">Q</span>
+                        <span id="CH3_dev3_q" class="lwmData" style="color: rgb(255, 255, 0);">996033.3</span>
+                        <span class="kdDT whgcDw1">kw</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="kdDT-title">Pf</span>
+                        <span id="CH3_dev3_pf" class="lwmData">1.0</span>
+                        <span class="kdDT whgcDw1"></span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="kdDT-title">Pa</span>
+                        <span id="CH3_dev3_pa" class="lwmData">50.00</span>
+                        <span class="kdDT whgcDw1">kw</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="kdDT-title">Pb</span>
+                        <span id="CH3_dev3_pb" class="lwmData" style="color: rgb(255, 255, 0);">48</span>
+                        <span class="kdDT whgcDw1">kw</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="kdDT-title">Pc</span>
+                        <span id="CH3_dev3_pc" class="lwmData" style="color: rgb(255, 255, 0);">1.6</span>
+                        <span class="kdDT whgcDw1">kw</span>
+                        </li>
+                    <li class="clearfix">
+                        <span class="kdDT-title">F</span>
+                        <span id="CH3_dev3_f" class="lwmData" style="color: rgb(255, 255, 0);">2.3</span>
+                        <span class="kdDT whgcDw1">Hz</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="kdDT-title">Ep</span>
+                        <span id="CH3_dev3_ep" class="lwmData" style="color: rgb(255, 255, 0);">1.8</span>
+                        <span class="kdDT whgcDw1">kwh</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="kdDT-title">Eq</span>
+                        <span id="CH3_dev3_eq" class="lwmData" style="color: rgb(255, 255, 0);">8</span>
+                        <span class="kdDT whgcDw1">kwh</span>
+                    </li>
+                </ul>
+            </div>
+            <!-- 1AA4 -->
+            <div class="left hcfs4">
+                <div>                       
+                    <div class="hcfsModel2Station">
+                        <p class="minHaiLT2 kdImg1DataTit whgcT3">1AA4</p>
+                        <img src="../../../static/images/dianli/whgcImg5.png" alt="">
+                        <ul class="hcfs4modelAllData hcfs4model3Data">
+                            <li class=""></li>
+                            <li class="clearfix"></li>
+                            <li class="clearfix"></li>
+                            <li class="clearfix"></li>
+                            <li class="clearfix"></li>
+                        </ul>
+                    </div>                     
+                    <div class="clearfix" style=" margin-left:71px; position:relative;">
+                        <ul class="whgc_dataTit">
+                            <li class="hcfs4model2DataDT">Ua</li>
+                            <li class="hcfs4model2DataDT">Ub</li>
+                            <li class="hcfs4model2DataDT">Uc</li>
+                            <li class="hcfs4model2DataDT">Ia</li>
+                            <li class="hcfs4model2DataDT">Ib</li>
+                            <li class="hcfs4model2DataDT">Ic</li>
+                            <li class="hcfs4model2DataDT">Ep</li>
+                            <!-- <li class="hcfs4model2DataDT" style="width: 80px;margin-left: -10px;">THD-Va</li>
+                            <li class="hcfs4model2DataDT" style="width: 80px;margin-left: -10px;">THD-Vb</li>
+                            <li class="hcfs4model2DataDT" style="width: 80px;margin-left: -10px;">THD-Vc</li>
+                            <li class="hcfs4model2DataDT" style="width: 80px;margin-left: -10px;">THD-Ia</li>
+                            <li class="hcfs4model2DataDT" style="width: 80px;;margin-left: -10px;">THD-Ib</li>
+                            <li class="hcfs4model2DataDT" style="width: 80px;;margin-left: -10px;">THD-Ic</li> -->
+                        </ul>
+                        <!-- 1AA4-1 备用 -->
+                        <div class="left hcfsModel1Station whgcW1">
+                            <dl>
+                                <dt class="MZBtnPosition whgcH2">
+                                    <img src="../../../static/images/dianli/whgcImg5_1.png" alt="">
+                                    <span id="a1_b5_kgzt3" class="OC1 cursor_pointer newDianLu1C whgcOCP3"></span>
+                                </dt>
+                                <dd class="mt">1AA4-1</dd>
+                                <dd class="mb">备用</dd>
+                            </dl>
+                            <ul class="lwm2Group whswcGroup">
+                                <li id="CH3_dev4_ua" class="lwmData" style="color: rgb(255, 255, 0);">231.1</li>
+                                <li id="CH3_dev4_ub" class="lwmData" style="color: rgb(255, 255, 0);">230.4</li>
+                                <li id="CH3_dev4_uc" class="lwmData" style="color: rgb(255, 255, 0);">230.9</li>
+                                <li id="CH3_dev4_ia" class="lwmData">0.0</li>
+                                <li id="CH3_dev4_ib" class="lwmData">0.0</li>
+                                <li id="CH3_dev4_ic" class="lwmData">0.0</li>
+                                <li id="CH3_dev4_ep" class="lwmData">0.0</li>
+                            </ul>
+                        </div>                   
+                        <!-- 1AA4-2 二楼办公室照明 -->
+                        <div class="left hcfsModel1Station whgcW1">
+                            <dl>
+                                <dt class="MZBtnPosition">
+                                    <img src="../../../static/images/dianli/whgcImg5_2.png" alt="">
+                                    <span id="a1_b5_kgzt3" class="OC1 cursor_pointer cursor_pointer newDianLu1C whgcOCP3"></span>
+                                </dt>
+                                <dd class="mt">1AA4-2</dd>
+                                <dd class="mb">二楼办公室照明</dd>
+                            </dl>
+                            <ul class="lwm2Group whswcGroup">
+                                <li id="CH3_dev5_ua" class="lwmData" style="color: rgb(255, 255, 0);">231.1</li>
+                                <li id="CH3_dev5_ub" class="lwmData" style="color: rgb(255, 255, 0);">230.3</li>
+                                <li id="CH3_dev5_uc" class="lwmData" style="color: rgb(255, 255, 0);">230.7</li>
+                                <li id="CH3_dev5_ia" class="lwmData" style="color: rgb(255, 255, 0);">68</li>
+                                <li id="CH3_dev5_ib" class="lwmData" style="color: rgb(255, 255, 0);">37.3</li>
+                                <li id="CH3_dev5_uca" class="lwmData" style="color: rgb(255, 255, 0);">49.4</li>
+                                <li id="CH3_dev5_ep" class="lwmData" style="color: rgb(255, 255, 0);">267080.9</li>
+                            </ul>
+                        </div>                    
+                        <!-- 1AA4-3 一楼办公室照明 -->
+                        <div class="left hcfsModel1Station whgcW1">
+                            <dl>
+                                <dt class="MZBtnPosition">
+                                    <img src="../../../static/images/dianli/whgcImg5_2.png" alt="">
+                                    <span id="a1_b6_kgzt3" class="OC1 cursor_pointer cursor_pointer newDianLu1C whgcOCP3"></span>
+                                </dt>
+                                <dd class="mt">1AA4-3</dd>
+                                <dd class="mb">一楼办公室照明</dd>
+                            </dl>
+                            <ul class="lwm2Group whswcGroup">
+                                <li id="CH3_dev6_ua" class="lwmData" style="color: rgb(255, 255, 0);">231.1</li>
+                                <li id="CH3_dev6_ub" class="lwmData" style="color: rgb(255, 255, 0);">230.3</li>
+                                <li id="CH3_dev6_uc" class="lwmData" style="color: rgb(255, 255, 0);">230.7</li>
+                                <li id="CH3_dev6_ia" class="lwmData" style="color: rgb(255, 255, 0);">68</li>
+                                <li id="CH3_dev6_ib" class="lwmData" style="color: rgb(255, 255, 0);">37.3</li>
+                                <li id="CH3_dev6_uca" class="lwmData" style="color: rgb(255, 255, 0);">49.4</li>
+                                <li id="CH3_dev6_ep" class="lwmData" style="color: rgb(255, 255, 0);">267080.9</li>
+                            </ul>
+                        </div>
+                        <!-- 1AA4-4 充电柜 -->
+                        <div class="left hcfsModel1Station whgcW1">
+                            <dl>
+                                <dt class="MZBtnPosition">
+                                    <img src="../../../static/images/dianli/whgcImg5_2.png" alt="">
+                                    <span id="a1_b7_kgzt3" class="OC1 cursor_pointer newDianLu1C whgcOCP3"></span>
+                                </dt>
+                                <dd class="mt">1AA4-4</dd>
+                                <dd class="mb">充电柜</dd>
+                            </dl>
+                            <ul class="lwm2Group whswcGroup">
+                                <li id="CH3_dev7_ua" class="lwmData" style="color: rgb(255, 255, 0);">231</li>
+                                <li id="CH3_dev7_ub" class="lwmData" style="color: rgb(255, 255, 0);">231.2</li>
+                                <li id="CH3_dev7_uc" class="lwmData" style="color: rgb(255, 255, 0);">230.4</li>
+                                <li id="CH3_dev7_ia" class="lwmData">0.0</li>
+                                <li id="CH3_dev7_ib" class="lwmData">0.0</li>
+                                <li id="CH3_dev7_uca" class="lwmData">0.0</li>
+                                <li id="CH3_dev7_ep" class="lwmData">2758.5</li>
+                            </ul>
+                        </div>
+                        <!-- 1AA4-5 消防泵 -->
+                        <div class="left hcfsModel1Station whgcW1">
+                            <dl>
+                                <dt class="MZBtnPosition">
+                                    <img src="../../../static/images/dianli/whgcImg5_2.png" alt="">
+                                    <span id="a1_b8_kgzt3" class="OC1 cursor_pointer newDianLu1C whgcOCP3"></span>
+                                </dt>
+                                <dd class="mt">1AA4-5</dd>
+                                <dd class="mb">消防泵</dd>
+                            </dl>
+                            <ul class="lwm2Group whswcGroup">
+                                <li id="CH3_dev8_ua" class="lwmData" style="color: rgb(255, 255, 0);">230.9</li>
+                                <li id="CH3_dev8_ub" class="lwmData" style="color: rgb(255, 255, 0);">231.2</li>
+                                <li id="CH3_dev8_uc" class="lwmData" style="color: rgb(255, 255, 0);">230.9</li>
+                                <li id="CH3_dev8_ia" class="lwmData">0.0</li>
+                                <li id="CH3_dev8_ib" class="lwmData">0.0</li>
+                                <li id="CH3_dev8_uca" class="lwmData">0.0</li>
+                                <li id="CH3_dev8_ep" class="lwmData">125.5</li>
+                            </ul>
+                        </div>
+                        <!-- 1AA4-6 拉拔机等设备 -->
+                        <div class="left hcfsModel1Station whgcW1">
+                            <dl>
+                                <dt class="MZBtnPosition">
+                                    <img src="../../../static/images/dianli/whgcImg5_3.png" alt="">
+                                    <span id="a1_b9_kgzt3" class="OC1 cursor_pointer newDianLu1C whgcOCP3"></span>
+                                </dt>
+                                <dd class="mt">1AA4-6</dd>
+                                <dd class="mb">拉拔机等设备</dd>
+                            </dl>
+                            <ul class="lwm2Group whswcGroup">
+                                <li id="CH3_dev9_ua" class="lwmData" style="color: rgb(255, 255, 0);">231.9</li>
+                                <li id="CH3_dev9_ub" class="lwmData" style="color: rgb(255, 255, 0);">232.2</li>
+                                <li id="CH3_dev9_uc" class="lwmData" style="color: rgb(255, 255, 0);">232.2</li>
+                                <li id="CH3_dev9_ia" class="lwmData" style="color: rgb(255, 255, 0);">109.4</li>
+                                <li id="CH3_dev9_ib" class="lwmData" style="color: rgb(255, 255, 0);">108.4</li>
+                                <li id="CH3_dev9_uca" class="lwmData" style="color: rgb(255, 255, 0);">104.2</li>
+                                <li id="CH3_dev9_ep" class="lwmData" style="color: rgb(255, 255, 0);">137129.1</li>
+                                <!-- <li id="a1_b9_g1_thd-va" class="lwmData" style="color: rgb(255, 255, 0);">1.7</li>
+                                <li id="a1_b9_g1_thd-vb" class="lwmData" style="color: rgb(255, 255, 0);">3.5</li>
+                                <li id="a1_b9_g1_thd-vc" class="lwmData" style="color: rgb(255, 255, 0);">1.4</li>
+                                <li id="a1_b9_g1_thd-ia" class="lwmData" style="color: rgb(255, 255, 0);">3.7</li>
+                                <li id="a1_b9_g1_thd-ib" class="lwmData" style="color: rgb(255, 255, 0);">4.7</li>
+                                <li id="a1_b9_g1_thd-ic" class="lwmData" style="color: rgb(255, 255, 0);">4.8</li>                                -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="left hcfs4" style="margin-left: -2px;">
+                <img src="../../../static/images/dianli/whgcImg7_01.png" alt="">
+            </div>
+        </div>    
+        <!-- 电路图下半部分 -->
+        <div class="clearfix" style="width:1590px; margin-left:30px;">
+            <div class="left hcfs4">
+                <div class="left">                       
+                    <div class="clearfix">                            
+                        <div>
+                            <div class="hcfsModel2Station">
+                                <p class="minHaiLT2 kdImg1DataTit whgcT4">1AA7</p>
+                                <img src="../../../static/images/dianli/whgcImg6.png" alt="">
+                                <ul class="hcfs4modelAllData hcfs4model3Data">
+                                    <li class=""></li>
+                                    <li class="clearfix"></li>
+                                    <li class="clearfix"></li>
+                                    <li class="clearfix"></li>
+                                    <li class="clearfix"></li>
+                                </ul>
+                            </div>                              
+                            <!-- 1AA7 -->
+                            <div class="clearfix" style="position:relative; margin-left:40px;">
+                                <!-- 1AA7 左侧标签 -->
+                                <ul class="whgc_dataTit whgc_dataTitP2">
+                                    <li class="hcfs4model2DataDT">Ua</li>
+                                    <li class="hcfs4model2DataDT">Ub</li>
+                                    <li class="hcfs4model2DataDT">Uc</li>
+                                    <li class="hcfs4model2DataDT">Ia</li>
+                                    <li class="hcfs4model2DataDT">Ib</li>
+                                    <li class="hcfs4model2DataDT">Ic</li>
+                                    <li class="hcfs4model2DataDT">Ep</li>
+                                    <!-- <li class="hcfs4model2DataDT">P</li>
+                                    <li class="hcfs4model2DataDT">Q</li>
+                                    <li class="hcfs4model2DataDT">Cosφ</li>
+                                    <li class="hcfs4model2DataDT" style="width: 80px;margin-left: -10px;">THD-Va</li>
+                                    <li class="hcfs4model2DataDT" style="width: 80px;margin-left: -10px;">THD-Vb</li>
+                                    <li class="hcfs4model2DataDT" style="width: 80px;margin-left: -10px;">THD-Vc</li>
+                                    <li class="hcfs4model2DataDT" style="width: 80px;margin-left: -10px;">THD-Ia</li>
+                                    <li class="hcfs4model2DataDT" style="width: 80px;;margin-left: -10px;">THD-Ib</li>
+                                    <li class="hcfs4model2DataDT" style="width: 80px;;margin-left: -10px;">THD-Ic</li> -->
+                                </ul>
+                                <!-- 1AA7-1 备用 -->
+                                <div class="left hcfsModel1Station whgcW1">
+                                    <dl>
+                                        <dt class="MZBtnPosition whgcH2">
+                                            <img src="../../../static/images/dianli/whgcImg5_1.png" alt="">
+                                            <span id="c1_b10_kgzt3" class="OC1 cursor_pointer newDianLu1C whgcOCP3"></span>
+                                        </dt>
+                                        <dd class="mt">1AA7-1</dd>
+                                        <dd class="mb">备用</dd>
+                                    </dl>
+                                    <ul class="lwm2Group whswcGroup">
+                                        <li id="CH3_dev10_ua" class="lwmData" style="color: rgb(255, 255, 0);">232.5</li>
+                                        <li id="CH3_dev10_ub" class="lwmData" style="color: rgb(255, 255, 0);">232.7</li>
+                                        <li id="CH3_dev10_uc" class="lwmData" style="color: rgb(255, 255, 0);">232</li>
+                                        <li id="CH3_dev10_ia" class="lwmData" style="color: rgb(255, 255, 0);">56.2</li>
+                                        <li id="CH3_dev10_ib" class="lwmData" style="color: rgb(255, 255, 0);">19.8</li>
+                                        <li id="CH3_dev10_ic" class="lwmData" style="color: rgb(255, 255, 0);">22.6</li>
+                                        <li id="CH3_dev10_ep" class="lwmData" style="color: rgb(255, 255, 0);">12409.7</li>
+                                        <!-- <li id="c1_b10_ib" class="lwmData">0.0</li>
+                                        <li id="c1_b10_ic" class="lwmData">3.0</li>
+                                        <li id="c1_b10_ep" class="lwmData">12404.4</li> -->
+                                    </ul>
+                                </div>
+                                <!-- 1AA7-2 铜牌挤压机 -->
+                                <div class="left hcfsModel1Station whgcW1">
+                                    <dl>
+                                        <dt class="MZBtnPosition">
+                                            <img src="../../../static/images/dianli/whgcImg5_3.png" alt="">
+                                            <span id="c1_b10_kgzt3" class="OC1 cursor_pointer newDianLu1C whgcOCP3"></span>
+                                        </dt>
+                                        <dd class="mt">1AA7-2</dd>
+                                        <dd class="mb">铜牌挤压机</dd>
+                                    </dl>
+                                    <ul class="lwm2Group whswcGroup">
+                                        <li id="CH3_dev11_ua" class="lwmData" style="color: rgb(255, 255, 0);">232.1</li>
+                                        <li id="CH3_dev11_ub" class="lwmData" style="color: rgb(255, 255, 0);">231.6</li>
+                                        <li id="CH3_dev11_uc" class="lwmData" style="color: rgb(255, 255, 0);">232</li>
+                                        <li id="CH3_dev11_ia" class="lwmData" style="color: rgb(255, 255, 0);">405.8</li>
+                                        <li id="CH3_dev11_ib" class="lwmData" style="color: rgb(255, 255, 0);">400.6</li>
+                                        <li id="CH3_dev11_ic" class="lwmData" style="color: rgb(255, 255, 0);">399.2</li>
+                                        <li id="CH3_dev11_ep" class="lwmData" style="color: rgb(255, 255, 0);">456630.6</li>
+                                        <!-- <li id="c1_b11_ib" class="lwmData">157160.0</li>
+                                        <li id="c1_b11_ic" class="lwmData">220400.0</li>
+                                        <li id="c1_b11_ep" class="lwmData">0.6</li>
+                                        <li id="c1_b11_g1_thd-va" class="lwmData" style="color: rgb(255, 255, 0);">6</li>
+                                        <li id="c1_b11_g1_thd-vb" class="lwmData" style="color: rgb(255, 255, 0);">1.3</li>
+                                        <li id="c1_b11_g1_thd-vc" class="lwmData" style="color: rgb(255, 255, 0);">2.8</li>
+                                        <li id="c1_b11_g1_thd-ia" class="lwmData" style="color: rgb(255, 255, 0);">29</li>
+                                        <li id="c1_b11_g1_thd-ib" class="lwmData" style="color: rgb(255, 255, 0);">29</li>
+                                        <li id="c1_b11_g1_thd-ic" class="lwmData" style="color: rgb(255, 255, 0);">26.3</li> -->
+                                    </ul>
+                                </div>
+                                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>               
+                            <!-- 1AA6 -->
+                            <div class="left hcfs4">                   
+                                <div>
+                                    <div class="hcfsModel2Station">
+                                        <p class="minHaiLT2 kdImg1DataTit whgcT5">1AA6</p>
+                                        <img src="../../../static/images/dianli/whgcImg8.png" alt="" width="601px">                                                     
+                                        <ul class="hcfs4modelAllData hcfs4model3Data">
+                                            <li class=""></li>
+                                            <li class="clearfix"></li>
+                                            <li class="clearfix"></li>
+                                            <li class="clearfix"></li>
+                                            <li class="clearfix"></li>
+                                        </ul>
+                                    </div>                                
+                                    <div class="clearfix" style=" margin-left:13px; position:relative;">
+                                        <!-- 1AA6 左侧标签 -->
+                                        <ul class="whgc_dataTit">
+                                            <li class="hcfs4model2DataDT">Ua</li>
+                                            <li class="hcfs4model2DataDT">Ub</li>
+                                            <li class="hcfs4model2DataDT">Uc</li>
+                                            <li class="hcfs4model2DataDT">Ia</li>
+                                            <li class="hcfs4model2DataDT">Ib</li>
+                                            <li class="hcfs4model2DataDT">Ic</li>
+                                            <li class="hcfs4model2DataDT">Ep</li>
+                                        </ul>
+                                        <!-- 1AA6-1 自控演示 -->
+                                        <div class="left hcfsModel1Station whgcW1">
+                                            <dl>
+                                                <dt class="MZBtnPosition whgcH2">
+                                                    <img src="../../../static/images/dianli/whgcImg5_1.png" alt="">
+                                                    <span id="c1_b4_kz1" style="cursor:pointer;" class="OC1 switch_span newDianLu1C whgcOCP3"></span>
+                                                    <input type="hidden" class="switch" id="c1_b4_kz1" value="0.0">
+                                                </dt>
+                                                <dd class="mt">1AA6-1</dd>
+                                                <dd class="mb">自控演示</dd>
+                                            </dl>
+                                            <ul class="lwm2Group whswcGroup">
+                                                <li id="CH3_dev12_ua" class="lwmData" style="color: rgb(255, 255, 0);">230.8</li>
+                                                <li id="CH3_dev12_ub" class="lwmData" style="color: rgb(255, 255, 0);">231.7</li>
+                                                <li id="CH3_dev12_uc" class="lwmData" style="color: rgb(255, 255, 0);">232.3</li>
+                                                <li id="CH3_dev12_ia" class="lwmData">0.0</li>
+                                                <li id="CH3_dev12_ib" class="lwmData">0.0</li>
+                                                <li id="CH3_dev12_ic" class="lwmData">0.0</li>
+                                                <li id="CH3_dev12_ep" class="lwmData">0.0</li>
+                                            </ul>
+                                        </div>                            
+                                        <!-- 1AA6-2 备用 -->
+                                        <div class="left hcfsModel1Station whgcW1">
+                                            <dl>
+                                                <dt class="MZBtnPosition">
+                                                    <img src="../../../static/images/dianli/whgcImg5_2.png" alt="">
+                                                    <span id="c1_b5_kgzt3" class="OC1 cursor_pointer newDianLu1C whgcOCP3"></span>
+                                                </dt>
+                                                <dd class="mt">1AA6-2</dd>
+                                                <dd class="mb">备用</dd>
+                                            </dl>
+                                            <ul class="lwm2Group whswcGroup">
+                                                <li id="CH3_dev13_ua" class="lwmData" style="color: rgb(255, 255, 0);">232.3</li>
+                                                <li id="CH3_dev13_ub" class="lwmData" style="color: rgb(255, 255, 0);">231.8</li>
+                                                <li id="CH3_dev13_uc" class="lwmData" style="color: rgb(255, 255, 0);">231.5</li>
+                                                <li id="CH3_dev13_ia" class="lwmData">0.0</li>
+                                                <li id="CH3_dev13_ib" class="lwmData">0.0</li>
+                                                <li id="CH3_dev13_ic" class="lwmData">0.0</li>
+                                                <li id="CH3_dev13_ep" class="lwmData">0.0</li>
+                                            </ul>
+                                        </div>
+                                        <!-- 1AA6-3 备用 -->
+                                        <div class="left hcfsModel1Station whgcW1">
+                                            <dl>
+                                                <dt class="MZBtnPosition">
+                                                    <img src="../../../static/images/dianli/whgcImg5_2.png" alt="">
+                                                    <span id="c1_b6_kgzt3" class="OC1 cursor_pointer newDianLu1C whgcOCP3"></span>
+                                                </dt>
+                                                <dd class="mt">1AA6-3</dd>
+                                                <dd class="mb">备用</dd>
+                                            </dl>
+                                            <ul class="lwm2Group whswcGroup">
+                                                <li id="CH3_dev14_ua" class="lwmData" style="color: rgb(255, 255, 0);">231.2</li>
+                                                <li id="CH3_dev14_ub" class="lwmData" style="color: rgb(255, 255, 0);">231.9</li>
+                                                <li id="CH3_dev14_uc" class="lwmData" style="color: rgb(255, 255, 0);">232</li>
+                                                <li id="CH3_dev14_ia" class="lwmData">0.0</li>
+                                                <li id="CH3_dev14_ib" class="lwmData">0.0</li>
+                                                <li id="CH3_dev14_ic" class="lwmData">0.1</li>
+                                                <li id="CH3_dev14_ep" class="lwmData" style="color: rgb(255, 255, 0);">2897.3</li>
+                                            </ul>
+                                        </div>
+                                        <!-- 1AA6-4 工厂用电AP10 -->
+                                        <div class="left hcfsModel1Station whgcW1">
+                                            <dl>
+                                                <dt class="MZBtnPosition">
+                                                    <img src="../../../static/images/dianli/whgcImg5_2.png" alt="">
+                                                    <span id="c1_b7_kgzt3" class="OC1 cursor_pointer newDianLu1C whgcOCP3"></span>
+                                                </dt>
+                                                <dd class="mt">1AA6-4</dd>
+                                                <dd class="mb">工厂用电AP10</dd>
+                                            </dl>
+                                            <ul class="lwm2Group whswcGroup">
+                                                <li id="CH3_dev15_ua" class="lwmData" style="color: rgb(255, 255, 0);">232.5</li>
+                                                <li id="CH3_dev15_ub" class="lwmData" style="color: rgb(255, 255, 0);">232.2</li>
+                                                <li id="CH3_dev15_uc" class="lwmData" style="color: rgb(255, 255, 0);">231.5</li>
+                                                <li id="CH3_dev15_ia" class="lwmData" style="color: rgb(255, 255, 0);">91.6</li>
+                                                <li id="CH3_dev15_ib" class="lwmData" style="color: rgb(255, 255, 0);">97.2</li>
+                                                <li id="CH3_dev15_ic" class="lwmData" style="color: rgb(255, 255, 0);">88.4</li>
+                                                <li id="CH3_dev15_ep" class="lwmData" style="color: rgb(255, 255, 0);">398411</li>
+                                            </ul>
+                                        </div>
+                                        <!-- 1AA6-5 工厂用电AP11 -->
+                                        <div class="left hcfsModel1Station whgcW1">
+                                            <dl>
+                                                <dt class="MZBtnPosition">
+                                                    <img src="../../../static/images/dianli/whgcImg5_2.png" alt="">
+                                                    <span id="c1_b8_kgzt3" class="OC1 cursor_pointer newDianLu1C whgcOCP3"></span>
+                                                </dt>
+                                                <dd class="mt">1AA6-5</dd>
+                                                <dd class="mb">工厂用电AP11</dd>
+                                            </dl>
+                                            <ul class="lwm2Group whswcGroup">
+                                                <li id="CH3_dev16_ua" class="lwmData" style="color: rgb(255, 255, 0);">231.7</li>
+                                                <li id="CH3_dev16_ub" class="lwmData" style="color: rgb(255, 255, 0);">231.8</li>
+                                                <li id="CH3_dev16_uc" class="lwmData" style="color: rgb(255, 255, 0);">231.6</li>
+                                                <li id="CH3_dev16_ia" class="lwmData">0.0</li>
+                                                <li id="CH3_dev16_ib" class="lwmData">0.0</li>
+                                                <li id="CH3_dev16_ic" class="lwmData">0.0</li>
+                                                <li id="CH3_dev16_ep" class="lwmData">1529.3</li>
+                                            </ul>
+                                        </div>
+                                        <!-- 1AA6-6 工厂用电AP12 -->
+                                        <div class="left hcfsModel1Station whgcW1">
+                                            <dl>
+                                                <dt class="MZBtnPosition">
+                                                    <img src="../../../static/images/dianli/whgcImg5_3.png" alt="">
+                                                    <span id="c1_b9_kgzt3" class="OC1 cursor_pointer newDianLu1C whgcOCP3"></span>
+                                                </dt>
+                                                <dd class="mt">1AA6-6</dd>
+                                                <dd class="mb">工厂用电AP12</dd>
+                                            </dl>
+                                            <ul class="lwm2Group whswcGroup">
+                                                <li id="CH3_dev17_ua" class="lwmData" style="color: rgb(255, 255, 0);">231</li>
+                                                <li id="CH3_dev17_ub" class="lwmData" style="color: rgb(255, 255, 0);">231.9</li>
+                                                <li id="CH3_dev17_uc" class="lwmData" style="color: rgb(255, 255, 0);">231.6</li>
+                                                <li id="CH3_dev17_ia" class="lwmData">0.0</li>
+                                                <li id="CH3_dev17_ib" class="lwmData">0.0</li>
+                                                <li id="CH3_dev17_ic" class="lwmData" style="color: rgb(255, 255, 0);">1.4</li>
+                                                <li id="CH3_dev17_ep" class="lwmData" style="color: rgb(255, 255, 0);">8025.1</li>                             
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+
+
+                            <!-- 1AA5 -->
+                            <div class="left hcfs4">     
+                                <div>
+                                    <div class="hcfsModel2Station">
+                                        <p class="minHaiLT2 kdImg1DataTit whgcT5">1AA5</p>
+                                        <img src="../../../static/images/dianli/whgcImg8.png" alt="">                       
+                                        <ul class="hcfs4modelAllData hcfs4model3Data">
+                                            <li class=""></li>
+                                            <li class="clearfix"></li>
+                                            <li class="clearfix"></li>
+                                            <li class="clearfix"></li>
+                                            <li class="clearfix"></li>
+                                        </ul>
+                                    </div>                      
+                                    <div class="clearfix" style=" margin-left:23px; position:relative;">
+                                        <!-- 1AA5 左侧标签 -->
+                                        <ul class="whgc_dataTit">
+                                            <li class="hcfs4model2DataDT">Ua</li>
+                                            <li class="hcfs4model2DataDT">Ub</li>
+                                            <li class="hcfs4model2DataDT">Uc</li>
+                                            <li class="hcfs4model2DataDT">Ia</li>
+                                            <li class="hcfs4model2DataDT">Ib</li>
+                                            <li class="hcfs4model2DataDT">Ic</li>
+                                            <li class="hcfs4model2DataDT">Ep</li>
+                                        </ul>
+                                        <!-- 1AA5-1 备用 -->
+                                        <div class="left hcfsModel1Station whgcW1">
+                                            <dl>
+                                                <dt class="MZBtnPosition whgcH2">
+                                                    <img src="../../../static/images/dianli/whgcImg5_1.png" alt="">
+                                                    <span id="a1_b10_kgzt3" class="OC1 cursor_pointer newDianLu1C whgcOCP3"></span>
+                                                </dt>
+                                                <dd class="mt">1AA5-1</dd>
+                                                <dd class="mb">备用</dd>
+                                            </dl>
+                                            <ul class="lwm2Group whswcGroup">
+                                                <li id="CH3_dev18_ua" class="lwmData" style="color: rgb(255, 255, 0);">231.8</li>
+                                                <li id="CH3_dev18_ub" class="lwmData" style="color: rgb(255, 255, 0);">232.5</li>
+                                                <li id="CH3_dev18_uc" class="lwmData" style="color: rgb(255, 255, 0);">232.2</li>
+                                                <li id="CH3_dev18_ia" class="lwmData">0.0</li>
+                                                <li id="CH3_dev18_ib" class="lwmData">0.0</li>
+                                                <li id="CH3_dev18_ic" class="lwmData">0.0</li>
+                                                <li id="CH3_dev18_ep" class="lwmData">0.0</li>
+                                            </ul>
+                                        </div>
+                                        <!-- 1AA5-2 备用 -->
+                                        <div class="left hcfsModel1Station whgcW1">
+                                            <dl>
+                                                <dt class="MZBtnPosition">
+                                                    <img src="../../../static/images/dianli/whgcImg5_2.png" alt="">
+                                                    <span id="a1_b11_kgzt3" class="OC1 cursor_pointer newDianLu1C whgcOCP3"></span>
+                                                </dt>
+                                                <dd class="mt">1AA5-2</dd>
+                                                <dd class="mb">备用</dd>
+                                            </dl>
+                                            <ul class="lwm2Group whswcGroup">
+                                                <li id="CH3_dev19_ua" class="lwmData" style="color: rgb(255, 255, 0);">231.5</li>
+                                                <li id="CH3_dev19_ub" class="lwmData" style="color: rgb(255, 255, 0);">232</li>
+                                                <li id="CH3_dev19_uc" class="lwmData" style="color: rgb(255, 255, 0);">232.4</li>
+                                                <li id="CH3_dev19_ia" class="lwmData">0.0</li>
+                                                <li id="CH3_dev19_ib" class="lwmData">0.0</li>
+                                                <li id="CH3_dev19_ic" class="lwmData">0.0</li>
+                                                <li id="CH3_dev19_ep" class="lwmData">0.0</li>
+                                            </ul>
+                                        </div>
+                                        <!-- 1AA5-3 范东平 -->
+                                        <div class="left hcfsModel1Station whgcW1">
+                                            <dl>
+                                                <dt class="MZBtnPosition">
+                                                    <img src="../../../static/images/dianli/whgcImg5_2.png" alt="">
+                                                    <span id="a1_b12_kgzt3" class="OC1 cursor_pointer newDianLu1C whgcOCP3"></span>
+                                                </dt>
+                                                <dd class="mt">1AA5-3</dd>
+                                                <dd class="mb">范东平</dd>
+                                            </dl>
+                                            <ul class="lwm2Group whswcGroup">
+                                                <li id="CH3_dev20_ua" class="lwmData" style="color: rgb(255, 255, 0);">231.5</li>
+                                                <li id="CH3_dev20_ub" class="lwmData" style="color: rgb(255, 255, 0);">231.1</li>
+                                                <li id="CH3_dev20_uc" class="lwmData" style="color: rgb(255, 255, 0);">231</li>
+                                                <li id="CH3_dev20_ia" class="lwmData">0.0</li>
+                                                <li id="CH3_dev20_ib" class="lwmData">0.0</li>
+                                                <li id="CH3_dev20_ic" class="lwmData">0.0</li>
+                                                <li id="CH3_dev20_ep" class="lwmData">0.0</li>
+                                            </ul>
+                                        </div>
+                                        <!-- 1AA5-4 工厂用电AP13 -->
+                                        <div class="left hcfsModel1Station whgcW1">
+                                            <dl>
+                                                <dt class="MZBtnPosition">
+                                                    <img src="../../../static/images/dianli/whgcImg5_2.png" alt="">
+                                                    <span id="c1_b1_kgzt3" class="OC1 cursor_pointer newDianLu1C whgcOCP3"></span>
+                                                </dt>
+                                                <dd class="mt">1AA5-4</dd>
+                                                <dd class="mb">工厂用电AP13</dd>
+                                            </dl>
+                                            <ul class="lwm2Group whswcGroup">
+                                                <li id="CH3_dev21_ua" class="lwmData" style="color: rgb(255, 255, 0);">232.4</li>
+                                                <li id="CH3_dev21_ub" class="lwmData" style="color: rgb(255, 255, 0);">231.8</li>
+                                                <li id="CH3_dev21_uc" class="lwmData" style="color: rgb(255, 255, 0);">231.8</li>
+                                                <li id="CH3_dev21_ia" class="lwmData" style="color: rgb(255, 255, 0);">17.8</li>
+                                                <li id="CH3_dev21_ib" class="lwmData" style="color: rgb(255, 255, 0);">15.4</li>
+                                                <li id="CH3_dev21_ic" class="lwmData" style="color: rgb(255, 255, 0);">19.2</li>
+                                                <li id="CH3_dev21_ep" class="lwmData" style="color: rgb(255, 255, 0);">48611.5</li>
+                                            </ul>
+                                        </div>
+                                        <!-- 1AA5-5 工厂用电AP14 -->
+                                        <div class="left hcfsModel1Station whgcW1">
+                                            <dl>
+                                                <dt class="MZBtnPosition">
+                                                    <img src="../../../static/images/dianli/whgcImg5_2.png" alt="">
+                                                    <span id="c1_b2_kgzt3" class="OC1 cursor_pointer newDianLu1C whgcOCP3"></span>
+                                                </dt>
+                                                <dd class="mt">1AA5-5</dd>
+                                                <dd class="mb">工厂用电AP14</dd>
+                                            </dl>
+                                            <ul class="lwm2Group whswcGroup">
+                                                <li id="CH3_dev22_ua" class="lwmData" style="color: rgb(255, 255, 0);">232.7</li>
+                                                <li id="CH3_dev22_ub" class="lwmData" style="color: rgb(255, 255, 0);">232.5</li>
+                                                <li id="CH3_dev22_uc" class="lwmData" style="color: rgb(255, 255, 0);">231.2</li>
+                                                <li id="CH3_dev22_ia" class="lwmData" style="color: rgb(255, 255, 0);">39.8</li>
+                                                <li id="CH3_dev22_ib" class="lwmData" style="color: rgb(255, 255, 0);">58</li>
+                                                <li id="CH3_dev22_ic" class="lwmData" style="color: rgb(255, 255, 0);">72.2</li>
+                                                <li id="CH3_dev22_ep" class="lwmData" style="color: rgb(255, 255, 0);">189869.9</li>
+                                            </ul>
+                                        </div>
+                                        <!-- 1AA5-6 工厂用电AP15 -->
+                                        <div class="left hcfsModel1Station whgcW1">
+                                            <dl>
+                                                <dt class="MZBtnPosition">
+                                                    <img src="../../../static/images/dianli/whgcImg5_3.png" alt="">
+                                                    <span id="c1_b3_kgzt3" class="OC1 cursor_pointer newDianLu1C whgcOCP3"></span>
+                                                </dt>
+                                                <dd class="mt">1AA5-6</dd>
+                                                <dd class="mb">工厂用电AP15</dd>
+                                            </dl>
+                                            <ul class="lwm2Group whswcGroup">
+                                                <li id="CH3_dev23_ua" class="lwmData" style="color: rgb(255, 255, 0);">232.5</li>
+                                                <li id="CH3_dev23_ub" class="lwmData" style="color: rgb(255, 255, 0);">231.2</li>
+                                                <li id="CH3_dev23_uc" class="lwmData" style="color: rgb(255, 255, 0);">231.8</li>
+                                                <li id="CH3_dev23_ia" class="lwmData" style="color: rgb(255, 255, 0);">14.2</li>
+                                                <li id="CH3_dev23_ib" class="lwmData" style="color: rgb(255, 255, 0);">0.9</li>
+                                                <li id="CH3_dev23_ic" class="lwmData" style="color: rgb(255, 255, 0);">1.7</li>
+                                                <li id="CH3_dev23_ep" class="lwmData" style="color: rgb(255, 255, 0);">251611.9</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                        
+                    
+        </div>
+    </div>
+
+</div>
+</template>
+
+
+
+
+<script>
+import circuit from '@/assets/css/circuit.css';
+  export default {
+    data() {
+      return {
+        msg_data: []
+      }
+    },
+    created() {
+      this.initWebSocket()
+    },
+    destroyed: function () {
+      this.websocketclose();
+    },
+    methods: {
+      initWebSocket: function () {
+        this.websock = new WebSocket("ws://192.168.0.37:8001/netgate-server/serverSocket/Root");
+        this.websock.onopen = this.websocketonopen;
+        this.websock.onerror = this.websocketonerror;
+        this.websock.onmessage = this.websocketonmessage;
+        this.websock.onclose = this.websocketclose;
+      },
+      websocketonopen: function () {
+        console.log("WebSocket连接成功");
+        console.log("连接开始时间："+(new Date()));
+      },
+      websocketonerror: function (e) {
+        console.log("WebSocket连接发生错误");
+      },
+      websocketonmessage: function (e) {
+        //console.log("数据开始接收时间："+(new Date()));
+        var da = JSON.parse(e.data);
+        var dataMap = new Map();
+        for(var i=0;i<da.length;i++){
+            // var dataArray = new Array();
+            // if(dataMap.get(da[i].dt) || dataMap.get(da[i].dt)!=undefined){//取json中的值
+            //     dataArray =  dataMap.get(da[i].dt);
+            //     dataArray.push(da[i]);
+            // }else{
+            //     dataArray.push(da[i]);
+            // }  
+            // dataMap.set(da[i].dt, dataArray);
+            if(da[i].dt == 0){
+                 //console.log(da[i]);
+                 //console.log(i+"==="+da[i].tnm)
+                if(document.getElementById(da[i].tnm)){
+                    document.getElementById(da[i].tnm).innerText=da[i].val;//da[i].tnm比如这个就是数据对应的页面上的id为CH3_dev23_ua
+                }
+            }
+        }
+        //console.log(dataMap);
+        //console.log("数据接收结束时间："+(new Date()));
+        //this.msg_data.unshift(da);
+      },
+      websocketclose: function (e) {
+        console.log("connection closed (" + e.code + ")");
+      }
+    }
+  }
+</script>
+
+
+
+<style>
+
+</style>

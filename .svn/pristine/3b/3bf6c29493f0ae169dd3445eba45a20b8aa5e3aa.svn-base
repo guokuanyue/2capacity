@@ -1,0 +1,88 @@
+<!-- 电力监控主页面-本地表格页面 -->
+<template>
+  <div>
+    <!-- 第一步 列表显示部分 -->
+    <div class="listShow">
+      <div id="access">
+        <ul>
+          <router-link
+            v-for="item in accessList"
+            :key="item.tid"
+            tag="el-button"
+            :to="{name:item.routerName}"
+          >{{item.title}}</router-link>
+        </ul>
+      </div>
+      <router-view>主体部分</router-view>
+    </div>
+    <!-- 列表显示部分结束 -->
+  </div>
+</template>
+
+<script>
+export default {
+  // 第二步 列表显示部分数据
+  data() {
+    return {
+      accessList: [
+        {
+          title: "access1",
+          tid: 1,
+          routerName: "access1"
+        },
+        {
+          title: "access2",
+          tid: 2,
+          routerName: "access2"
+        },
+        {
+          title: "access3",
+          tid: 3,
+          routerName: "access3"
+        },
+        {
+          title: "access4",
+          tid: 4,
+          routerName: "access4"
+        },
+        {
+          title: "access5",
+          tid: 5,
+          routerName: "access5"
+        },
+        {
+          title: "access6",
+          tid: 6,
+          routerName: "access6"
+        },
+        {
+          title: "access7",
+          tid: 7,
+          routerName: "access7"
+        },
+        {
+          title: "access8",
+          tid: 8,
+          routerName: "access8"
+        }
+      ]
+    };
+  }
+};
+</script>
+
+<style>
+/* 第三步 列表显示样式开始 */
+.listShow {
+  margin-left: 0.4%;
+}
+#access .el-button {
+  min-width: 12px;
+  border-radius: 0;
+  border-bottom: 0;
+}
+.el-button + .el-button {
+  margin-left: -13px;
+}
+/* 列表显示样式结束 */
+</style>

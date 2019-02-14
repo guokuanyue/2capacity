@@ -1,0 +1,82 @@
+{
+  "ok": false,
+  "code": 0,
+  "data": [{
+      "powerConsum": 0,
+      "tnm": "d1_b14_ep",
+      "tds": "2#低压回路仪表后半部分-2-7-2 变压器工厂-三相总有功电度",
+      "eds": null,
+      "first": "0",
+      "last": "0"
+    },
+    {
+      "powerConsum": 0,
+      "tnm": "d1_b13_ep",
+      "tds": "2#低压回路仪表后半部分-2-7-1 母联-三相总有功电度",
+      "eds": null,
+      "first": "0",
+      "last": "0"
+    },
+    {
+      "powerConsum": 0,
+      "tnm": "d1_b11_ep",
+      "tds": "2#低压回路仪表后半部分-2-6-5 工厂用电AP8-三相总有功电度",
+      "eds": null,
+      "first": "0",
+      "last": "0"
+    },
+    {
+      "powerConsum": 0,
+      "tnm": "d1_b9_ep",
+      "tds": "2#低压回路仪表后半部分-2-6-3 备用-三相总有功电度",
+      "eds": null,
+      "first": "0",
+      "last": "0"
+    },
+    {
+      "powerConsum": 0,
+      "tnm": "d1_b8_ep",
+      "tds": "2#低压回路仪表后半部分-2-6-2 备用-三相总有功电度",
+      "eds": null,
+      "first": "0",
+      "last": "0"
+    },
+    {
+      "powerConsum": 0,
+      "tnm": "a1_b10_ep",
+      "tds": "1#回路低压仪表前半部分-1-5-1 备用-三相总有功电度",
+      "eds": null,
+      "first": "0",
+      "last": "0"
+    },
+    {
+      "powerConsum": 0,
+      "tnm": "a1_b6_ep",
+      "tds": "1#回路低压仪表前半部分-1-4-3 一楼办公室-三相总有功电度",
+      "eds": null,
+      "first": "0",
+      "last": "0"
+    },
+    {
+      "powerConsum": 0,
+      "tnm": "a1_b9_ep",
+      "tds": "1#回路低压仪表前半部分-1-4-6 铜排工厂拉拔-三相总有功电度",
+      "eds": null,
+      "first": "0",
+      "last": "0"
+    },
+    {
+      "powerConsum": 0,
+      "tnm": "c1_b10_ep",
+      "tds": "1#低压回路仪表后半部分-1-7-1 备用-三相总有功电度",
+      "eds": null,
+      "first": "0",
+      "last": "0"
+    },
+    {
+      "powerConsum": 0,
+      "tnm": "a1_b4_ep",
+      "tds": "1#回路低压仪表"
+    }
+  ]
+}

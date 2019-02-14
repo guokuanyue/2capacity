@@ -1,0 +1,57 @@
+<!-- 电力监控主页面 -->
+<template>
+    <div>
+        <input class="buttonT1" type="button" value="T1" @click="toggleTabs(circuit);">
+        <input class="buttonT2" type="button" value="T2" @click="toggleTabs(second);">
+　　　　 <circuit :is="currentView" keep-alive></circuit>
+　　    </div>
+</template>
+
+<script>
+//引入子组件
+import circuit from './circuit.vue';
+import second from './second.vue';
+
+export default {
+        data () {
+             return {
+                currentView: 'circuit', //默认选中circuit子组件
+                circuit: "circuit", 
+                second: "second",        
+             };
+         },
+        components: { 
+             circuit,
+             second,
+         },
+        methods: {
+             toggleTabs (tabText) {
+                 this.currentView = tabText;
+             }
+         }
+    }
+</script>
+
+<style>
+.buttonT1 {
+    width:80px;
+    background:red;
+    border:none;
+    cursor:pointer;
+    padding:4px 4px;
+    border-radius:5px;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+}
+.buttonT2 {
+    position:relative;
+    width:80px;
+    background:#efea3a;
+    border:none;
+    cursor:pointer;
+    padding:4px 4px;
+    border-radius:4px;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+}
+</style>

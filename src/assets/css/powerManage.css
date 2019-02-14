@@ -1,0 +1,64 @@
+.powerManage-span {
+  color: #929BA6;
+  margin-left: 18px;
+}
+.powerManage {
+  margin-left: 7px;
+}
+.powerManage .powerManage-header {
+  margin-left: -18px;
+  background-color: #212429;
+  height: 60px;
+  line-height: 60px;
+}
+.powerManage .powerManage-header .powerManage-el-button {
+  position: relative;
+  padding: 0 0 0 22px;
+  margin-left: 2px;
+  border-radius: 3px;
+  font-size: 14px;
+  width: 70px;
+  height: 35px;
+  line-height: 35px;
+  background-color: #212429;
+  border: 1px solid#535960;
+  color: #fff;
+}
+.powerManage .powerManage-header .powerManage-el-button .powerManage-el-button-circle {
+  position: absolute;
+  left: 16px;
+  top: 8px;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid #aaa;
+  background-color: #929BA6;
+  cursor: pointer;
+}
+.powerManage .powerManage-item-ipt {
+  margin-left: 4px;
+  width: 200px;
+  height: 24px;
+  background-color: #212429;
+  color: #929BA6;
+  border-radius: 3px;
+  border: 1px solid #929BA6;
+}
+.powerManage-pie-table .powerManage-pie {
+  height: 432px;
+  background-color: #24292F;
+}
+.powerManage-pie-table .powerManage-pie #powerManage-ve-pie {
+  margin-top: -40px;
+}
+.powerManage-pie-table .powerManage-pie .powerManage-pie-header {
+  padding: 0 20px 0 40px;
+  overflow: hidden;
+  height: 70px;
+  line-height: 70px;
+  background-color: #24292F;
+}
+.powerManage-pie-table .powerManage-pie .powerManage-pie-header span {
+  color: #929BA6;
+}

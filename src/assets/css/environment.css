@@ -1,0 +1,255 @@
+* {
+    font-size: 13px;
+}
+
+.environment-con {
+    width: 100%;
+    background: #212429;
+    padding-bottom: 85px;
+}
+
+.left {
+    float: left;
+}
+
+.environment-img-wrap {
+    width: 48%;
+}
+
+.environment-con-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 右侧内容 */
+
+.environment-item-wrap {
+    margin-left: 2%;
+    width: 50%;
+    padding-top: 3%;
+}
+
+.environment-item-con-wrap {
+    width: 40.65%;
+    margin-right: 10%;
+    margin-bottom: 8%;
+}
+
+.environment-img-box {
+    position: relative;
+    padding-top: 80.85%;
+}
+
+.environment-title {
+    color: #2a84f6;
+    font-size: 20px;
+    position: relative;
+    top: 1%;
+    left: 18%;
+}
+
+
+/* 屏幕缩小后7个小标题字体大小 */
+
+.environment-title {
+    font-size: 14px!important;
+}
+
+.enviroment-num {
+    position: absolute;
+    top: 2.3%;
+    left: 8%;
+    color: white;
+    font-size: 14px;
+}
+
+.environment-item-temperature {
+    top: 41%;
+    left: 22%;
+}
+
+.environment-item {
+    width: 65%;
+    height: 33px;
+    line-height: 33px;
+    color: white;
+    position: absolute;
+    font-size: 14px;
+}
+
+.environment-item-title {
+    width: 40%;
+    text-align: center;
+    height: 33px;
+    line-height: 33px;
+}
+
+.environment-item-value {
+    font-size: 25px;
+    width: 46%;
+    height: 33px;
+    line-height: 33px;
+}
+
+
+/* 屏幕缩小后数据---数字大小 */
+
+.environment-item-value {
+    font-size: 16px!important;
+}
+
+.environment-item-humidity {
+    top: 66%;
+    left: 22%;
+}
+
+.environment-item {
+    width: 65%;
+    height: 33px;
+    line-height: 33px;
+    color: white;
+    position: absolute;
+    font-size: 14px;
+}
+
+
+/* 2 变压器侧浸水*/
+
+
+/* 边框大小 */
+
+.environment-item-con-wrap {
+    width: 25.65%;
+    margin-right: 10%;
+    margin-bottom: 8%;
+}
+
+.environment-status {
+    position: absolute;
+    top: 38%;
+    left: 23%;
+    width: 53.68%;
+    height: 44.14%;
+}
+
+.environment-title {
+    color: #2a84f6;
+    font-size: 20px;
+    position: absolute;
+    top: 1%;
+    left: 18%;
+}
+
+.enviroment-num {
+    position: absolute;
+    top: 2.3%;
+    left: 8%;
+    color: white;
+    font-size: 14px;
+}
+
+.environment-conditioner-box {
+    position: relative;
+    padding-top: 152.58%;
+}
+
+.environment-conditioner-list {
+    position: absolute;
+    top: 20%;
+    left: 3.4%;
+    width: 92.78%;
+    height: 70.95%;
+}
+
+.environment-conditioner-list>li {
+    height: 30px;
+    line-height: 30px;
+    color: white;
+}
+
+
+/* @media (max-width: 1800px)
+.environment-conditioner-list>li {
+    height: 30px!important;
+} */
+
+.environment-conditioner-title {
+    color: white;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+.environment-status-green {
+    background: #00ff00;
+}
+
+.environment-conditioner-status {
+    width: 30px;
+    height: 14px;
+    margin-top: 5%;
+}
+
+.environment-conditioner-btn-on {
+    cursor: pointer;
+    border: 1px solid #acacac;
+    outline: none;
+    background: #2a84f6;
+    margin-top: 5%;
+    color: white;
+    width: 38px;
+    height: 18px;
+    line-height: 18px;
+    border-radius: 3px;
+}
+
+.environment-conditioner-btn {
+    cursor: pointer;
+    border: 1px solid #acacac;
+    outline: none;
+    background: #171717;
+    margin-top: 5%;
+    color: #acacac;
+    width: 38px;
+    height: 18px;
+    line-height: 18px;
+    border-radius: 3px;
+}
+
+.environment-conditioner-value {
+    margin-right: 1%;
+    text-align: center;
+    color: white;
+    height: 30px;
+    line-height: 30px;
+}
+
+.environment-conditioner-input {
+    border: 1px solid #171717;
+    width: 33px;
+    height: 18px;
+    background: #35383c;
+    color: #ffff00;
+    margin-top: 3%;
+}
+
+.environment-pencil-wrap {
+    padding-top: 12%;
+    position: relative;
+    width: 11.29%;
+}
+
+.environment-pencil {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

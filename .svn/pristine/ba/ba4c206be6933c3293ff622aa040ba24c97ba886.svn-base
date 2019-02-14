@@ -1,0 +1,101 @@
+<template>
+  <div class="powerManage">
+    <!-- 头部菜单部分 -->
+    <div class="powerManage-header">
+      <el-row type="flex">
+        <el-col :span="24">
+          <!-- 区域选择部分 -->
+          <label for="powerManage-item-ipt" class="powerManage-span">选择查看区域</label>
+          <select class="powerManage-item-ipt" name id="powerManage-item-ipt">
+            <option value="选项1">总能耗</option>
+            <option value="选项1">工厂用电</option>
+            <option value="选项1">照明用电</option>
+            <option value="选项1">其他</option>
+          </select>
+          <!-- 进线选择部分 -->
+          <label for="powerManage-item-ipt" class="powerManage-span">选择查看进线</label>
+          <select class="powerManage-item-ipt" name id="powerManage-item-ipt">
+            <option value="选项1">总能耗</option>
+            <option value="选项1">工厂用电</option>
+            <option value="选项1">照明用电</option>
+            <option value="选项1">其他</option>
+          </select>
+          <!-- 查看周期部分 -->
+          <label for="powerManage-item-ipt" class="powerManage-span">选择查看周期</label>
+          <el-button class="powerManage-el-button" type="primary" plain>
+            <span class="powerManage-el-button-circle"></span>日
+          </el-button>
+          <el-button class="powerManage-el-button" type="primary" plain>
+            <span class="powerManage-el-button-circle"></span>月
+          </el-button>
+          <el-button class="powerManage-el-button" type="primary" plain>
+            <span class="powerManage-el-button-circle"></span>年
+          </el-button>
+          <!-- 选择数据日期 -->
+          <label for="powerManage-item-ipt" class="powerManage-span">选择数据日期</label>
+          <select class="powerManage-item-ipt" name id="powerManage-item-ipt">
+            <option value="选项1">总能耗</option>
+            <option value="选项1">工厂用电</option>
+            <option value="选项1">照明用电</option>
+            <option value="选项1">其他</option>
+          </select>
+        </el-col>
+      </el-row>
+    </div>
+    <!-- 饼图和数据table部分 -->
+    <div class="powerManage-pie-table">
+      <el-row type="flex">
+        <el-col :xs="10" :sm="10" :md="10" :lg="12" :xl="12">
+          <div class="powerManage-pie">
+            <div class="powerManage-pie-header">
+              新工厂配电室
+              <span class="fr">注：点击饼图，可查看对应的下级分类详情</span>
+            </div>
+            <ve-pie id="powerManage-ve-pie"></ve-pie>
+          </div>
+        </el-col>
+        <el-col :xs="10" :sm="10" :md="10" :lg="12" :xl="12">
+          <div class="powerManage-table">
+            <el-table id="powerManage-el-table" :data="tableData">
+              <el-table-column header-align="center" prop="type" label="类型" minWidth="1"></el-table-column>
+              <el-table-column header-align="center" prop="value" label="数值(kWh)" minWidth="1"></el-table-column>
+              <el-table-column header-align="center" prop="proportion" label="占比(%)" minWidth="1"></el-table-column>
+              <el-table-column header-align="center" prop="power" label="上月耗电量" minWidth="1"></el-table-column>
+              <el-table-column header-align="center" prop="percent" label="环比(%)" minWidth="1"></el-table-column>
+            </el-table>
+          </div>
+        </el-col>
+      </el-row>
+    </div>
+    <!--能耗同比 条形图和折线图 -->
+    <div class="powerManage-bar-line">
+      <el-row>
+        <el-col :xs="10" :sm="10" :md="12" :lg="12" :xl="12">
+          <!-- 柱状图 -->
+          <div class="grid-content bg-purple">
+            <ve-histogram :extend="veHistogramExtend" :data="veHistogramData"></ve-histogram>
+          </div>
+        </el-col>
+        <el-col :xs="10" :sm="10" :md="12" :lg="12" :xl="12">
+          <div class="grid-content bg-purple-light"></div>
+        </el-col>
+      </el-row>
+    </div>
+    <!-- 耗电量条形图 -->
+    <div class="powerManage-Bigbar"></div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "powerManage",
+  
+};
+</script>
+<style scoped>
+@import "../../assets/css/powerManage";
+</style>
+
+
+
+

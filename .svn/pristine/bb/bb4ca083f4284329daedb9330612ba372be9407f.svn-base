@@ -1,0 +1,15 @@
+<template>
+<div class="powerManage">
+    powerManage
+</div>
+</template>
+
+<script>
+export default {
+    name: 'powerManage'
+}
+</script>
+
+<style>
+
+</style>

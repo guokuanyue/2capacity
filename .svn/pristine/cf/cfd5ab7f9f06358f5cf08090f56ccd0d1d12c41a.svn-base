@@ -1,0 +1,78 @@
+// 背景色
+@bg-color: #212429;
+// 字体颜色
+@font-color: #C0C4CC;
+.reportConfig {
+  padding-left: 7px; // 头部顶栏
+  h3 {
+    height: 40px;
+    font-size: 16px;
+    padding-left: 14px;
+  }
+  .reportConfig-hearder {
+    padding: 14px;
+    background-color: #303740;
+    .bg-purple {
+      .reportConfig-el-select {
+        width: 300px; // 下拉框
+        .el-input__inner {
+          border: 1px solid #666;
+          height: 35px;
+          border-radius: 0px;
+          background-color: @bg-color;
+        }
+      }
+    } // 批量按钮
+    .el-button {
+      margin-top: 4px;
+      float: right;
+      width: 100px;
+      border-radius: 0px;
+      color: aliceblue;
+      background-color: @bg-color;
+    }
+    .el-button--primary:hover {
+      background-color: #0B65D3;
+    }
+  } // 渲染的列表
+  .reportConfig-table {
+    .el-table--enable-row-hover .el-table__body tr:hover>td {
+      background-color: #2a84f6;
+      color: #fff;
+    } // 表格样式
+    .el-table::before {
+      height: 0;
+    }
+    .el-table {
+      padding: 4px 0;
+      background-color: @bg-color;
+      thead {
+        tr {
+          th {
+            color: #fff;
+            font-weight: 400;
+            background-color: #303740;
+            border-bottom: none;
+          }
+        }
+      }
+      tbody {
+        tr {
+          // 操作选择框
+          .el-input__inner {
+            border: 1px solid #666;
+            height: 35px;
+            border-radius: 0px;
+            background-color: @bg-color;
+          }
+          background-color: #303740;
+          td {
+            color: @font-color;
+            border-top: 4px solid @bg-color;
+            border-bottom: none;
+          }
+        }
+      }
+    }
+  }
+}

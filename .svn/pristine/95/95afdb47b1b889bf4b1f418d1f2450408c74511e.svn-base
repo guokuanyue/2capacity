@@ -1,0 +1,63 @@
+.reportConfig {
+  padding-left: 7px;
+}
+.reportConfig h3 {
+  height: 40px;
+  font-size: 16px;
+  padding-left: 14px;
+}
+.reportConfig .reportConfig-hearder {
+  padding: 14px;
+  background-color: #303740;
+}
+.reportConfig .reportConfig-hearder .bg-purple .reportConfig-el-select {
+  width: 300px;
+}
+.reportConfig .reportConfig-hearder .bg-purple .reportConfig-el-select .el-input__inner {
+  border: 1px solid #666;
+  height: 35px;
+  border-radius: 0px;
+  background-color: #212429;
+}
+.reportConfig .reportConfig-hearder .el-button {
+  margin-top: 4px;
+  float: right;
+  width: 100px;
+  border-radius: 0px;
+  color: aliceblue;
+  background-color: #212429;
+}
+.reportConfig .reportConfig-hearder .el-button--primary:hover {
+  background-color: #0B65D3;
+}
+.reportConfig .reportConfig-table .el-table--enable-row-hover .el-table__body tr:hover > td {
+  background-color: #2a84f6;
+  color: #fff;
+}
+.reportConfig .reportConfig-table .el-table::before {
+  height: 0;
+}
+.reportConfig .reportConfig-table .el-table {
+  padding: 4px 0;
+  background-color: #212429;
+}
+.reportConfig .reportConfig-table .el-table thead tr th {
+  color: #fff;
+  font-weight: 400;
+  background-color: #303740;
+  border-bottom: none;
+}
+.reportConfig .reportConfig-table .el-table tbody tr {
+  background-color: #303740;
+}
+.reportConfig .reportConfig-table .el-table tbody tr .el-input__inner {
+  border: 1px solid #666;
+  height: 35px;
+  border-radius: 0px;
+  background-color: #212429;
+}
+.reportConfig .reportConfig-table .el-table tbody tr td {
+  color: #C0C4CC;
+  border-top: 4px solid #212429;
+  border-bottom: none;
+}

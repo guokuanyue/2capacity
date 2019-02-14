@@ -1,0 +1,427 @@
+<template>
+  <div class="chart">
+    <!-- 项目概况 -->
+    <div class="general-box fl">
+      <div class="general-wrap">
+        <div class="general">
+          <div class="general-top">项目概况</div>
+          <!-- 不同部分 -->
+          <div class="item-choice">
+            <span class="fl">名称：</span>
+            <div class="name-box">互联网智能配电系统</div>
+            <!-- 动画旋转部分 -->
+            <div class="turn-wrap clearfix">
+              <ul>
+                <li>
+                  <img src="../../../static/images/chart/icon-01.png" alt>
+                  <p>电压等级</p>
+                  <p>10KV/400V</p>
+                </li>
+                <li>
+                  <img src="../../../static/images/chart/icon-02.png" alt>
+                  <p>变电器台数</p>
+                  <p>2</p>
+                </li>
+                <li>
+                  <img src="../../../static/images/chart/icon-03.png" alt>
+                  <p>额定装机容量</p>
+                  <p>1250kVA</p>
+                </li>
+                <li>
+                  <img src="../../../static/images/chart/icon-04.png" alt>
+                  <p>负载率</p>
+                  <p>47%</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 运行状态 -->
+    <div class="general-box fl">
+      <div class="general-wrap">
+        <div class="general">
+          <div class="general-top">运行状态</div>
+          <!-- 不同部分 -->
+          <div class="run-progress">
+            <img src="../../../static/images/chart/zzfj.png" alt>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 事件记录 -->
+    <div class="general-box fl">
+      <div class="general-wrap">
+        <div class="general">
+          <div class="general-top">事件记录</div>
+
+          <!-- 不同部分 -->
+          <div class="event-log">
+            <div class="el-picker-panel__body-wrapper">
+              <!---->
+              <div class="el-picker-panel__body">
+                <!---->
+                <div class="el-date-picker__header">
+                  <button
+                    type="button"
+                    aria-label="上个月"
+                    class="el-picker-panel__icon-btn el-date-picker__prev-btn el-icon-caret-left"
+                  ></button>
+                  <span role="button" class="el-date-picker__header-label">2018 年</span>
+                  <span role="button" class="el-date-picker__header-label">12 月</span>
+                  <button
+                    type="button"
+                    aria-label="下个月"
+                    class="el-picker-panel__icon-btn el-date-picker__next-btn el-icon-caret-right"
+                  ></button>
+                </div>
+                <div class="el-picker-panel__content">
+                  <table cellspacing="0" cellpadding="0" class="el-date-table">
+                    <tbody>
+                      <tr>
+                        <!---->
+                        <th>周日</th>
+                        <th>周一</th>
+                        <th>周二</th>
+                        <th>周三</th>
+                        <th>周四</th>
+                        <th>周五</th>
+                        <th>周六</th>
+                      </tr>
+                      <tr class="el-date-table__row">
+                        <td class="prev-month">
+                          <div>
+                            <span>25</span>
+                          </div>
+                        </td>
+                        <td class="prev-month">
+                          <div>
+                            <span>26</span>
+                          </div>
+                        </td>
+                        <td class="prev-month">
+                          <div>
+                            <span>27</span>
+                          </div>
+                        </td>
+                        <td class="prev-month">
+                          <div>
+                            <span>28</span>
+                          </div>
+                        </td>
+                        <td class="prev-month">
+                          <div>
+                            <span>29</span>
+                          </div>
+                        </td>
+                        <td class="prev-month">
+                          <div>
+                            <span>30</span>
+                          </div>
+                        </td>
+                        <td class="available">
+                          <div>
+                            <span>1</span>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="el-date-table__row">
+                        <td class="available">
+                          <div>
+                            <span>2</span>
+                          </div>
+                        </td>
+                        <td class="available">
+                          <div>
+                            <span>3</span>
+                          </div>
+                        </td>
+                        <td class="available">
+                          <div>
+                            <span>4</span>
+                          </div>
+                        </td>
+                        <td class="available">
+                          <div>
+                            <span>5</span>
+                          </div>
+                        </td>
+                        <td class="available">
+                          <div>
+                            <span>6</span>
+                          </div>
+                        </td>
+                        <td class="available">
+                          <div>
+                            <span>7</span>
+                          </div>
+                        </td>
+                        <td class="available">
+                          <div>
+                            <span>8</span>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="el-date-table__row">
+                        <td class="available">
+                          <div>
+                            <span>9</span>
+                          </div>
+                        </td>
+                        <td class="available">
+                          <div>
+                            <span>10</span>
+                          </div>
+                        </td>
+                        <td class="available">
+                          <div>
+                            <span>11</span>
+                          </div>
+                        </td>
+                        <td class="available today">
+                          <div>
+                            <span>12</span>
+                          </div>
+                        </td>
+                        <td class="available">
+                          <div>
+                            <span>13</span>
+                          </div>
+                        </td>
+                        <td class="available">
+                          <div>
+                            <span>14</span>
+                          </div>
+                        </td>
+                        <td class="available">
+                          <div>
+                            <span>15</span>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="el-date-table__row">
+                        <td class="available">
+                          <div>
+                            <span>16</span>
+                          </div>
+                        </td>
+                        <td class="available">
+                          <div>
+                            <span>17</span>
+                          </div>
+                        </td>
+                        <td class="available">
+                          <div>
+                            <span>18</span>
+                          </div>
+                        </td>
+                        <td class="available">
+                          <div>
+                            <span>19</span>
+                          </div>
+                        </td>
+                        <td class="available">
+                          <div>
+                            <span>20</span>
+                          </div>
+                        </td>
+                        <td class="available">
+                          <div>
+                            <span>21</span>
+                          </div>
+                        </td>
+                        <td class="available">
+                          <div>
+                            <span>22</span>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="el-date-table__row">
+                        <td class="available">
+                          <div>
+                            <span>23</span>
+                          </div>
+                        </td>
+                        <td class="available">
+                          <div>
+                            <span>24</span>
+                          </div>
+                        </td>
+                        <td class="available">
+                          <div>
+                            <span>25</span>
+                          </div>
+                        </td>
+                        <td class="available">
+                          <div>
+                            <span>26</span>
+                          </div>
+                        </td>
+                        <td class="available">
+                          <div>
+                            <span>27</span>
+                          </div>
+                        </td>
+                        <td class="available">
+                          <div>
+                            <span>28</span>
+                          </div>
+                        </td>
+                        <td class="available">
+                          <div>
+                            <span>29</span>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="el-date-table__row">
+                        <td class="available">
+                          <div>
+                            <span>30</span>
+                          </div>
+                        </td>
+                        <td class="available">
+                          <div>
+                            <span>31</span>
+                          </div>
+                        </td>
+                        <td class="next-month">
+                          <div>
+                            <span>1</span>
+                          </div>
+                        </td>
+                        <td class="next-month">
+                          <div>
+                            <span>2</span>
+                          </div>
+                        </td>
+                        <td class="next-month">
+                          <div>
+                            <span>3</span>
+                          </div>
+                        </td>
+                        <td class="next-month">
+                          <div>
+                            <span>4</span>
+                          </div>
+                        </td>
+                        <td class="next-month">
+                          <div>
+                            <span>5</span>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class="el-year-table" style="display: none;">
+                    <tbody>
+                      <tr>
+                        <td class="available">
+                          <a class="cell">2010</a>
+                        </td>
+                        <td class="available">
+                          <a class="cell">2011</a>
+                        </td>
+                        <td class="available">
+                          <a class="cell">2012</a>
+                        </td>
+                        <td class="available">
+                          <a class="cell">2013</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="available">
+                          <a class="cell">2014</a>
+                        </td>
+                        <td class="available">
+                          <a class="cell">2015</a>
+                        </td>
+                        <td class="available">
+                          <a class="cell">2016</a>
+                        </td>
+                        <td class="available">
+                          <a class="cell">2017</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="available today">
+                          <a class="cell">2018</a>
+                        </td>
+                        <td class="available">
+                          <a class="cell">2019</a>
+                        </td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class="el-month-table" style="display: none;">
+                    <tbody>
+                      <tr>
+                        <td class>
+                          <a class="cell">一月</a>
+                        </td>
+                        <td class>
+                          <a class="cell">二月</a>
+                        </td>
+                        <td class>
+                          <a class="cell">三月</a>
+                        </td>
+                        <td class>
+                          <a class="cell">四月</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class>
+                          <a class="cell">五月</a>
+                        </td>
+                        <td class>
+                          <a class="cell">六月</a>
+                        </td>
+                        <td class>
+                          <a class="cell">七月</a>
+                        </td>
+                        <td class>
+                          <a class="cell">八月</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class>
+                          <a class="cell">九月</a>
+                        </td>
+                        <td class>
+                          <a class="cell">十月</a>
+                        </td>
+                        <td class>
+                          <a class="cell">十一月</a>
+                        </td>
+                        <td class="today">
+                          <a class="cell">十二月</a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      name: "chart",
+      value1: ""
+    };
+  },
+  methods: {}
+};
+</script>
+
+<style>
+</style>

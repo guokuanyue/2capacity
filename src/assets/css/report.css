@@ -1,0 +1,42 @@
+.reporting-con-box-title {
+  height: 60px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 60px;
+}
+.report {
+  padding: 0 20px 0 7px;
+}
+.report .reporting-title {
+  height: 40px;
+  line-height: 40px;
+  width: 97.5%;
+  background: #303740;
+  padding-left: 2.5%;
+  color: white;
+  margin-bottom: 20px;
+}
+.report .reporting-four-wrap .reporting-con-box {
+  height: 60px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 60px;
+  min-height: 36px;
+  background-color: #2B74CD;
+}
+.report .reporting-four-wrap .reporting-con-box .reporting-con-box-wrap {
+  padding-top: 40px;
+  min-height: 260px;
+  background-color: blue;
+}
+.report .reporting-second-title {
+  height: 40px;
+  line-height: 40px;
+  width: 97.5%;
+  background: #303740;
+  padding-left: 2.5%;
+  color: white;
+  margin-bottom: 20px;
+  margin-top: 320px;
+  background-color: orange;
+}

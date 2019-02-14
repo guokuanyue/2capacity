@@ -1,0 +1,178 @@
+<template>
+  <div class="videoManage">
+    <!-- 头部部分 -->
+    <el-row class="videoHeader">
+      <el-col :span="24">
+        <div class="grid-content">
+          请选择每排展示画面的个数：
+          <img src="../../../static/images/videoManage/icon_num_2.png" alt>
+          <img src="../../../static/images/videoManage/icon_num_3.png" alt>
+          请选择是否需要控制摄像头:
+          <img
+            id="videowith"
+            src="../../../static/images/videoManage/icon_control_chrome.png"
+            alt
+          >
+          <img id="videowith" src="../../../static/images/videoManage/icon_control_ie.png" alt>
+        </div>
+      </el-col>
+    </el-row>
+    <!-- 头部结束 -->
+    <!-- 主体视频部分 -->
+    <div class="camera">
+      <ul>
+        <li>
+          <div class="camera-play">
+            <a href="http://61.183.116.86:10076/doc/page/preview.asp">
+              <img src="../../../static/images/videoManage/init.png" alt>
+            </a>
+          </div>
+          <p>
+            配电室云台摄像头1
+            <a href="http://61.183.116.86:10076/doc/page/preview.asp">
+              <img src="../../../static/images/videoManage/quanping.png" alt>
+            </a>
+          </p>
+        </li>
+        <li>
+          <div class="camera-play">
+            <a href="http://61.183.116.86:10076/doc/page/preview.asp">
+              <img src="../../../static/images/videoManage/init.png" alt>
+            </a>
+          </div>
+          <p>
+            配电室云台摄像头2
+            <a href="http://61.183.116.86:10076/doc/page/preview.asp">
+              <img src="../../../static/images/videoManage/quanping.png" alt>
+            </a>
+          </p>
+        </li>
+        <li>
+          <div class="camera-play">
+            <a href="http://61.183.116.86:10076/doc/page/preview.asp">
+              <img src="../../../static/images/videoManage/init.png" alt>
+            </a>
+          </div>
+          <p>
+            配电室后窗摄像头
+            <a href="http://61.183.116.86:10076/doc/page/preview.asp">
+              <img src="../../../static/images/videoManage/quanping.png" alt>
+            </a>
+          </p>
+        </li>
+        <li>
+          <div class="camera-play">
+            <a href="http://61.183.116.86:10076/doc/page/preview.asp">
+              <img src="../../../static/images/videoManage/init.png" alt>
+            </a>
+          </div>
+          <p>
+            配电室主入口摄像头
+            <a href="http://61.183.116.86:10076/doc/page/preview.asp">
+              <img src="../../../static/images/videoManage/quanping.png" alt>
+            </a>
+          </p>
+        </li>
+        <li>
+          <div class="camera-play">
+            <a href="http://61.183.116.86:10076/doc/page/preview.asp">
+              <img src="../../../static/images/videoManage/init.png" alt>
+            </a>
+          </div>
+          <p>
+            配电室入口摄像头
+            <a href="http://61.183.116.86:10076/doc/page/preview.asp">
+              <img src="../../../static/images/videoManage/quanping.png" alt>
+            </a>
+          </p>
+        </li>
+        <li>
+          <div class="camera-play">
+            <a href="http://61.183.116.86:10076/doc/page/preview.asp">
+              <img src="../../../static/images/videoManage/init.png" alt>
+            </a>
+          </div>
+          <p>
+            配电室后门摄像头
+            <a href="http://61.183.116.86:10076/doc/page/preview.asp">
+              <img src="../../../static/images/videoManage/quanping.png" alt>
+            </a>
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {};
+</script>
+
+<style>
+.videoManage {
+  padding-left: 6px;
+  padding-right: 20px;
+}
+
+/* 头部样式 */
+.videoHeader {
+  background-color: #303740;
+  border-radius: none;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+}
+
+.videoHeader #videowith {
+  width: 3%;
+  margin-left: 1%;
+  margin-right: 0;
+}
+
+.videoHeader .grid-content {
+  color: #99a2ad;
+  padding-left: 3%;
+  border-radius: none;
+}
+
+.videoHeader .grid-content img {
+  margin-left: 4px;
+  margin-right: 12px;
+  width: 2%;
+}
+
+/* 头部样式结束 */
+/* 第一横排部分 */
+.camera {
+  padding-top: 2.6%;
+}
+
+.camera li {
+  float: left;
+  width: 49%;
+  min-height: 500px;
+  margin-bottom: 20px;
+}
+
+.camera li:nth-child(2n) {
+  margin-left: 2%;
+}
+
+.camera li .camera-play a > img {
+  width: 100%;
+}
+
+.camera li p {
+  padding-right: 25px;
+  height: 40px;
+  font-size: 18px;
+  background-color: #212429;
+  color: #99a2ad;
+}
+
+.camera li p img {
+  margin-top: 8px;
+  float: right;
+  width: 3%;
+}
+</style>

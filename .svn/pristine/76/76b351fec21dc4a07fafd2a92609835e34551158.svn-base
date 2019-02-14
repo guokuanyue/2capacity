@@ -1,0 +1,71 @@
+<template>
+  <div class="title">
+    <el-row>
+      <!-- 列表头部 -->
+      <h5>access2</h5>
+    </el-row>
+    <!-- 表头部分 -->
+    <el-table :data="tableData" style="width: 100% background-color:#39414a">
+      <el-table-column prop="measname" label="名称" minWidth="1"></el-table-column>
+      <el-table-column prop="measdesc" label="描述" minWidth="1"></el-table-column>
+      <el-table-column label="UID" minWidth="1" type="index"></el-table-column>
+      <el-table-column prop="type" label="类型" minWidth="1"></el-table-column>
+      <el-table-column prop="subcode" label="类型子码" minWidth="1"></el-table-column>
+      <el-table-column prop="value" label="实时值" minWidth="1"></el-table-column>
+      <el-table-column prop="time" label="时间戳" minWidth="1"></el-table-column>
+      <el-table-column prop="quality" label="质量戳" minWidth="1"></el-table-column>
+    </el-table>
+  </div>
+</template>
+
+<script>
+import axios from "axios";
+export default {
+  data() {
+    return {
+      tableData: []
+    };
+  },
+  created() {
+    // 创建之前接收数据
+    axios.get("../../../static/b.json").then(response => {
+      this.tableData = response.data.chinfo[0].devinfo[0].devmeas;
+      // console.log(response.data.chinfo[0].devinfo[0].devmeas);
+    });
+  }
+};
+</script>
+
+<style>
+.title h5 {
+  color: #adb6c2;
+  background-color: #39414a;
+  text-align: center;
+  font-size: 24px;
+  height: 40px;
+  line-height: 40px;
+}
+/* 表头样式 */
+.el-table th {
+  color: #fff;
+  background-color: #2a84f6;
+  text-align: center;
+}
+/* 表格样式 */
+.el-table tr {
+  color: #adb6c2;
+  background-color: #39414a;
+}
+.el-table td {
+  border-top: 5px solid #212429;
+  border-bottom: none;
+}
+.el-table--striped .el-table__body tr.el-table__row--striped td {
+  background-color: #f0f9eb;
+}
+/* 鼠标悬停样式 */
+.el-table--enable-row-hover .el-table__body tr:hover > td {
+  background-color: #2a84f6 !important;
+  color: #fff;
+}
+</style>

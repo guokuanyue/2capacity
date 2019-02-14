@@ -1,0 +1,388 @@
+<template>
+  <div class="project">
+    <el-container class="container">
+      <!-- header部分 -->
+      <el-header class="header">
+        <el-row>
+          <!-- 左 -->
+          <el-col :span="8">
+            <div class="center" id="date"></div>
+          </el-col>
+          <!-- 中 -->
+          <el-col :span="8">
+            <div class="center fontSize18">互联网智能配电系统</div>
+          </el-col>
+          <!-- 右 -->
+          <el-col :span="8">
+            <div class="right center">
+              <div class="left">
+                <img src="../../static/images/header/alert.png" alt>
+                <span>10</span>
+              </div>
+              <div class="left">
+                <img src="../../static/images/header/user.png" alt>
+                <span>test</span>
+              </div>
+              <div class="left">
+                <h4 class="left">安全运行786天</h4>
+                <span>
+                  <img src="../../static/images/header/skin.png" alt>
+                </span>
+              </div>
+            </div>
+          </el-col>
+        </el-row>
+      </el-header>
+      <!-- header结束 -->
+      <!-- nav部分 -->
+      <el-container class="black">
+        <el-col :span="12" class="nav">
+          <el-menu
+            background-color="#24292F"
+            text-color="#adb6c2"
+            class="el-menu-vertical-demo"
+            router
+            default-active="/poverMoniter"
+          >
+            <template v-for="item in menus">
+              <el-menu-item :key="item.id" :index="item.url" class="width176">
+                <i :class="item.className" style="width:27px; height:21px;"></i>
+                <span slot="title">{{item.title}}</span>
+              </el-menu-item>
+            </template>
+          </el-menu>
+        </el-col>
+        <!-- 主体部分-->
+        <el-main class="main">
+          <router-view class="h">主体部分</router-view>
+        </el-main>
+      </el-container>
+    </el-container>
+  </div>
+</template>
+
+<script>
+// header时间日期
+var interval = setInterval(function() {
+  var week = [
+    "星期日",
+    "星期一",
+    "星期二",
+    "星期三",
+    "星期四",
+    "星期五",
+    "星期六"
+  ];
+  var myDate = new Date();
+  var year = myDate.getFullYear();
+  var month = myDate.getMonth() + 1;
+  var hour = myDate.getHours();
+  var showHour = hour > 12 ? hour - 12 : hour;
+  var day = myDate.getDate();
+  var minute = myDate.getMinutes();
+  minute = minute < 10 ? "0" + minute : minute.toString();
+  var dayOfWeek = week[myDate.getDay()];
+  if (document.getElementById("date")) {
+    document.getElementById("date").innerHTML =
+      year +
+      "年" +
+      month +
+      "月" +
+      day +
+      "日 " +
+      dayOfWeek +
+      " " +
+      hour +
+      ":" +
+      minute;
+  }
+}, 1000);
+export default {
+  data() {
+    return {
+      menus: [
+        {
+          title: "网络拓扑图",
+          id: 1,
+          url: "/topo",
+          menuname: "topo",
+          className: "el-icon-topo" //这是图标样式
+        },
+        {
+          title: "负荷概况",
+          id: 2,
+          url: "/chart",
+          menuname: "chart",
+          className: "el-icon-chart"
+        },
+        {
+          title: "电力监控",
+          id: 3,
+          url: "/poverMoniter",
+          menuname: "power-moniter",
+          className: "el-icon-power-moniter"
+        },
+        {
+          title: "视频监控",
+          id: 4,
+          url: "/videoManage",
+          menuname: "video-manage",
+          className: "el-icon-video-manage"
+        },
+        {
+          title: "环境监控",
+          id: 5,
+          url: "/environment",
+          menuname: "environment",
+          className: "el-icon-environment"
+        },
+        {
+          title: "火灾监控",
+          id: 6,
+          url: "/fireMoniter",
+          menuname: "fire-moniter",
+          className: "el-icon-fire-moniter"
+        },
+        {
+          title: "能耗管理",
+          id: 7,
+          url: "/powerManage",
+          menuname: "power-manage",
+          className: "el-icon-power-manage"
+        },
+        {
+          title: "用电监测分析",
+          id: 8,
+          url: "/powerAnalyze",
+          menuname: "power-analyze",
+          className: "el-icon-power-analyze"
+        },
+        {
+          title: "报表打印",
+          id: 9,
+          url: "/roport",
+          menuname: "roport",
+          className: "el-icon-roport"
+        },
+        {
+          title: "报警管理",
+          id: 10,
+          url: "/alermManage",
+          menuname: "alerm-manage",
+          className: "el-icon-alerm-manage"
+        },
+        {
+          title: "报警配置",
+          id: 11,
+          url: "/alermConfig",
+          menuname: "alerm-config",
+          className: "el-icon-alerm-config"
+        },
+        {
+          title: "知识库",
+          id: 12,
+          url: "/knowledge",
+          menuname: "knowledge",
+          className: "el-icon-knowledge"
+        },
+        {
+          title: "用户管理",
+          id: 13,
+          url: "/userManage",
+          menuname: "user-manage",
+          className: "el-icon-user-manage"
+        },
+        {
+          title: "操作记录",
+          id: 14,
+          url: "/logManage",
+          menuname: "log-manage",
+          className: "el-icon-log-manage"
+        },
+        {
+          title: "帮助",
+          id: 15,
+          url: "/help",
+          menuname: "help",
+          className: "el-icon-help"
+        }
+      ]
+    };
+  }
+};
+</script>
+
+<style>
+/* 这是本地图标地址 */
+.el-icon-topo {
+  background-image: url("../../static/images/menu/icon_topo.png");
+  background-repeat: no-repeat;
+}
+.el-icon-chart {
+  background-image: url("../../static/images/menu/icon_chart.png");
+  background-repeat: no-repeat;
+}
+.el-icon-power-moniter {
+  background-image: url("../../static/images/menu/icon_power_monitor.png");
+  background-repeat: no-repeat;
+}
+.el-icon-video-manage {
+  background-image: url("../../static/images/menu/icon_camera_manage.png");
+  background-repeat: no-repeat;
+}
+.el-icon-environment {
+  background-image: url("../../static/images/menu/icon_environment.png");
+  background-repeat: no-repeat;
+}
+.el-icon-fire-moniter {
+  background-image: url("../../static/images/menu/icon_fire_monitor.png");
+  background-repeat: no-repeat;
+}
+.el-icon-power-manage {
+  background-image: url("../../static/images/menu/icon_power_manage.png");
+  background-repeat: no-repeat;
+}
+.el-icon-power-analyze {
+  background-image: url("../../static/images/menu/icon_power_manage.png");
+  background-repeat: no-repeat;
+}
+.el-icon-roport {
+  background-image: url("../../static/images/menu/icon_reporting.png");
+  background-repeat: no-repeat;
+}
+.el-icon-alerm-manage {
+  background-image: url("../../static/images/menu/icon_alerm_manage.png");
+  background-repeat: no-repeat;
+}
+.el-icon-alerm-config {
+  background-image: url("../../static/images/menu/icon_alerm_configer.png");
+  background-repeat: no-repeat;
+}
+.el-icon-knowledge {
+  background-image: url("../../static/images/menu/icon_wiki.png");
+  background-repeat: no-repeat;
+}
+.el-icon-user-manage {
+  background-image: url("../../static/images/menu/icon_user_manage.png");
+  background-repeat: no-repeat;
+}
+.el-icon-log-manage {
+  background-image: url("../../static/images/menu/icon_user_log_manage.png");
+  background-repeat: no-repeat;
+}
+.el-icon-help {
+  background-image: url("../../static/images/menu/icon_help.png");
+  background-repeat: no-repeat;
+}
+
+.width176 {
+  width: 176px;
+  height: 34px;
+  line-height: 34px;
+}
+/* 选中状态字体的颜色 */
+.el-menu-item.is-active {
+  background-color: rgb(11, 101, 211) !important;
+  color: #fff;
+}
+/* 选中状态图标 */
+.el-menu-item.is-active .el-icon-topo {
+  background-image: url("../../static/images/menu/icon_topo_white.png");
+}
+.el-menu-item.is-active .el-icon-chart {
+  background-image: url("../../static/images/menu/icon_chart_white.png");
+}
+.el-menu-item.is-active .el-icon-power-moniter {
+  background-image: url("../../static/images/menu/icon_power_monitor_white.png");
+}
+.el-menu-item.is-active .el-icon-video-manage {
+  background-image: url("../../static/images/menu/icon_camera_manage_white.png");
+}
+.el-menu-item.is-active .el-icon-environment {
+  background-image: url("../../static/images/menu/icon_environment_white.png");
+}
+.el-menu-item.is-active .el-icon-fire-moniter {
+  background-image: url("../../static/images/menu/icon_fire_monitor_white.png");
+}
+.el-menu-item.is-active .el-icon-power-manage {
+  background-image: url("../../static/images/menu/icon_power_manage_white.png");
+}
+.el-menu-item.is-active .el-icon-power-analyze {
+  background-image: url("../../static/images/menu/icon_power_manage_white.png");
+}
+.el-menu-item.is-active .el-icon-roport {
+  background-image: url("../../static/images/menu/icon_reporting_white.png");
+}
+.el-menu-item.is-active .el-icon-alerm-manage {
+  background-image: url("../../static/images/menu/icon_alerm_manage_white.png");
+}
+.el-menu-item.is-active .el-icon-alerm-config {
+  background-image: url("../../static/images/menu/icon_alerm_configer_white.png");
+}
+.el-menu-item.is-active .el-icon-knowledge {
+  background-image: url("../../static/images/menu/icon_wiki_white.png");
+}
+.el-menu-item.is-active .el-icon-user-manage {
+  background-image: url("../../static/images/menu/icon_user_manage_white.png");
+}
+.el-menu-item.is-active .el-icon-log-manage {
+  background-image: url("../../static/images/menu/icon_user_log_manage_white.png");
+}
+.el-menu-item.is-active .el-icon-help {
+  background-image: url("../../static/images/menu/icon_help_white.png");
+}
+
+.right .left img {
+  width: 20px;
+  height: 20px;
+  margin: 22px 12px;
+}
+.header .left h4 {
+  text-align: center;
+  height: 60px;
+  line-height: 60px;
+  margin: 0px 20px;
+}
+
+.nav {
+  width: 168px;
+  height: 100%;
+}
+
+.borderNone {
+  border: none;
+}
+
+.fontSize18 {
+  font-size: 18px;
+}
+
+.center {
+  text-align: center;
+  height: 68px;
+  line-height: 68px;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.header {
+  background-color: #24292f;
+  color: #fff;
+  font-size: 14px;
+}
+
+.black {
+  background-color: #212429;
+  height: 100%;
+}
+.main {
+  overflow: visible;
+  height: auto;
+}
+</style>

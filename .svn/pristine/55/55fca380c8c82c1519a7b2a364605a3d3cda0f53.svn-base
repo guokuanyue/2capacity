@@ -1,0 +1,41 @@
+<template>
+  <div class="title">
+    <el-row>
+      <!-- 列表头部 -->
+      <h5>access3</h5>
+    </el-row>
+    <el-table :data="tableData" style="width: 100% background-color:#39414a">
+      <!-- 表头部分 -->
+      <el-table-column prop="measname" label="名称" minWidth="1"></el-table-column>
+      <el-table-column prop="measdesc" label="描述" minWidth="1"></el-table-column>
+      <el-table-column label="UID" minWidth="1" type="index"></el-table-column>
+      <el-table-column prop="type" label="类型" minWidth="1"></el-table-column>
+      <el-table-column prop="subcode" label="类型子码" minWidth="1"></el-table-column>
+      <el-table-column prop="value" label="实时值" minWidth="1"></el-table-column>
+      <el-table-column prop="time" label="时间戳" minWidth="1"></el-table-column>
+      <el-table-column prop="quality" label="质量戳" minWidth="1"></el-table-column>
+    </el-table>
+  </div>
+</template>
+
+<script>
+import axios from "axios";
+export default {
+  data() {
+    return {
+      tableData: []
+    };
+  },
+  created() {
+    // 创建之前接收数据
+    axios.get("../../../static/b.json").then(response => {
+      this.tableData = response.data.chinfo[0].devinfo[0].devmeas;
+      // console.log(response.data.chinfo[0].devinfo[0].devmeas);
+    });
+  }
+};
+</script>
+
+<style scoped>
+@import "../../assets/css/listShow";
+</style>

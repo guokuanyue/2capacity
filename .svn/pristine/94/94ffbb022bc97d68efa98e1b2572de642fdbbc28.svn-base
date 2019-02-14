@@ -1,0 +1,118 @@
+/* 通用的大盒子结构 */
+.general-box {
+  width: 32.34%;
+  margin-left: 0.631%;
+  margin-bottom: 0.65%;
+  min-width: 238px;
+
+}
+
+.general-wrap {
+  position: relative;
+  min-width: 238px;
+
+}
+
+.general {
+  min-width: 238px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+}
+
+.general .general-top {
+  padding-left: 5.65%;
+  width: 94.35%;
+  background-color: #303740;
+  color: #fff;
+  height: 40px;
+  line-height: 40px;
+}
+
+/* 通用样式结束 */
+/* 项目概况部分的样式开始 */
+.item-choice {
+  padding-top: 3.5%;
+  background-color: #24292F;
+}
+
+.item-choice span {
+  width: 56px;
+  text-align: right;
+  height: 25px;
+  line-height: 25px;
+  color: #adb6c2;
+  margin-bottom: 2.5%;
+}
+
+.item-choice .name-box {
+  color: #fff;
+  height: 25px;
+  line-height: 25px;
+  width: 250px;
+}
+
+/* 动画旋转 */
+.turn-wrap {
+  position: relative;
+  padding-top: 3%;
+  background-color: #24292F;
+  padding-bottom: 12%;
+}
+
+.turn-wrap ul li {
+  text-align: center;
+  float: left;
+  width: 31%;
+  margin-left: 13%;
+  background-color: #24292F;
+}
+
+/* 运行状态 */
+.run-progress {
+  padding-bottom: 28px;
+  background-color: #24292F;
+}
+
+.run-progress img {
+  width: 100%;
+}
+
+/* 事件记录 */
+.event-log {
+  text-align: center;
+}
+
+.el-date-picker__header {
+  padding: 0 22px 8px 22px;
+}
+
+.el-date-picker__header button {
+  background-color: #0073EA;
+  border-radius: 50%;
+}
+
+.el-date-picker__header span {
+  color: #adb6c2;
+}
+
+.el-picker-panel__content {
+  padding-left: 27px;
+}
+
+.el-date-table {
+  /* background-color: green; */
+
+}
+
+.el-date-table th {
+  border: none;
+  font-size: 14px;
+}
+
+.el-date-table td {
+  padding: 0 33px;
+}

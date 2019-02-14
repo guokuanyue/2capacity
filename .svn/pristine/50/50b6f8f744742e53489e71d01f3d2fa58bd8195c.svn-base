@@ -1,0 +1,182 @@
+* {
+    font-size: 13px;
+}
+
+.fire-wrap {
+    width: 100%;
+    background: #212429;
+    padding-bottom: 100px;
+}
+
+.left {
+    float: left;
+}
+
+.fire-box {
+    width: 97%;
+    margin: 20px auto 0;
+}
+
+
+/* 1AA4 上半部分标题样式 */
+
+.con-title {
+    height: 45px;
+    width: 100%;
+    text-align: center;
+    line-height: 45px;
+    color: #2b7ce5;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.con-title-a {
+    background: #303740;
+}
+
+.con-title {
+    height: 45px;
+    width: 100%;
+    text-align: center;
+    line-height: 45px;
+    color: #2b7ce5;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.con-title-a {
+    background: #303740;
+}
+
+.con-title-b {
+    background: #282d34;
+}
+
+.con-title {
+    height: 45px;
+    width: 100%;
+    text-align: center;
+    line-height: 45px;
+    color: #2b7ce5;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+/* 1AA4标题下内容区样式 */
+
+.fire-con-box {
+    width: 100%;
+    background: #25292e;
+}
+
+.fire-nav {
+    width: 5.6%;
+    height: 346px;
+}
+
+.fire-nav-list {
+    color: #adb6c2;
+    width: 100%;
+    text-align: center;
+    height: 31px;
+    line-height: 31px;
+}
+
+
+/* 地址(1) */
+
+.fire-con {
+    width: 13.3%;
+    height: 346px;
+    border-left: 1px dashed #adb6c2;
+}
+
+.fire-con-wrap {
+    width: 93%;
+    margin: 1% auto;
+}
+
+.fire-con-title {
+    width: 100%;
+    text-align: center;
+    color: #adb6c2;
+    height: 33px;
+    line-height: 33px;
+}
+
+.fire-con-name {
+    font-size: 12px;
+    width: 43.5%;
+    text-align: center;
+    height: 31px;
+    line-height: 31px;
+    color: #ffffff;
+}
+
+
+/* 屏幕缩小后文字换行 */
+
+.fire-con-name-double {
+    line-height: 16px!important;
+}
+
+
+/* 绿色原点 */
+
+.fire-con-status-wrap {
+    cursor: pointer;
+    width: 13%;
+    height: 31px;
+    line-height: 31px;
+    text-align: center;
+}
+
+.fire-con-status-on {
+    background: #19d419;
+    color: #19d419!important;
+}
+
+.fire-con-status {
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 18%;
+}
+
+
+/* 屏幕缩小后绿色原点变小 */
+
+.fire-con-status {
+    width: 13px!important;
+    height: 13px!important;
+}
+
+
+/* 展示数据的边框样式 */
+
+.fire-con-value {
+    margin-left: 3%;
+    height: 21px;
+    line-height: 21px;
+    width: 38%;
+    text-align: center;
+    color: #ffffff;
+    border: 1px solid #2b7ce5;
+}
+
+
+/* 横行分割线---虚线 */
+
+.fire-nav-list-3 {
+    height: 45px;
+    line-height: 45px;
+}
+
+.fire-nav-list-3-last {
+    height: 58px;
+    line-height: 41px;
+    border-bottom: 1px dashed #adb6c2;
+    margin-bottom: 11%;
+}

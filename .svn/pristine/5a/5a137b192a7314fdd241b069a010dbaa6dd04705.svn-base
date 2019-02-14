@@ -1,0 +1,15 @@
+<template>
+<div class="environment">
+    environment
+</div>
+</template>
+
+<script>
+export default {
+    name: 'environment'
+}
+</script>
+
+<style>
+
+</style>

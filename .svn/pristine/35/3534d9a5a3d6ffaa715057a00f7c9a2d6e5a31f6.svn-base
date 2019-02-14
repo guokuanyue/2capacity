@@ -1,0 +1,155 @@
+import Vue from 'vue'
+import Router from 'vue-router'
+
+import Logo from '@/views/logo'
+import Home from '@/views/home'
+
+
+import Topo from '../components/topo/topo'
+import Chart from '../components/chart/chart'
+import Help from '../components/help/help'
+import PoverMoniter from '../components/poverMoniter/poverMoniter'
+import VideoManage from '../components/VideoManage/VideoManage'
+import Environment from '../components/environment/environment'
+import FireMoniter from '../components/fireMoniter/fireMoniter'
+import PowerManage from '../components/powerManage/powerManage'
+import PowerAnalyze from '../components/powerAnalyze/powerAnalyze'
+import Roport from '../components/roport/roport'
+import AlermManage from '../components/alermManage/alermManage'
+import AlermConfig from '../components/alermConfig/alermConfig'
+import Knowledge from '../components/knowledge/knowledge'
+import UserManage from '../components/userManage/userManage'
+import LogManage from '../components/logManage/logManage'
+
+
+Vue.use(Router)
+
+const router = new Router({
+        routes: [{
+                name: 'logo',
+                path: '/',
+                component: Logo,
+            },
+
+            {
+                path: '/home',
+                component: Home,
+                name: 'home',
+                redirect: 'poverMoniter',
+                children: [{
+                        path: '/topo',
+                        component: Topo,
+                        name: 'topo'
+                    },
+                    {
+                        path: '/chart',
+                        component: Chart,
+                        name: 'chart'
+                    },
+                    {
+                        path: '/poverMoniter',
+                        component: PoverMoniter,
+                        name: 'poverMoniter'
+                    },
+                    {
+                        path: '/videoManage',
+                        component: VideoManage,
+                        name: 'videoManage'
+                    },
+                    {
+                        path: '/environment',
+                        component: Environment,
+                        name: 'environment'
+                    },
+                    {
+                        path: '/fireMoniter',
+                        component: FireMoniter,
+                        name: 'fireMoniter'
+                    },
+                    {
+                        path: '/powerManage',
+                        component: PowerManage,
+                        name: 'powerManage'
+                    },
+                    // 用电监测分析
+                    {
+                        path: '/powerAnalyze',
+                        component: PowerAnalyze,
+                        name: 'powerAnalyze'
+                    },
+
+
+
+                    {
+                        path: '/roport',
+                        component: Roport,
+                        name: 'roport'
+                    },
+                    {
+                        path: '/alermManage',
+                        component: AlermManage,
+                        name: 'alermManage'
+                    },
+                    {
+                        path: '/alermConfig',
+                        component: AlermConfig,
+                        name: 'alermConfig'
+                    },
+                    {
+                        path: '/knowledge',
+                        component: Knowledge,
+                        name: 'knowledge'
+                    },
+                    {
+                        path: '/userManage',
+                        component: UserManage,
+                        name: 'userManage'
+                    },
+                    {
+                        path: '/logManage',
+                        component: LogManage,
+                        name: 'logManage'
+                    },
+                    {
+                        path: '/help',
+                        component: Help,
+                        name: 'help'
+                    },
+                ]
+            },
+
+
+
+
+
+
+
+            // {
+            //     name: 'home',
+            //     path: '/home',
+            //     component: Home
+            //         // redirect:{name:'chart'} ,
+            //         // children:[{
+            //         //   name:'chart',path:'/chart',component:Chart
+            //         // }]
+            // },
+
+        ]
+
+    })
+    // router.beforeEach((to,from,next)=> {
+    //   if (to.name === 'logo') {
+    //     next()
+    //   } else {
+    //     const token = sessionStorage.getItem('token')
+    //     if (!token) {
+    //       router.push({
+    //         'name': 'logo'
+    //       })
+    //       Message.warning('请先登录')
+    //       return
+    //     }
+    //     next()
+    //   }
+    // })
+export default router

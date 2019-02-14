@@ -1,0 +1,15 @@
+<template>
+<div class="poverMoniter">
+    poverMoniter
+</div>
+</template>
+
+<script>
+export default {
+    name: 'poverMoniter'
+}
+</script>
+
+<style>
+
+</style>

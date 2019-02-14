@@ -1,0 +1,43 @@
+// 标题背景色
+@header-background-color: #303740;
+// 板块背景色
+@banner-background-color: #25292e;
+// 四个盒子通用样式
+.reporting-con-box-title {
+  height: 60px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 60px;
+}
+
+// 报表界面
+.report {
+  padding: 0 20px 0 7px; // 头部标题
+  .reporting-title {
+    height: 40px;
+    line-height: 40px;
+    width: 97.5%;
+    background: @header-background-color;
+    padding-left: 2.5%;
+    color: white;
+    margin-bottom: 20px;
+  } // 累积量报表四盒子
+  .reporting-four-wrap {
+    // 日累积量报表
+    .reporting-con-box {
+      .reporting-con-box-title; // 题头
+      min-height: 36px;
+      background-color: #2B74CD; // min-width: 150px;
+      .reporting-con-box-wrap {
+        padding-top: 40px;
+        min-height: 260px;
+        background-color: blue; // background-color: @banner-background-color;
+      }
+    }
+  }
+  .reporting-second-title {
+    .reporting-title;
+    margin-top: 320px;
+    background-color: orange;
+  }
+}

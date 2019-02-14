@@ -1,0 +1,15 @@
+<template>
+<div class="powerAnalyze">
+    powerAnalyze
+</div>
+</template>
+
+<script>
+export default {
+    name: 'powerAnalyze'
+}
+</script>
+
+<style>
+
+</style>

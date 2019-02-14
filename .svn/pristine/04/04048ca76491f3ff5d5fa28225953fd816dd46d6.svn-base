@@ -1,0 +1,189 @@
+import Vue from 'vue'
+import Router from 'vue-router'
+
+import Logo from '@/views/logo'
+import Home from '@/views/home'
+
+
+import Topo from '../components/topo/topo'
+import Chart from '../components/chart/chart'
+import Help from '../components/help/help'
+import PoverMoniter from '../components/poverMoniter/poverMoniter'
+import VideoManage from '../components/VideoManage/VideoManage'
+import Environment from '../components/environment/environment'
+import FireMoniter from '../components/fireMoniter/fireMoniter'
+import PowerManage from '../components/powerManage/powerManage'
+import PowerAnalyze from '../components/powerAnalyze/powerAnalyze'
+import Roport from '../components/roport/roport'
+import ReportConfig from '../components/roport/reportConfig'
+import AlermManage from '../components/alermManage/alermManage'
+import AlermConfig from '../components/alermConfig/alermConfig'
+import Knowledge from '../components/knowledge/knowledge'
+import UserManage from '../components/userManage/userManage'
+import LogManage from '../components/logManage/logManage'
+
+//第四步 列表显示组件引入  
+import Second from '../../src/components/poverMoniter/second'
+const Access1 = () =>
+  import('@/components/listShow/access1')
+const Access2 = () =>
+  import('@/components/listShow/access2')
+const Access3 = () =>
+  import('@/components/listShow/access3')
+const Access4 = () =>
+  import('@/components/listShow/access4')
+const Access5 = () =>
+  import('@/components/listShow/access5')
+const Access6 = () =>
+  import('@/components/listShow/access6')
+const Access7 = () =>
+  import('@/components/listShow/access7')
+const Access8 = () =>
+  import('@/components/listShow/access8')
+// 列表引入组件结束
+Vue.use(Router)
+
+const router = new Router({
+  routes: [{
+      name: 'logo',
+      path: '/',
+      component: Logo,
+    },
+
+    {
+      path: '/home',
+      component: Home,
+      name: 'home',
+      redirect: 'poverMoniter',
+      children: [{
+          path: '/topo',
+          component: Topo,
+          name: 'topo'
+        },
+        {
+          path: '/chart',
+          component: Chart,
+          name: 'chart'
+        },
+        {
+          path: '/poverMoniter',
+          component: PoverMoniter,
+          name: 'poverMoniter',
+          //   第五步 列表显示组件部分开始
+          children: [{
+              path: '/second',
+              name: 'second',
+              component: Second,
+              redirect: 'access1'
+            },
+            {
+              path: 'access1',
+              name: 'access1',
+              component: Access1
+            }, {
+              path: 'access2',
+              name: 'access2',
+              component: Access2
+            }, {
+              path: 'access3',
+              name: 'access3',
+              component: Access3
+            }, {
+              path: 'access4',
+              name: 'access4',
+              component: Access4
+            }, {
+              path: 'access5',
+              name: 'access5',
+              component: Access5
+            }, {
+              path: 'access6',
+              name: 'access6',
+              component: Access6
+            }, {
+              path: 'access7',
+              name: 'access7',
+              component: Access7
+            }, {
+              path: 'access8',
+              name: 'access8',
+              component: Access8
+            }
+          ]
+          //   列表显示组件部分结束
+        },
+        {
+          path: '/videoManage',
+          component: VideoManage,
+          name: 'videoManage'
+        },
+        {
+          path: '/environment',
+          component: Environment,
+          name: 'environment'
+        },
+        {
+          path: '/fireMoniter',
+          component: FireMoniter,
+          name: 'fireMoniter'
+        },
+        {
+          path: '/powerManage',
+          component: PowerManage,
+          name: 'powerManage'
+        },
+        // 用电监测分析
+        {
+          path: '/powerAnalyze',
+          component: PowerAnalyze,
+          name: 'powerAnalyze'
+        },
+
+
+
+        {
+          path: '/roport',
+          component: Roport,
+          name: 'roport'
+        },
+        {
+          path: '/alermManage',
+          component: AlermManage,
+          name: 'alermManage'
+        },
+        {
+          path: '/alermConfig',
+          component: AlermConfig,
+          name: 'alermConfig'
+        },
+        {
+          path: '/knowledge',
+          component: Knowledge,
+          name: 'knowledge'
+        },
+        {
+          path: '/userManage',
+          component: UserManage,
+          name: 'userManage'
+        },
+        {
+          path: '/logManage',
+          component: LogManage,
+          name: 'logManage'
+        },
+        {
+          path: '/help',
+          component: Help,
+          name: 'help'
+        },
+        {
+          path: '/reportConfig',
+          component: ReportConfig,
+          name: 'reportConfig'
+        },
+      ]
+    },
+
+  ]
+})
+export default router

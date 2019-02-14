@@ -1,0 +1,1701 @@
+           {
+             "chinfo": [{
+                 "chdesc": "閫氶亾",
+                 "chname": "CH1",
+                 "devinfo": [{
+                     "devdesc": "璁惧",
+                     "devmeas": [{
+                         "measdesc": "绗�1璺紡鐢垫姤璀﹀€�",
+                         "measname": "L1",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�2璺紡鐢垫姤璀﹀€�",
+                         "measname": "L2",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�3璺紡鐢垫姤璀﹀€�",
+                         "measname": "L3",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�4璺紡鐢垫姤璀﹀€�",
+                         "measname": "L4",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�5璺紡鐢�/绗�1璺俯搴︽姤璀﹀€�",
+                         "measname": "L5",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�6璺紡鐢�/绗�2璺俯搴︽姤璀﹀€�",
+                         "measname": "L6",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�7璺紡鐢�/绗�3璺俯搴︽姤璀﹀€�",
+                         "measname": "L7",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�8璺紡鐢�/绗�4璺俯搴︽姤璀﹀€�",
+                         "measname": "L8",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�1璺紡娓╁害",
+                         "measname": "T1",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�2璺紡娓╁害",
+                         "measname": "T2",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�3璺紡娓╁害",
+                         "measname": "T3",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�4璺紡娓╁害",
+                         "measname": "T4",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�5婕忕數锛�1娓╁害锛夊疄鏃舵暟鍊�",
+                         "measname": "T5",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "25.9"
+                       },
+                       {
+                         "measdesc": "绗�6婕忕數锛�2娓╁害锛夊疄鏃舵暟鍊�",
+                         "measname": "T6",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "24.1"
+                       },
+                       {
+                         "measdesc": "绗�7婕忕數锛�3娓╁害锛夊疄鏃舵暟鍊�",
+                         "measname": "T7",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "23.6"
+                       },
+                       {
+                         "measdesc": "绗�8婕忕數锛�4娓╁害锛夊疄鏃舵暟鍊�",
+                         "measname": "T8",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "24.9"
+                       }
+                     ],
+                     "devname": "dev1"
+                   },
+                   {
+                     "devdesc": "璁惧",
+                     "devmeas": [{
+                         "measdesc": "绗�1璺紡鐢垫姤璀﹀€�",
+                         "measname": "L1",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�2璺紡鐢垫姤璀﹀€�",
+                         "measname": "L2",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�3璺紡鐢垫姤璀﹀€�",
+                         "measname": "L3",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�4璺紡鐢垫姤璀﹀€�",
+                         "measname": "L4",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�5璺紡鐢�/绗�1璺俯搴︽姤璀﹀€�",
+                         "measname": "L5",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�6璺紡鐢�/绗�2璺俯搴︽姤璀﹀€�",
+                         "measname": "L6",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�7璺紡鐢�/绗�3璺俯搴︽姤璀﹀€�",
+                         "measname": "L7",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�8璺紡鐢�/绗�4璺俯搴︽姤璀﹀€�",
+                         "measname": "L8",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�1璺紡娓╁害",
+                         "measname": "T1",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�2璺紡娓╁害",
+                         "measname": "T2",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�3璺紡娓╁害",
+                         "measname": "T3",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�4璺紡娓╁害",
+                         "measname": "T4",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�5婕忕數锛�1娓╁害锛夊疄鏃舵暟鍊�",
+                         "measname": "T5",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�6婕忕數锛�2娓╁害锛夊疄鏃舵暟鍊�",
+                         "measname": "T6",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�7婕忕數锛�3娓╁害锛夊疄鏃舵暟鍊�",
+                         "measname": "T7",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�8婕忕數锛�4娓╁害锛夊疄鏃舵暟鍊�",
+                         "measname": "T8",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       }
+                     ],
+                     "devname": "dev2"
+                   },
+                   {
+                     "devdesc": "璁惧",
+                     "devmeas": [{
+                         "measdesc": "绗�1璺紡鐢垫姤璀﹀€�",
+                         "measname": "L1",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�2璺紡鐢垫姤璀﹀€�",
+                         "measname": "L2",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�3璺紡鐢垫姤璀﹀€�",
+                         "measname": "L3",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�4璺紡鐢垫姤璀﹀€�",
+                         "measname": "L4",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�5璺紡鐢�/绗�1璺俯搴︽姤璀﹀€�",
+                         "measname": "L5",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�6璺紡鐢�/绗�2璺俯搴︽姤璀﹀€�",
+                         "measname": "L6",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�7璺紡鐢�/绗�3璺俯搴︽姤璀﹀€�",
+                         "measname": "L7",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�8璺紡鐢�/绗�4璺俯搴︽姤璀﹀€�",
+                         "measname": "L8",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�1璺紡娓╁害",
+                         "measname": "T1",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�2璺紡娓╁害",
+                         "measname": "T2",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�3璺紡娓╁害",
+                         "measname": "T3",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�4璺紡娓╁害",
+                         "measname": "T4",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�5婕忕數锛�1娓╁害锛夊疄鏃舵暟鍊�",
+                         "measname": "T5",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�6婕忕數锛�2娓╁害锛夊疄鏃舵暟鍊�",
+                         "measname": "T6",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�7婕忕數锛�3娓╁害锛夊疄鏃舵暟鍊�",
+                         "measname": "T7",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�8婕忕數锛�4娓╁害锛夊疄鏃舵暟鍊�",
+                         "measname": "T8",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       }
+                     ],
+                     "devname": "dev3"
+                   },
+                   {
+                     "devdesc": "璁惧",
+                     "devmeas": [{
+                         "measdesc": "绗�1璺紡鐢垫姤璀﹀€�",
+                         "measname": "L1",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�2璺紡鐢垫姤璀﹀€�",
+                         "measname": "L2",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�3璺紡鐢垫姤璀﹀€�",
+                         "measname": "L3",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�4璺紡鐢垫姤璀﹀€�",
+                         "measname": "L4",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�5璺紡鐢�/绗�1璺俯搴︽姤璀﹀€�",
+                         "measname": "L5",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�6璺紡鐢�/绗�2璺俯搴︽姤璀﹀€�",
+                         "measname": "L6",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�7璺紡鐢�/绗�3璺俯搴︽姤璀﹀€�",
+                         "measname": "L7",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�8璺紡鐢�/绗�4璺俯搴︽姤璀﹀€�",
+                         "measname": "L8",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�1璺紡娓╁害",
+                         "measname": "T1",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�2璺紡娓╁害",
+                         "measname": "T2",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�3璺紡娓╁害",
+                         "measname": "T3",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�4璺紡娓╁害",
+                         "measname": "T4",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�5婕忕數锛�1娓╁害锛夊疄鏃舵暟鍊�",
+                         "measname": "T5",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�6婕忕數锛�2娓╁害锛夊疄鏃舵暟鍊�",
+                         "measname": "T6",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�7婕忕數锛�3娓╁害锛夊疄鏃舵暟鍊�",
+                         "measname": "T7",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�8婕忕數锛�4娓╁害锛夊疄鏃舵暟鍊�",
+                         "measname": "T8",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       }
+                     ],
+                     "devname": "dev4"
+                   },
+                   {
+                     "devdesc": "璁惧",
+                     "devmeas": [{
+                         "measdesc": "绗�1璺紡鐢垫姤璀﹀€�",
+                         "measname": "L1",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�2璺紡鐢垫姤璀﹀€�",
+                         "measname": "L2",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�3璺紡鐢垫姤璀﹀€�",
+                         "measname": "L3",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�4璺紡鐢垫姤璀﹀€�",
+                         "measname": "L4",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�5璺紡鐢�/绗�1璺俯搴︽姤璀﹀€�",
+                         "measname": "L5",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�6璺紡鐢�/绗�2璺俯搴︽姤璀﹀€�",
+                         "measname": "L6",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�7璺紡鐢�/绗�3璺俯搴︽姤璀﹀€�",
+                         "measname": "L7",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�8璺紡鐢�/绗�4璺俯搴︽姤璀﹀€�",
+                         "measname": "L8",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�1璺紡娓╁害",
+                         "measname": "T1",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�2璺紡娓╁害",
+                         "measname": "T2",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�3璺紡娓╁害",
+                         "measname": "T3",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�4璺紡娓╁害",
+                         "measname": "T4",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�5婕忕數锛�1娓╁害锛夊疄鏃舵暟鍊�",
+                         "measname": "T5",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�6婕忕數锛�2娓╁害锛夊疄鏃舵暟鍊�",
+                         "measname": "T6",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�7婕忕數锛�3娓╁害锛夊疄鏃舵暟鍊�",
+                         "measname": "T7",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�8婕忕數锛�4娓╁害锛夊疄鏃舵暟鍊�",
+                         "measname": "T8",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       }
+                     ],
+                     "devname": "dev5"
+                   }
+                 ]
+               },
+               {
+                 "chdesc": "閫氶亾",
+                 "chname": "CH2",
+                 "devinfo": [{
+                     "devdesc": "璁惧",
+                     "devmeas": [{
+                         "measdesc": "绗�1璺紡鐢垫姤璀﹀€�",
+                         "measname": "L1",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�2璺紡鐢垫姤璀﹀€�",
+                         "measname": "L2",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�3璺紡鐢垫姤璀﹀€�",
+                         "measname": "L3",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�4璺紡鐢垫姤璀﹀€�",
+                         "measname": "L4",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�5璺紡鐢�/绗�1璺俯搴︽姤璀﹀€�",
+                         "measname": "L5",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�6璺紡鐢�/绗�2璺俯搴︽姤璀﹀€�",
+                         "measname": "L6",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�7璺紡鐢�/绗�3璺俯搴︽姤璀﹀€�",
+                         "measname": "L7",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�8璺紡鐢�/绗�4璺俯搴︽姤璀﹀€�",
+                         "measname": "L8",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�1璺紡娓╁害",
+                         "measname": "T1",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�2璺紡娓╁害",
+                         "measname": "T2",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�3璺紡娓╁害",
+                         "measname": "T3",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�4璺紡娓╁害",
+                         "measname": "T4",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�5婕忕數锛�1娓╁害锛夊疄鏃舵暟鍊�",
+                         "measname": "T5",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�6婕忕數锛�2娓╁害锛夊疄鏃舵暟鍊�",
+                         "measname": "T6",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�7婕忕數锛�3娓╁害锛夊疄鏃舵暟鍊�",
+                         "measname": "T7",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�8婕忕數锛�4娓╁害锛夊疄鏃舵暟鍊�",
+                         "measname": "T8",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       }
+                     ],
+                     "devname": "dev1"
+                   },
+                   {
+                     "devdesc": "璁惧",
+                     "devmeas": [{
+                         "measdesc": "绗�1璺紡鐢垫姤璀﹀€�",
+                         "measname": "L1",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�2璺紡鐢垫姤璀﹀€�",
+                         "measname": "L2",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�3璺紡鐢垫姤璀﹀€�",
+                         "measname": "L3",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�4璺紡鐢垫姤璀﹀€�",
+                         "measname": "L4",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�5璺紡鐢�/绗�1璺俯搴︽姤璀﹀€�",
+                         "measname": "L5",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�6璺紡鐢�/绗�2璺俯搴︽姤璀﹀€�",
+                         "measname": "L6",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�7璺紡鐢�/绗�3璺俯搴︽姤璀﹀€�",
+                         "measname": "L7",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�8璺紡鐢�/绗�4璺俯搴︽姤璀﹀€�",
+                         "measname": "L8",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�1璺紡娓╁害",
+                         "measname": "T1",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�2璺紡娓╁害",
+                         "measname": "T2",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�3璺紡娓╁害",
+                         "measname": "T3",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�4璺紡娓╁害",
+                         "measname": "T4",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�5婕忕數锛�1娓╁害锛夊疄鏃舵暟鍊�",
+                         "measname": "T5",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�6婕忕數锛�2娓╁害锛夊疄鏃舵暟鍊�",
+                         "measname": "T6",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�7婕忕數锛�3娓╁害锛夊疄鏃舵暟鍊�",
+                         "measname": "T7",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�8婕忕數锛�4娓╁害锛夊疄鏃舵暟鍊�",
+                         "measname": "T8",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       }
+                     ],
+                     "devname": "dev2"
+                   },
+                   {
+                     "devdesc": "璁惧",
+                     "devmeas": [{
+                         "measdesc": "绗�1璺紡鐢垫姤璀﹀€�",
+                         "measname": "L1",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�2璺紡鐢垫姤璀﹀€�",
+                         "measname": "L2",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�3璺紡鐢垫姤璀﹀€�",
+                         "measname": "L3",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�4璺紡鐢垫姤璀﹀€�",
+                         "measname": "L4",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�5璺紡鐢�/绗�1璺俯搴︽姤璀﹀€�",
+                         "measname": "L5",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�6璺紡鐢�/绗�2璺俯搴︽姤璀﹀€�",
+                         "measname": "L6",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�7璺紡鐢�/绗�3璺俯搴︽姤璀﹀€�",
+                         "measname": "L7",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�8璺紡鐢�/绗�4璺俯搴︽姤璀﹀€�",
+                         "measname": "L8",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�1璺紡娓╁害",
+                         "measname": "T1",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�2璺紡娓╁害",
+                         "measname": "T2",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�3璺紡娓╁害",
+                         "measname": "T3",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�4璺紡娓╁害",
+                         "measname": "T4",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�5婕忕數锛�1娓╁害锛夊疄鏃舵暟鍊�",
+                         "measname": "T5",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�6婕忕數锛�2娓╁害锛夊疄鏃舵暟鍊�",
+                         "measname": "T6",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�7婕忕數锛�3娓╁害锛夊疄鏃舵暟鍊�",
+                         "measname": "T7",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�8婕忕數锛�4娓╁害锛夊疄鏃舵暟鍊�",
+                         "measname": "T8",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       }
+                     ],
+                     "devname": "dev3"
+                   },
+                   {
+                     "devdesc": "璁惧",
+                     "devmeas": [{
+                         "measdesc": "绗�1璺紡鐢垫姤璀﹀€�",
+                         "measname": "L1",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�2璺紡鐢垫姤璀﹀€�",
+                         "measname": "L2",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�3璺紡鐢垫姤璀﹀€�",
+                         "measname": "L3",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�4璺紡鐢垫姤璀﹀€�",
+                         "measname": "L4",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�5璺紡鐢�/绗�1璺俯搴︽姤璀﹀€�",
+                         "measname": "L5",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�6璺紡鐢�/绗�2璺俯搴︽姤璀﹀€�",
+                         "measname": "L6",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�7璺紡鐢�/绗�3璺俯搴︽姤璀﹀€�",
+                         "measname": "L7",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�8璺紡鐢�/绗�4璺俯搴︽姤璀﹀€�",
+                         "measname": "L8",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�1璺紡娓╁害",
+                         "measname": "T1",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�2璺紡娓╁害",
+                         "measname": "T2",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�3璺紡娓╁害",
+                         "measname": "T3",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�4璺紡娓╁害",
+                         "measname": "T4",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�5婕忕數锛�1娓╁害锛夊疄鏃舵暟鍊�",
+                         "measname": "T5",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�6婕忕數锛�2娓╁害锛夊疄鏃舵暟鍊�",
+                         "measname": "T6",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�7婕忕數锛�3娓╁害锛夊疄鏃舵暟鍊�",
+                         "measname": "T7",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�8婕忕數锛�4娓╁害锛夊疄鏃舵暟鍊�",
+                         "measname": "T8",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       }
+                     ],
+                     "devname": "dev4"
+                   },
+                   {
+                     "devdesc": "璁惧",
+                     "devmeas": [{
+                         "measdesc": "绗�1璺紡鐢垫姤璀﹀€�",
+                         "measname": "L1",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�2璺紡鐢垫姤璀﹀€�",
+                         "measname": "L2",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�3璺紡鐢垫姤璀﹀€�",
+                         "measname": "L3",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�4璺紡鐢垫姤璀﹀€�",
+                         "measname": "L4",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�5璺紡鐢�/绗�1璺俯搴︽姤璀﹀€�",
+                         "measname": "L5",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�6璺紡鐢�/绗�2璺俯搴︽姤璀﹀€�",
+                         "measname": "L6",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�7璺紡鐢�/绗�3璺俯搴︽姤璀﹀€�",
+                         "measname": "L7",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�8璺紡鐢�/绗�4璺俯搴︽姤璀﹀€�",
+                         "measname": "L8",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�1璺紡娓╁害",
+                         "measname": "T1",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�2璺紡娓╁害",
+                         "measname": "T2",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�3璺紡娓╁害",
+                         "measname": "T3",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�4璺紡娓╁害",
+                         "measname": "T4",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�5婕忕數锛�1娓╁害锛夊疄鏃舵暟鍊�",
+                         "measname": "T5",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�6婕忕數锛�2娓╁害锛夊疄鏃舵暟鍊�",
+                         "measname": "T6",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�7婕忕數锛�3娓╁害锛夊疄鏃舵暟鍊�",
+                         "measname": "T7",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       },
+                       {
+                         "measdesc": "绗�8婕忕數锛�4娓╁害锛夊疄鏃舵暟鍊�",
+                         "measname": "T8",
+                         "quality": 0,
+                         "subcode": 0,
+                         "time": 1544752951,
+                         "type": "1",
+                         "value": "0"
+                       }
+                     ],
+                     "devname": "dev5"
+                   }
+                 ]
+               },
+               {
+                 "chdesc": "閫氶亾",
+                 "chname": "CH3",
+                 "devinfo": [{
+                   "devdesc": "璁惧",
+                   "devmeas": [{
+                       "measdesc": "A鐩哥數鍘�",
+                       "measname": "ua",
+                       "quality": 0,
+                       "subcode": 0,
+                       "time": 1544752951,
+                       "type": "1",
+                       "value": "0"
+                     },
+                     {
+                       "measdesc": "B鐩哥數鍘�",
+                       "measname": "ub",
+                       "quality": 0,
+                       "subcode": 0,
+                       "time": 1544752951,
+                       "type": "1",
+                       "value": "0"
+                     },
+                     {
+                       "measdesc": "C鐩哥數鍘�",
+                       "measname": "uc",
+                       "quality": 0,
+                       "subcode": 0,
+                       "time": 1544752951,
+                       "type": "1",
+                       "value": "0"
+                     },
+                     {
+                       "measdesc": "AB绾跨數鍘�",
+                       "measname": "uab",
+                       "quality": 0,
+                       "subcode": 0,
+                       "time": 1544752951,
+                       "type": "1",
+                       "value": "0"
+                     },
+                     {
+                       "measdesc": "BC绾跨數鍘�",
+                       "measname": "ubc",
+                       "quality": 0,
+                       "subcode": 0,
+                       "time": 1544752951,
+                       "type": "1",
+                       "value": "0"
+                     },
+                     {
+                       "measdesc": "AC绾跨數鍘�",
+                       "measname": "uca",
+                       "quality": 0,
+                       "subcode": 0,
+                       "time": 1544752951,
+                       "type": "1",
+                       "value": "0"
+                     },
+                     {
+                       "measdesc": "a鐩哥數娴�",
+                       "measname": "ia",
+                       "quality": 0,
+                       "subcode": 0,
+                       "time": 1544752951,
+                       "type": "1",
+                       "value": "0"
+                     },
+                     {
+                       "measdesc": "b鐩哥數娴�",
+                       "measname": "ib",
+                       "quality": 0,
+                       "subcode": 0,
+                       "time": 1544752951,
+                       "type": "1",
+                       "value": "0"
+                     },
+                     {
+                       "measdesc": "c鐩哥數娴�",
+                       "measname": "ic",
+                       "quality": 0,
+                       "subcode": 0,
+                       "time": 1544752951,
+                       "type": "1",
+                       "value": "0"
+                     },
+                     {
+                       "measdesc": "鏈夊姛鍔熺巼",
+                       "measname": "p",
+                       "quality": 0,
+                       "subcode": 0,
+                       "time": 1544752951,
+                       "type": "1",
+                       "value": "0"
+                     },
+                     {
+                       "measdesc": "鏃犲姛鍔熺巼",
+                       "measname": "q",
+                       "quality": 0,
+                       "subcode": 0,
+                       "time": 1544752951,
+                       "type": "1",
+                       "value": "0"
+                     },
+                     {
+                       "measdesc": "鍔熺巼鍥犳暟",
+                       "measname": "pf",
+                       "quality": 0,
+                       "subcode": 0,
+                       "time": 1544752951,
+                       "type": "1",
+                       "value": "0"
+                     },
+                     {
+                       "measdesc": "a鐩告湁鍔�",
+                       "measname": "pa",
+                       "quality": 0,
+                       "subcode": 0,
+                       "time": 1544752951,
+                       "type": "1",
+                       "value": "0"
+                     },
+                     {
+                       "measdesc": "b鐩告湁鍔�",
+                       "measname": "pb",
+                       "quality": 0,
+                       "subcode": 0,
+                       "time": 1544752951,
+                       "type": "1",
+                       "value": "0"
+                     },
+                     {
+                       "measdesc": "c鐩告湁鍔�",
+                       "measname": "pc",
+                       "quality": 0,
+                       "subcode": 0,
+                       "time": 1544752951,
+                       "type": "1",
+                       "value": "0"
+                     },
+                     {
+                       "measdesc": "棰戠巼",
+                       "measname": "f",
+                       "quality": 0,
+                       "subcode": 0,
+                       "time": 1544752951,
+                       "type": "1",
+                       "value": "0"
+                     },
+                     {
+                       "measdesc": "鏈夊姛鐢靛害",
+                       "measname": "ep",
+                       "quality": 0,
+                       "subcode": 0,
+                       "time": 1544752951,
+                       "type": "1",
+                       "value": "1682.4"
+                     },
+                     {
+                       "measdesc": "鏃犲姛鐢靛害",
+                       "measname": "eq",
+                       "quality": 0,
+                       "subcode": 0,
+                       "time": 1544752951,
+                       "type": "1",
+                       "value": "9.7"
+                     },
+                     {
+                       "measdesc": "楂樺嘲鏃舵10:00--15:00鍙�18:00--21:00鐢靛害",
+                       "measname": "ep1",
+                       "quality": 0,
+                       "subcode": 0,
+                       "time": 1544752951,
+                       "type": "1",
+                       "value": "0"
+                     },
+                     {
+                       "measdesc": "浣庤胺鏃舵23:00--7:00鐢靛害",
+                       "measname": "ep2",
+                       "quality": 0,
+                       "subcode": 0,
+                       "time": 1544752951,
+                       "type": "1",
+                       "value": "0"
+                     },
+                     {
+                       "measdesc": "骞宠胺鏃舵7:00--10:00鍙�15:00--18:00鍙�21:00--23:00鐢靛害",
+                       "measname": "ep3",
+                       "quality": 0,
+                       "subcode": 0,
+                       "time": 1544752951,
+                       "type": "1",
+                       "value": "0"
+                     }
+                   ],
+                   "devname": "dev1"
+                 }]
+               }
+             ]
+           }

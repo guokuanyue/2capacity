@@ -1,0 +1,287 @@
+/* 电力监控-T1 */
+
+* {
+    font-size: 13px;
+}
+
+.newDL1 {
+    padding-left: 0;
+}
+
+.dianlu1 {
+    background: #212429;
+    margin-left: 0px;
+    height: 1054px;
+    text-align: center !important;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+img {
+    vertical-align: top;
+}
+
+
+/* 电路图上半部分 */
+
+
+/* 变压器 */
+
+.whsInfor {
+    width: 180px;
+    height: 30px;
+    display: inline-block;
+}
+
+.whgcHeight {
+    height: 30px;
+}
+
+.whsInfor,
+.whgcHeight li {
+    line-height: 20px;
+    margin: 5px 0;
+    color: #01ff5b;
+    text-align: center;
+}
+
+.whgcW2 {
+    width: 178px;
+}
+
+.lwm2Group {
+    margin: 0 auto;
+}
+
+.lwm2Group li {
+    margin-bottom: 6px;
+}
+
+.lwm2Group li span {
+    float: left;
+    text-align: center;
+}
+
+.kdDT-title {
+    width: 60px;
+    color: white;
+    text-align: center;
+}
+
+.lwm2Group li .lwmData {
+    color: #01ff5b;
+    border: 1px solid #404e83;
+    width: 88px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.lwm2Group li .whgcDw1 {
+    width: 25px;
+    text-indent: 5px;
+}
+
+.lwm2Group li .kdDT {
+    color: #FFF;
+    line-height: 20px;
+}
+
+
+/* 进线柜 */
+
+.whswcBlock1 {
+    position: relative;
+}
+
+.left {
+    float: left;
+}
+
+.whgcT1 {
+    left: 44px;
+}
+
+.kdImg1DataTit {
+    font-family: "SimHei";
+    font-size: 16px;
+    color: #FFF;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.minHaiLT2 {
+    top: -50px;
+    width: 72px;
+    position: absolute;
+}
+
+
+/* 方块开关1. */
+
+.whgcOCP1 {
+    top: 148px;
+    left: 48px;
+}
+
+.OC1 {
+    position: absolute;
+    width: 11px;
+    height: 25px;
+}
+
+.cursor_pointer {
+    cursor: pointer;
+}
+
+.newDianLu1C {
+    background: #FF0000;
+}
+
+
+/* 电容柜 */
+
+.whswcBlock1 {
+    position: relative;
+}
+
+.whgcT2 {
+    left: 60px;
+}
+
+
+/* 方块开关2. */
+
+.whgcOCP2 {
+    top: 28px;
+    left: 94px;
+}
+
+.cursor_pointer {
+    cursor: pointer;
+}
+
+
+/* 有源滤波柜 */
+
+
+/* 1AA4--- */
+
+.hcfsModel2Station {
+    position: relative;
+}
+
+.whgcT3 {
+    left: 322px;
+}
+
+.hcfs4modelAllData {
+    position: absolute;
+}
+
+.hcfs4modelAllData li {
+    margin-bottom: 9px;
+}
+
+.whgc_dataTit {
+    width: 40px;
+    position: absolute;
+    left: -25px;
+    top: 249px;
+}
+
+.whgc_dataTit {
+    width: 40px;
+    position: absolute;
+    left: -25px;
+    top: 249px;
+}
+
+.whgc_dataTit li {
+    margin-bottom: 8px;
+}
+
+.hcfs4model2DataDT {
+    float: left;
+    text-align: left;
+    width: 40px;
+    height: 20px;
+    line-height: 20px;
+    color: #FFF;
+}
+
+.whgcW1 {
+    width: 96px;
+}
+
+.hcfsModel1Station {
+    position: relative;
+}
+
+.MZBtnPosition {
+    position: relative;
+}
+
+
+/* 1AA4-1 备用 */
+
+.hcfsModel1Station dd {
+    color: #01ff5b;
+}
+
+.hcfsModel1Station dd {
+    line-height: 20px;
+}
+
+.mt {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.mb {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.whgcOCP3 {
+    top: 37px;
+    left: 45px;
+}
+
+.whswcGroup li {
+    /* color: #01ff5b; */
+    border: 1px solid #404e83;
+    width: 88px;
+    height: 20px;
+    line-height: 20px;
+    margin: 0 auto 6px;
+}
+
+.lwmData {
+    text-align: center;
+}
+
+.lwmData {
+    color: #01ff5b;
+}
+
+
+/* 电路图下半部分 */
+
+.whgc_dataTitP2 {
+    left: -44px;
+}
+
+.whgcT4 {
+    left: 100px;
+}
+
+.whgcT5 {
+    left: 270px;
+}
+
+.whgc_dataTit li {
+    margin-bottom: 8px;
+}

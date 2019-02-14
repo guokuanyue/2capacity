@@ -1,0 +1,118 @@
+/* 电力监控-lpanel2 */
+
+.line_box {
+    position: relative;
+    /* margin-bottom: 12px; */
+}
+
+.switch_close {
+    background: #ff0000;
+}
+
+.switch_span {
+    /* width: 11px; */
+    /* height: 24px; */
+    position: absolute;
+    /* top: 64px; */
+    /* left: 44px; */
+}
+
+.line_name {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    height: 75px;
+}
+
+.data_tempeture li,
+.line_box li {
+    color: white;
+}
+
+.line_name li {
+    height: 20px;
+    line-height: 20px;
+}
+
+.line_box li {
+    margin-bottom: 5px;
+}
+
+.data_unit_wrap ul li {
+    height: 22px;
+    line-height: 22px;
+    margin-bottom: 5px;
+}
+
+.data_unit_wrap li {
+    width: 60px;
+    text-align: right;
+    /* color: white; */
+    /* margin-bottom: 5px; */
+}
+
+.line_data li {
+    width: 80px;
+    border: 1px solid #404e83;
+    text-align: center;
+    /* color: #01ff5b; */
+    margin: 0 auto;
+    margin-bottom: 5px;
+    height: 20px;
+    line-height: 20px;
+    /* color: #01ff5b; */
+}
+
+.line_data li span {
+    color: #01ff5b;
+}
+
+
+/* 高压 */
+
+.ipanel-vertical-con {
+    position: relative;
+}
+
+.ipanel-vertical-con {
+    height: 145px;
+    width: 100%;
+}
+
+.ipanel-vertical-img {
+    z-index: -10;
+}
+
+.ipanel-ct {
+    color: #00ff5a;
+    font-size: 12px;
+    position: absolute;
+    top: 25px;
+    left: 3px;
+}
+
+.ipanel-vertical-switch-on {
+    position: absolute;
+    background: #00ff00;
+    width: 24px;
+    height: 12px;
+    cursor: pointer;
+    left: 49px;
+    top: 41px;
+}
+
+.ipanel-vertical-value-box {
+    width: 270px;
+    padding-left: 10px;
+    position: absolute;
+    top: 65px;
+}
+
+.ipanel-vertical-value {
+    font-size: 12px;
+    color: white;
+    width: 85px;
+    height: 20px;
+    line-height: 20px;
+}

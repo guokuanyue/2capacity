@@ -1,0 +1,49 @@
+/* 电力监控-T2 */
+
+
+/* @media (max-width: 1300px)
+* {          将窗口缩小时样式
+    font-size: 12px!important;
+} */
+
+
+/* .newDL1 {
+    padding-left: 0;
+} */
+
+.dianlu1 {
+    background: #212429;
+    margin-left: 0px;
+    height: 1054px;
+    text-align: center !important;
+}
+
+.jinxian2Position {
+    position: relative;
+}
+
+
+/* .whgcOCP1 {
+    top: 148px;
+    left: 53px;
+} */
+
+.OC1 {
+    height: 25px;
+}
+
+.cursor_pointer {
+    cursor: pointer;
+}
+
+.OC1 {
+    width: 11px;
+    /* height: 24px; */
+    position: absolute;
+    /* top: 152px; */
+    /* left: 202px; */
+}
+
+.newDianLu1O {
+    background: #00ff00;
+}
