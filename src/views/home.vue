@@ -207,7 +207,7 @@ export default {
           className: "el-icon-help"
         },
         {
-          title: "报表配置",
+          title: "设备配置",
           id: 16,
           url: "/reportConfig",
           menuname: "reportConfig",

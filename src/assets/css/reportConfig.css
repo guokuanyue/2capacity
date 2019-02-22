@@ -1,5 +1,11 @@
+.el-main {
+  padding-right: 0px;
+  padding-bottom: 0px;
+}
 .reportConfig {
   padding-left: 7px;
+  width: 1200px;
+  margin: 0 auto;
 }
 .reportConfig h3 {
   line-height: 40px;
@@ -17,7 +23,7 @@
   right: 10%;
 }
 .reportConfig .reportConfig-hearder .el-cascader__label {
-  color: #fff;
+  color: red;
 }
 .reportConfig .reportConfig-hearder .el-input__inner {
   border: 1px solid #666;
@@ -26,16 +32,16 @@
   border-radius: 0px;
   background-color: #212429;
 }
-.reportConfig .reportConfig-hearder .el-button {
+.reportConfig .reportConfig-hearder .reportConfig-el-button {
   margin-top: 4px;
   float: right;
   width: 100px;
   height: 35px;
-  border-radius: 0px;
+  border: 1px solid #fff;
   color: aliceblue;
   background-color: #212429;
 }
-.reportConfig .reportConfig-hearder .el-button .el-button--primary:hover {
+.reportConfig .reportConfig-hearder .reportConfig-el-button:hover {
   background-color: #0B65D3;
 }
 .reportConfig .reportConfig-table .el-table--enable-row-hover .el-table__body tr:hover > td {

@@ -5,18 +5,16 @@
       <el-row>
         <el-col :span="12">
           <!-- 页面标题 -->
-          <h3>报表配置列表</h3>
+          <h3>设备配置列表</h3>
         </el-col>
-        <!-- 批量修改按钮 -->
+        <!-- 层联选择 -->
         <el-col :span="12">
           <el-cascader
             @change="handleChange"
             class="reportConfig-el-cascader"
             :options="optionsWithDisabled"
           ></el-cascader>
-          <el-button class="reportConfig-el-button" size="mini" @click="handleEdit">保存</el-button>
-
-          <!-- <el-button size="mini" type="primary" plain>批量修改</el-button> -->
+          <button class="reportConfig-el-button" @click="handleEdit">保存</button>
         </el-col>
       </el-row>
     </div>
@@ -32,17 +30,11 @@
         @select="selects"
       >
         <el-table-column align="center" type="selection" width="55"></el-table-column>
-        <el-table-column align="center" prop="bnm" label="网关名称"></el-table-column>
-        <el-table-column align="center" prop="bsn" label="网关名称"></el-table-column>
-        <el-table-column align="center" prop="code" label="类型子码"></el-table-column>
-        <el-table-column align="center" prop="dt" :show-overflow-tooltip="true" label="测点类型"></el-table-column>
-        <el-table-column align="center" prop="eds" label="设备描述"></el-table-column>
-        <el-table-column align="center" prop="tds" label="测点描述"></el-table-column>
-        <el-table-column align="center" prop="tnm" label="名称"></el-table-column>
-        <el-table-column align="center" prop="ts" label="时间戳" show-overflow-tooltip></el-table-column><el-table-column align="center" prop="uid" lab" show-overflow-tooltip><el="UID/el-table-column>
-        <el-table-column align="center" prop="val" label="实时值" show-overflow-tooltip></el-table-column>
-        <el-table-column align="center" prop="vq" label="质量戳" show-overflow-tooltip></el-table-column>
-        <el-table-column align="center" prop="vt" label="类型" show-overflow-tooltip></el-table-column>
+        <el-table-column align="center" prop="bnm" label="通讯管理机"></el-table-column>
+        <el-table-column align="center" prop="enm" label="名称"></el-table-column>
+        <el-table-column align="center" prop="eds" label="描述"></el-table-column>
+        <el-table-column align="center" prop="switchhouse" label="一级分类"></el-table-column>
+        <el-table-column align="center" prop="category" label="二级分类"></el-table-column>
       </el-table>
     </div>
   </div>
@@ -112,57 +104,65 @@ export default {
           ]
         }
       ],
-      multipleSelection: [],
+
       checkedRow: [], //选中行
       checkedSelect: [], //选中下拉框
       currrentRoleId: "Root"
     };
   },
-  watch: {
-    multipleSelection: function() {
-      let arr = [];
-      for (let i in this.multipleSelection) {
-        arr.push(this.multipleSelection[i].id);
-      }
-      // console.log(arr);
-    }
-  },
   created() {
     this.getTableList();
   },
   methods: {
+    //请求列表
     getTableList() {
-      //请求列表
       this.reportData.splice(0); //this.reportData.length = 0
-      let obj = { eid: this.currrentRoleId };
-      this.$http
-        .get("netgate-server/report/pointList", { params: obj })
-        .then(res => {
-          if (res.data.code == 0) {
-            this.reportData = JSON.parse(JSON.parse(res.data.data[0]).data);
-          } else {
-            alert("获取列表失败");
-          }
-        });
+      let obj = { eid: this.currrentRoleId }; //动态设置请求id
+      //  判断接口案例
+      //  this.$http.get("dffdsf").then(res => {
+      //     let url = "";
+      //     if (res) {
+      //       url = "set/equipmentListByEid";
+      //     } else {
+      //       url = "dsadasd";
+      //     }
+      //     this.$http
+      //       // 获取列表
+      //       .get(url, { params: obj })
+      //       .then(res => {
+      //         if (res.data.code == 0) {
+      //           //成功渲染
+      //           this.reportData = JSON.parse(JSON.parse(res.data.data[0]).data);
+      //           console.log("this.reportData", this.reportData);
+      //         } else {
+      //           alert("获取列表失败");
+      //         }
+      //       });
+      //   });
     },
+
     // 级联选择器change事件
     handleChange(value) {
       console.log(value);
+      //把分类赋值checkedSelect
       this.checkedSelect = value;
     },
 
     //点击保存提交
     handleEdit(h) {
+      //判断是否选择了数据
       if (this.checkedRow.length == 0) {
         alert("你没有选择数据");
         return false;
       }
-      let sendData = [];
+      let sendData = []; //要发送的数据
+      //判断是否选择了分类
       if (this.checkedSelect.length !== 0) {
         let arr = JSON.parse(JSON.stringify(this.checkedRow));
         arr.forEach(item => {
+          //把分类信息追加到要上传的数据中的每个数组对象里面去
           item.switchhouse = this.checkedSelect[0];
-          item.type = this.checkedSelect[1];
+          item.category = this.checkedSelect[1];
           sendData.push(item);
         });
       } else {
@@ -170,15 +170,18 @@ export default {
       }
 
       console.log(sendData, "sendData");
+      //上传数据、分类
       this.$http
-        .post("netgate-server/report/epPointList", sendData)
+        .post("set/saveSet", sendData)
         .then(res => {
           console.log(res, "res");
+          //选中数据、选择分类、返回状态码为0都满足
           if (
             res.data.code == 0 &&
             this.checkedSelect.length !== 0 &&
             this.checkedRow.length !== 0
           ) {
+            // 保存后重新请求界面
             this.getTableList();
             alert("保存成功");
           }
@@ -187,7 +190,7 @@ export default {
           alert("保存失败");
         });
     },
-    // 获取选中数据
+    // 创建方法用于筛选对象所需要的属性
     helpFun(arr, attributeArr) {
       var result = [];
       arr.forEach(item => {
@@ -199,10 +202,18 @@ export default {
       });
       return result;
     },
-
+    // 获取选中数据
     selects(selection) {
-      var resArr = this.helpFun(selection, ["bnm", "bsn", "eds", "tds", "tnm"]);
-      console.log(resArr); //得到想要数组传给后台
+      var resArr = this.helpFun(selection, [
+        "bnm",
+        "bsn",
+        "eds",
+        "enm",
+        "tds",
+        "tnm",
+        "vt"
+      ]);
+      console.log(resArr); //得到列表选中数据
       this.checkedRow = resArr;
     }
   }

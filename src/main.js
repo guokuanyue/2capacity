@@ -18,7 +18,7 @@ import qs from 'qs'
 Vue.prototype.$qs = qs
 Vue.prototype.$http = axios
 axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded; charset=UTF-8'
-axios.defaults.baseURL = 'http://192.168.0.174:8001/'
+axios.defaults.baseURL = 'http://192.168.0.217:8001/netgate-server/'
 
 
 import ElementUI from 'element-ui'

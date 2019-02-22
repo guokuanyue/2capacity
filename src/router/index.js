@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-import Logo from '@/views/logo'
+import login from '@/views/login'
 import Home from '@/views/home'
 
 
@@ -46,11 +46,10 @@ Vue.use(Router)
 const router = new Router({
   mode: 'history',
   routes: [{
-      name: 'logo',
+      name: 'login',
       path: '/',
-      component: Logo,
+      component: login,
     },
-
     {
       path: '/home',
       component: Home,

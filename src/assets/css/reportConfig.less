@@ -3,9 +3,18 @@
 // 字体颜色
 @font-color: #C0C4CC;
 
-.reportConfig {
-  padding-left: 7px; // 头部顶栏
+.el-main {
+  padding-right: 0px;
+  padding-bottom: 0px;
+}
 
+.reportConfig {
+  padding-left: 7px;
+  width: 1200px;
+  margin: 0 auto;
+
+
+  // 设备配置列表
   h3 {
     line-height: 40px;
     height: 40px;
@@ -13,18 +22,21 @@
     padding-left: 10px;
   }
 
+  // 头部
   .reportConfig-hearder {
     position: relative;
     padding: 10px;
     background-color: #303740;
 
+    // 层级选择器
     .reportConfig-el-cascader {
       position: absolute;
       right: 10%;
     }
 
+    // 选中后的字体颜色
     .el-cascader__label {
-      color: #fff;
+      color: red;
     }
 
     // 操作选择框
@@ -36,17 +48,18 @@
       background-color: @bg-color;
     }
 
-    // 批量按钮
-    .el-button {
+    // 保存按钮
+    .reportConfig-el-button {
       margin-top: 4px;
       float: right;
       width: 100px;
       height: 35px;
-      border-radius: 0px;
+      border: 1px solid #fff;
       color: aliceblue;
       background-color: @bg-color;
 
-      .el-button--primary:hover {
+      // 按钮悬停背景色
+      &:hover {
         background-color: #0B65D3;
       }
     }
@@ -70,6 +83,7 @@
       padding: 4px 0;
       background-color: @bg-color;
 
+      // 表头
       thead {
         tr {
           th {

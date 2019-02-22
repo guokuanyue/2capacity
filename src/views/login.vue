@@ -5,16 +5,18 @@
       <img src="../../static/images/header/logo_new.png" alt class="login-logo">
       <h2 class="system-title">互联网智能配用电管理系统</h2>
       <p class="system-subTitle">Internet&nbsp;&nbsp;Intelligent&nbsp;&nbsp;P.M.P</p>
-      <form @submit.prevent="onSubmit" class="login-form clear" method="post" :model="formInline">
+      <form class="login-form clear" :model="formData">
         <div class="login-input-div left">
-            <label style="background:url('./static/images/login/login-user.png') no-repeat 10px 10px;"></label>
-            <input type="text" class="login-input" name="uname" placeholder="用户名" v-model="formInline.username">
+          <label
+            style="background:url('./static/images/login/login-user.png') no-repeat 10px 10px;"
+          ></label>
+          <input class="login-input" placeholder="用户名" v-model="formData.username">
         </div>
         <div class="login-input-div left">
-            <label style="background:url('./static/images/login/login-pwd.png') no-repeat 10px 10px;"></label>
-            <input type="password" class="login-input" name="pwd" placeholder="密码" v-model="formInline.password">
+          <label style="background:url('./static/images/login/login-pwd.png') no-repeat 10px 10px;"></label>
+          <input type="password" class="login-input" placeholder="密码" v-model="formData.password">
         </div>
-        <input type="submit" value="登 录" class="login-btn">
+        <input @click="handleLogin" type="primary" value="登 录" class="login-btn">
       </form>
     </div>
     <div id="jq_ez_bg">
@@ -31,16 +33,23 @@
 export default {
   data() {
     return {
-      formInline: {
-        username: "admin",
-        password: "123456"
+      formData: {
+        username: "",
+        password: ""
       }
     };
   },
   methods: {
-    onSubmit() {
-      sessionStorage.setItem("user", JSON.stringify(this.formInline));
-      this.$router.push("/home");
+    handleLogin() {
+      // sessionStorage.setItem("user", JSON.stringify(this.formData));
+      // this.$router.push("/home");
+      if (this.formData.username !== "admin") {
+        alert("请输入正确用户名");
+      } else if (this.formData.password !== "123456") {
+        alert("请输入正确密码");
+      } else {
+        this.$router.push("/home");
+      }
     }
   }
 };
