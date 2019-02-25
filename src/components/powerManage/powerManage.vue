@@ -2,87 +2,51 @@
   <div class="powerManage">
     <!-- 头部菜单部分 -->
     <div class="powerManage-header">
-      <el-row type="flex">
-        <el-col :span="24">
-          <!-- 区域选择部分 -->
-          <label for="powerManage-item-ipt" class="powerManage-span">选择查看区域</label>
-          <select class="powerManage-item-ipt" name id="powerManage-item-ipt">
-            <option value="选项1">总能耗</option>
-            <option value="选项1">工厂用电</option>
-            <option value="选项1">照明用电</option>
-            <option value="选项1">其他</option>
-          </select>
-          <!-- 进线选择部分 -->
-          <label for="powerManage-item-ipt" class="powerManage-span">选择查看进线</label>
-          <select class="powerManage-item-ipt" name id="powerManage-item-ipt">
-            <option value="选项1">总能耗</option>
-            <option value="选项1">工厂用电</option>
-            <option value="选项1">照明用电</option>
-            <option value="选项1">其他</option>
-          </select>
-          <!-- 查看周期部分 -->
-          <label for="powerManage-item-ipt" class="powerManage-span">选择查看周期</label>
-          <el-button class="powerManage-el-button" type="primary" plain>
-            <span class="powerManage-el-button-circle"></span>日
-          </el-button>
-          <el-button class="powerManage-el-button" type="primary" plain>
-            <span class="powerManage-el-button-circle"></span>月
-          </el-button>
-          <el-button class="powerManage-el-button" type="primary" plain>
-            <span class="powerManage-el-button-circle"></span>年
-          </el-button>
-          <!-- 选择数据日期 -->
-          <label for="powerManage-item-ipt" class="powerManage-span">选择数据日期</label>
-          <select class="powerManage-item-ipt" name id="powerManage-item-ipt">
-            <option value="选项1">总能耗</option>
-            <option value="选项1">工厂用电</option>
-            <option value="选项1">照明用电</option>
-            <option value="选项1">其他</option>
-          </select>
-        </el-col>
-      </el-row>
+      <span>选择查看区域&nbsp;</span>
+      <!-- 下拉查看区域 -->
+      <select
+        @click="CurrentSelectedChange"
+        v-model="powerCurrentSelected"
+        class="powerManage-header-viewplace"
+      >
+        <option :key="item.value" :value="item.value" v-for="item in powerOptionData">{{item.label}}</option>
+      </select>
+      <!-- 选择查看进线 -->
+      <span class="powerLeft">选择查看进线&nbsp;</span>
+      <!-- 下拉查看进线 -->
+      <select
+        @click="EnterSelectedChange"
+        v-model="powerEnterSelected"
+        class="powerManage-header-viewplace"
+      >
+        <option selected="selected" disabled value>请选择一项</option>
+        <option :key="item.value" :value="item.value" v-for="item in enterOptionData">{{item.label}}</option>
+      </select>
+      <!-- 选择查看周期 -->
+      <span class="powerLeft">选择查看周期&nbsp;</span>
+      <el-button type="primary" class="powerDateSelected" size="mini" plain @click="dayhandle">日</el-button>
+      <el-button type="primary" class="powerDateSelected" size="mini" plain @click="monthhandle">月</el-button>
+      <el-button type="primary" class="powerDateSelected" size="mini" plain @click="yearhandle">年</el-button>&nbsp;&nbsp;&nbsp;
+      <!-- 日期选择 -->
+      <el-date-picker
+        :picker-options="pickerOptions"
+        v-model="cycleTime"
+        :type="typeChange"
+        :placeholder="timeDefaultShow"
+        :format="formatChange"
+        :value-format="valueChange"
+      ></el-date-picker>
     </div>
-    <!-- 饼图和数据table部分 -->
-    <div class="powerManage-pie-table">
-      <el-row type="flex">
-        <el-col :xs="10" :sm="10" :md="10" :lg="12" :xl="12">
-          <div class="powerManage-pie">
-            <div class="powerManage-pie-header">
-              新工厂配电室
-              <span class="fr">注：点击饼图，可查看对应的下级分类详情</span>
-            </div>
-            <ve-pie id="powerManage-ve-pie"></ve-pie>
-          </div>
-        </el-col>
-        <el-col :xs="10" :sm="10" :md="10" :lg="12" :xl="12">
-          <div class="powerManage-table">
-            <el-table id="powerManage-el-table" :data="tableData">
-              <el-table-column header-align="center" prop="type" label="类型" minWidth="1"></el-table-column>
-              <el-table-column header-align="center" prop="value" label="数值(kWh)" minWidth="1"></el-table-column>
-              <el-table-column header-align="center" prop="proportion" label="占比(%)" minWidth="1"></el-table-column>
-              <el-table-column header-align="center" prop="power" label="上月耗电量" minWidth="1"></el-table-column>
-              <el-table-column header-align="center" prop="percent" label="环比(%)" minWidth="1"></el-table-column>
-            </el-table>
-          </div>
-        </el-col>
-      </el-row>
+    <!-- 下半部总体 -->
+    <div class="powerManage-wrap">
+      <!-- 饼图和数据列表总体 -->
+      <div class="powerManage-topCon">
+        <!-- 饼图部分 -->
+        <div class="topCon-pie"></div>
+        <!-- 列表部分 -->
+        <div class="topCon-table"></div>
+      </div>
     </div>
-    <!--能耗同比 条形图和折线图 -->
-    <div class="powerManage-bar-line">
-      <el-row>
-        <el-col :xs="10" :sm="10" :md="12" :lg="12" :xl="12">
-          <!-- 柱状图 -->
-          <div class="grid-content bg-purple">
-            <ve-histogram :extend="veHistogramExtend" :data="veHistogramData"></ve-histogram>
-          </div>
-        </el-col>
-        <el-col :xs="10" :sm="10" :md="12" :lg="12" :xl="12">
-          <div class="grid-content bg-purple-light"></div>
-        </el-col>
-      </el-row>
-    </div>
-    <!-- 耗电量条形图 -->
-    <div class="powerManage-Bigbar"></div>
   </div>
 </template>
 
@@ -90,138 +54,181 @@
 export default {
   name: "powerManage",
   data() {
-    this.veHistogramExtend = {
-      // 柱状图样式
-      series: {
-        barWidth: 4
-      },
-      // 标题
-      title: {
-        text: "新工厂配电室",
-        textStyle: {
-          color: "#fff",
-          fontWeight: 400,
-          fontSize: 12,
-          verticalAlign: "middle"
-        }
-      }
-    };
-    let arr1 = ["月份", "当月", "上月"];
-    let arr2 = [
-      { 月份: "1", 当月: 1191.7, 上月: 5973.3 },
-      { 月份: "2", 当月: 1191.7, 上月: 5973.3 },
-      { 月份: "3", 当月: 1191.7, 上月: 5973.3 },
-      { 月份: "4", 当月: 1191.7, 上月: 5973.3 },
-      { 月份: "5", 当月: 1191.7, 上月: 5973.3 },
-      { 月份: "6", 当月: 1191.7, 上月: 5973.3 },
-      { 月份: "7", 当月: 1191.7, 上月: 5973.3 },
-      { 月份: "8", 当月: 1191.7, 上月: 5973.3 },
-      { 月份: "9", 当月: 1191.7, 上月: 5973.3 },
-      { 月份: "10", 当月: 1191.7, 上月: 5973.3 },
-      { 月份: "11", 当月: 1191.7, 上月: 5973.3 },
-      { 月份: "12", 当月: 1191.7, 上月: 5973.3 },
-      { 月份: "13", 当月: 2923, 上月: 2623 },
-      { 月份: "14", 当月: 1723, 上月: 1423 },
-      { 月份: "15", 当月: 3792, 上月: 3492 },
-      { 月份: "16", 当月: 4593, 上月: 4293 },
-      { 月份: "17", 当月: 4593, 上月: 4293 },
-      { 月份: "18", 当月: 4593, 上月: 4293 },
-      { 月份: "19", 当月: 4593, 上月: 4293 },
-      { 月份: "20", 当月: 4593, 上月: 4293 },
-      { 月份: "21", 当月: 4593, 上月: 4293 },
-      { 月份: "22", 当月: 4593, 上月: 4293 },
-      { 月份: "23", 当月: 4593, 上月: 4293 },
-      { 月份: "24", 当月: 4593, 上月: 4293 },
-      { 月份: "25", 当月: 4593, 上月: 4293 },
-      { 月份: "26", 当月: 4593, 上月: 4293 },
-      { 月份: "27", 当月: 4593, 上月: 4293 },
-      { 月份: "28", 当月: 4593, 上月: 4293 },
-      { 月份: "29", 当月: 4593, 上月: 4293 },
-      { 月份: "30", 当月: 4593, 上月: 4293 },
-      { 月份: "31", 当月: 4593, 上月: 4293 }
-    ];
     return {
-      veHistogramData: {
-        columns: arr1,
-        rows: arr2
-      },
-      tableData: [
+      // 查看区域下拉
+      powerOptionData: [
         {
-          type: "工厂用电",
-          value: "46631.8",
-          proportion: "83.2%",
-          power: "131546.3",
-          percent: "-50"
+          value: "总耗能",
+          label: "总耗能"
         },
         {
-          type: "工厂用电",
-          value: "46631.8",
-          proportion: "83.2%",
-          power: "131546.3",
-          percent: "-50"
+          value: "工厂用电",
+          label: "工厂用电"
         },
         {
-          type: "工厂用电",
-          value: "46631.8",
-          proportion: "83.2%",
-          power: "131546.3",
-          percent: "-50"
+          value: "照明用电",
+          label: "照明用电"
         },
         {
-          type: "工厂用电",
-          value: "46631.8",
-          proportion: "83.2%",
-          power: "131546.3",
-          percent: "-50"
+          value: "其他",
+          label: "其他"
         }
-      ]
+      ],
+
+      // 进线下拉
+      enterOptionData: [
+        {
+          value: "铜排工厂拉拔",
+          label: "铜排工厂拉拔"
+        },
+        {
+          value: "工厂用电AP1",
+          label: "工厂用电AP1"
+        },
+        {
+          value: "工厂用电AP2",
+          label: "工厂用电AP2"
+        },
+        {
+          value: "工厂用电AP3",
+          label: "工厂用电AP3"
+        },
+        {
+          value: "工厂用电AP4",
+          label: "工厂用电AP4"
+        },
+        {
+          value: "工厂用电AP5",
+          label: "工厂用电AP5"
+        },
+        {
+          value: "工厂用电AP6",
+          label: "工厂用电AP6"
+        },
+        {
+          value: "工厂用电AP7",
+          label: "工厂用电AP7"
+        },
+        {
+          value: "工厂用电AP8",
+          label: "工厂用电AP8"
+        },
+        {
+          value: "工厂用电AP9",
+          label: "工厂用电AP9"
+        },
+        {
+          value: "工厂用电AP10",
+          label: "工厂用电AP10"
+        },
+        {
+          value: "工厂用电AP11",
+          label: "工厂用电AP11"
+        },
+        {
+          value: "工厂用电AP12",
+          label: "工厂用电AP12"
+        },
+        {
+          value: "工厂用电AP13",
+          label: "工厂用电AP13"
+        },
+        {
+          value: "工厂用电AP14",
+          label: "工厂用电AP14"
+        },
+        {
+          value: "工厂用电AP15",
+          label: "工厂用电AP15"
+        },
+        {
+          value: "变压器工厂",
+          label: "变压器工厂"
+        },
+        {
+          value: "铜排挤压机",
+          label: "铜排挤压机"
+        },
+        {
+          value: "高压侧1AH3 PT柜",
+          label: "高压侧1AH3 PT柜"
+        },
+        {
+          value: "1#进线电容柜",
+          label: "1#进线电容柜"
+        },
+        {
+          value: "2#进线电容柜",
+          label: "2#进线电容柜"
+        }
+      ],
+      // 区域选中
+      powerCurrentSelected: "",
+      // 进线选中
+      powerEnterSelected: "",
+      // 日期选择
+      cycleTime: "",
+      pickerOptions: {
+        disabledDate(time) {
+          return time.getTime() > Date.now() - 8.64e6;
+        }
+      },
+      // 日期类型改变
+      typeChange: "date",
+      // 日期格式改变
+      formatChange: "yyyy年MM月dd日",
+      //  获取的格式
+      valueChange: "yyyy-MM-dd",
+      // 默认选中日期
+      timeDefaultShow: "",
+      // 默认选中日期的格式化yyyy-MM
+      formatTimeShow: ""
     };
   },
-  mounted() {
-    this.bigPieData();
+  created() {
+    // 查看区域默认选中
+    this.powerCurrentSelected = this.powerOptionData[0].label;
+    // 日期默认选中
+    let nowDate = new Date();
+    let nowDateMth = nowDate.getMonth() + 1;
+    let showDate = nowDate.getFullYear() + "年" + nowDateMth + "月";
+    this.timeDefaultShow = showDate;
+    // yyyy-MM
+    this.formatTimeShow = nowDate.getFullYear() + "-" + nowDateMth;
   },
   methods: {
-    bigPieData() {
-      let powerManageVePie = this.$echarts.init(
-        document.getElementById("powerManage-ve-pie")
-      );
-      powerManageVePie.setOption({
-        // 悬停提示框内容
-        tooltip: {
-          trigger: "item",
-          formatter: "{b}",
-          backgroundColor: "rgba(255, 255, 255, 0.5)",
-          borderColor: "#7CB5EC",
-          borderWidth: 2,
-          padding: [5, 10],
-          textStyle: {
-            color: "#000"
-          }
-        },
-        series: [
-          {
-            type: "pie",
-            radius: "80%",
-            hoverAnimation: true,
-            center: ["50%", "52%"],
-            data: [
-              { value: 83.1, name: "工厂用电: 83.2 %" },
-              { value: 16.8, name: "照明用电: 16.8 %" }
-            ],
-            label: {
-              color: "#fff"
-            },
-            labelLine: {
-              smooth: 0.5,
-              lineStyle: {
-                color: "#929BA6"
-              }
-            }
-          }
-        ],
-        // 饼图颜色
-        color: ["#7CB5EC", "#5C5C61"]
-      });
+    // 日改变
+    dayhandle() {
+      this.typeChange = "date";
+      this.formatChange = "yyyy年MM月dd日";
+      this.valueChange = "yyyy-MM-dd";
+    },
+    // 月改变
+    monthhandle() {
+      this.typeChange = "month";
+      this.formatChange = "yyyy年MM月";
+      this.valueChange = "yyyy-MM";
+    },
+    // 年改变
+    yearhandle() {
+      this.typeChange = "year";
+      this.formatChange = "yyyy年";
+      this.valueChange = "yyyy";
+    },
+    // 选中日期
+    selectTime(val) {
+      this.dayTime = val;
+      this.monthTime = val;
+      this.yearTime = val;
+    },
+    // 进线选中
+    EnterSelectedChange() {
+      this.powerCurrentSelected = this.powerOptionData[0].label;
+    },
+    // 查看区域选中
+    CurrentSelectedChange() {
+      // 点击区域进线清空
+      this.powerEnterSelected = "";
     }
   }
 };
@@ -230,69 +237,24 @@ export default {
 @import "../../assets/css/powerManage";
 </style>
 <style lang="less">
-// 文本颜色
-@text-color: #929ba6;
-// 饼图背景色
-@pie-color: #24292f;
-// 背景色
-@background-color: #212429;
-// 图表样式
-.powerManage-table {
-  padding-left: 10px;
-  .el-table:before {
-    height: 0px;
-  }
-  #powerManage-el-table {
-    // 表头
-    .el-table__header th {
-      padding: 0;
-      height: 45px;
-      color: #2a84f6;
-      border-bottom: none;
-      background-color: #252a31;
+.powerManage {
+  .powerManage-header {
+    // 向右偏移
+    .powerLeft {
+      margin-left: 1%;
     }
-    // 行列
-    .el-table__body {
-      tr,
-      td {
-        color: #ddd;
-        padding: 0;
-        height: 20px;
-        border-bottom: none;
-        border-top: 2px solid #212429;
-      }
+    // 日月年选择
+    .powerDateSelected {
+      border: 1px solid #535960;
+      width: 5%;
     }
-
-    // 隔行变色
-    tr:nth-child(even) {
-      background-color: #252a31;
+    // 日期选择
+    .el-input--prefix .el-input__inner {
+      background: #25292e;
+      border: 1px solid #535960;
+      color: #ddd;
+      height: 31px;
     }
-    tr:nth-child(odd) {
-      background-color: #2c323b;
-    }
-  }
-}
-// !--能耗同比 条形图和折线图
-.powerManage-bar-line {
-  .el-col {
-    border-radius: 0;
-  }
-  // 二层条形图
-  .bg-purple {
-    height: 480px;
-    background-color: @pie-color;
-  }
-  // 二层折线图
-  .bg-purple-light {
-    height: 480px;
-    margin-left: 10px;
-    background-color: @pie-color;
-  }
-  // 第二层共同样式
-  .grid-content {
-    border-radius: 0px;
-    min-height: 36px;
-    margin-top: 10px;
   }
 }
 </style>
