@@ -160,9 +160,9 @@ export default {
         {
           title: "报表打印",
           id: 9,
-          url: "/roport",
-          menuname: "roport",
-          className: "el-icon-roport"
+          url: "/report",
+          menuname: "report",
+          className: "el-icon-report"
         },
         {
           title: "报警管理",
@@ -211,7 +211,7 @@ export default {
           id: 16,
           url: "/reportConfig",
           menuname: "reportConfig",
-          className: "el-icon-roport"
+          className: "el-icon-report"
         }
       ],
       curRoutePath: "/poverMoniter" //当前路由路径
@@ -262,7 +262,7 @@ export default {
   background-image: url("../../static/images/menu/icon_power_manage.png");
   background-repeat: no-repeat;
 }
-.el-icon-roport {
+.el-icon-report {
   background-image: url("../../static/images/menu/icon_reporting.png");
   background-repeat: no-repeat;
 }
@@ -326,7 +326,7 @@ export default {
 .el-menu-item.is-active .el-icon-power-analyze {
   background-image: url("../../static/images/menu/icon_power_manage_white.png");
 }
-.el-menu-item.is-active .el-icon-roport {
+.el-menu-item.is-active .el-icon-report {
   background-image: url("../../static/images/menu/icon_reporting_white.png");
 }
 .el-menu-item.is-active .el-icon-alerm-manage {

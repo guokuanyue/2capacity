@@ -10,13 +10,25 @@
           <label
             style="background:url('./static/images/login/login-user.png') no-repeat 10px 10px;"
           ></label>
-          <input class="login-input" placeholder="用户名" v-model="formData.username">
+          <input
+            @keyup.13="handleLogin"
+            type="text"
+            class="login-input"
+            placeholder="用户名"
+            v-model="formData.username"
+          >
         </div>
         <div class="login-input-div left">
           <label style="background:url('./static/images/login/login-pwd.png') no-repeat 10px 10px;"></label>
-          <input type="password" class="login-input" placeholder="密码" v-model="formData.password">
+          <input
+            @keyup.13="handleLogin"
+            type="password"
+            class="login-input"
+            placeholder="密码"
+            v-model="formData.password"
+          >
         </div>
-        <input @click="handleLogin" type="primary" value="登 录" class="login-btn">
+        <input type="button" @click="handleLogin" value="登 录" class="login-btn">
       </form>
     </div>
     <div id="jq_ez_bg">
@@ -41,13 +53,18 @@ export default {
   },
   methods: {
     handleLogin() {
-      // sessionStorage.setItem("user", JSON.stringify(this.formData));
-      // this.$router.push("/home");
       if (this.formData.username !== "admin") {
-        alert("请输入正确用户名");
+        this.$alert("请输入正确用户名", "用户名不存在", {
+          confirmButtonText: "确定"
+        });
+        return false;
       } else if (this.formData.password !== "123456") {
-        alert("请输入正确密码");
+        this.$alert("请输入正确密码", "你输入的密码不正确", {
+          confirmButtonText: "确定"
+        });
+        return false;
       } else {
+        // sessionStorage.setItem("user", JSON.stringify(this.formData));
         this.$router.push("/home");
       }
     }
@@ -55,7 +72,7 @@ export default {
 };
 </script>
 
-<style>
+<style scope>
 * {
   margin: 0;
   padding: 0;

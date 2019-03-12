@@ -5,7 +5,7 @@
 .powerManage .powerManage-header {
   width: 99%;
   min-width: 880px;
-  background-color: orange;
+  background-color: #212429;
   height: 60px;
   line-height: 60px;
   color: #929ba6;
@@ -23,13 +23,43 @@
   background-color: #212429;
 }
 .powerManage .powerManage-wrap .powerManage-topCon {
-  background-color: #24292F;
+  background-color: #212429;
   margin-bottom: 10px;
+  height: 400px;
+  display: flex;
 }
 .powerManage .powerManage-wrap .powerManage-topCon .topCon-pie {
   width: 56.5%;
+  min-width: 600px;
+  background-color: #24292F;
   margin-right: 0.5%;
 }
 .powerManage .powerManage-wrap .powerManage-topCon .topCon-table {
-  width: 42%;
+  width: 43%;
+  min-width: 400px;
+}
+.powerManage .powerManage-wrap .powerManage-banner {
+  background-color: #212429;
+  margin-bottom: 10px;
+  height: 400px;
+  display: flex;
+}
+.powerManage .powerManage-wrap .powerManage-banner .banner-bar {
+  background-color: #24292F;
+  width: 49.75%;
+  margin-right: 0.5%;
+}
+.powerManage .powerManage-wrap .powerManage-banner .banner-line {
+  background-color: #24292F;
+  width: 49.75%;
+}
+.powerManage .powerManage-wrap .powerManage-footer {
+  background-color: #212429;
+  margin-bottom: 10px;
+  height: 400px;
+  display: flex;
+}
+.powerManage .powerManage-wrap .powerManage-footer .footer-bar {
+  width: 100%;
+  background-color: #24292F;
 }

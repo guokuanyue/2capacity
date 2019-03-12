@@ -6,7 +6,6 @@ import router from './router'
 import VCharts from 'v-charts'
 import 'element-ui/lib/theme-chalk/index.css'
 import '@/assets/css/index.css'
-import '@/assets/css/chart.css'
 import '@/assets/css/environment.css'
 import '@/assets/css/fireMoniter.css'
 // 导入echarts
@@ -18,7 +17,7 @@ import qs from 'qs'
 Vue.prototype.$qs = qs
 Vue.prototype.$http = axios
 axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded; charset=UTF-8'
-axios.defaults.baseURL = 'http://192.168.0.217:8001/netgate-server/'
+axios.defaults.baseURL = 'http://192.168.0.209:8001/netgate-server/'
 
 
 import ElementUI from 'element-ui'

@@ -1,0 +1,276 @@
+.general-top {
+  height: 40px;
+  color: #ddd;
+  line-height: 40px;
+  padding-left: 20px;
+  background-color: #303740;
+}
+
+// 负荷概况
+.chart {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #212429;
+
+  // 上半部分
+  .chart-up {
+    display: flex;
+    min-width: 700px;
+
+    // 项目概况
+    .chart-general {
+      background-color: #25292E;
+      width: 33%;
+
+      // 概况版心
+      .general-banner {
+        .general-banner-title {
+          padding-left: 20px;
+          height: 50px;
+          line-height: 50px;
+        }
+
+        // 主题版心
+        .banner-wrap {
+
+          // 上半部分
+          .banner-wrap-box-con {
+            margin: 5% 0;
+            display: flex;
+
+            // 排布的盒子
+            .banner-wrap-box {
+              margin: 0 15%;
+              text-align: center;
+
+              p {
+                height: 30px;
+                line-height: 30px;
+              }
+
+              img {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    // 运行状态
+    .chart-progress {
+      background-color: #25292E;
+      width: 33%;
+      margin: 0 0.5%;
+
+      // 运行版心
+      .progress-banner {
+        padding-top: 8%;
+
+        // 第一梯队
+        .banner-first {
+          display: flex;
+
+          // 圆
+          .circle {
+            border-radius: 50%;
+            margin-left: 15px;
+            width: 120px;
+            height: 120px;
+            line-height: 120px;
+            text-align: center;
+
+            &:first-child {
+              background-color: #38A3CB;
+            }
+
+            &:nth-child(2) {
+              background-color: #3A76CB;
+            }
+
+            &:nth-child(3) {
+              background-color: #E3863D;
+            }
+
+            &:nth-child(4) {
+              background-color: #D43879;
+            }
+
+            &>p {
+              font-size: 20px;
+            }
+          }
+        }
+
+        // 第二梯队
+        .banner-second {
+          padding-top: 8%;
+          display: flex;
+
+          .second-p {
+
+            width: 25%;
+            margin-left: 4%;
+
+            &:nth-child(1) {
+              padding-left: 5%;
+              background: url("../../../static/images/chart/icon-05.png") no-repeat
+            }
+
+            &:nth-child(2) {
+              padding-left: 5%;
+              background: url("../../../static/images/chart/icon-06.png") no-repeat
+            }
+
+            &:nth-child(3) {
+              padding-left: 5%;
+              background: url("../../../static/images/chart/icon-07.png") no-repeat
+            }
+
+            &:nth-child(4) {
+              padding-left: 5%;
+              background: url("../../../static/images/chart/icon-08.png") no-repeat
+            }
+          }
+        }
+
+        // 第三梯度
+        .banner-third {
+          padding-top: 8%;
+          padding-left: 6%;
+          display: flex;
+
+          .third-img {
+            width: 20%;
+          }
+        }
+
+        // 第四梯度
+        .banner-forth {
+          padding-top: 8%;
+          padding-left: 6%;
+          display: flex;
+
+          .forth-img {
+            width: 20%;
+          }
+        }
+      }
+    }
+
+    // 事件记录
+    .chart-event {
+      background-color: #25292E;
+      width: 33%;
+
+      // 日历表
+      .event-date {}
+
+      // 三部分
+      .event-three {
+        padding-left: 8%;
+        display: flex;
+
+        // 盒子部分
+        .event-three-box {
+          margin: 0 8%;
+          text-align: center;
+
+          p {
+            height: 30px;
+            line-height: 30px;
+          }
+
+          img {
+            width: 100%;
+          }
+
+        }
+      }
+    }
+  }
+
+  // 下半部分
+  .chart-down {
+    display: flex;
+    min-width: 700px;
+
+    // 能耗曲线
+    .chart-line {
+      width: 66.5%;
+      margin-right: 0.5%;
+
+    }
+
+    // 用电概况
+    .chart-power {
+      width: 33%;
+
+      .power-view {
+
+        // 第一梯度
+        .view-first {
+          display: flex;
+
+          .view-first-con1 {
+            padding-top: 10%;
+            height: 60px;
+            text-align: center;
+            width: 50%;
+            background-color: #25292E;
+          }
+
+          .view-first-con2 {
+            padding-top: 10%;
+            height: 60px;
+            text-align: center;
+            width: 50%;
+            background-color: #212429;
+          }
+        }
+
+        // 第二梯度
+        .view-second {
+          display: flex;
+
+          .view-second-con1 {
+            padding-top: 10%;
+            height: 60px;
+            text-align: center;
+            width: 50%;
+            background-color: #212429;
+          }
+
+          .view-second-con2 {
+            padding-top: 10%;
+            height: 60px;
+            text-align: center;
+            width: 50%;
+            background-color: #25292E;
+          }
+        }
+
+        // 第三梯度
+        .view-third {
+          display: flex;
+
+          .view-third-con1 {
+            padding-top: 10%;
+            height: 60px;
+            text-align: center;
+            width: 50%;
+            background-color: #25292E;
+          }
+
+          .view-third-con2 {
+            padding-top: 10%;
+            height: 60px;
+            text-align: center;
+            width: 50%;
+            background-color: #212429;
+          }
+        }
+      }
+    }
+  }
+}

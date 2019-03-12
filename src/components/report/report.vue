@@ -36,6 +36,14 @@
           <!-- 三个按钮 -->
           <div class="report-con-btn">
             <button class="report-btn" @click="dayReportView">查看</button>
+            <!-- 查看弹窗 -->
+            <el-dialog :title="dialogTitle" :visible.sync="dialogTableVisible1">
+              <el-table border :data="dialogDayDate">
+                <el-table-column align="center" property="tnm" label="名称"></el-table-column>
+                <el-table-column align="center" property="tds" label="描述"></el-table-column>
+                <el-table-column align="center" property="eds" label="设备描述"></el-table-column>
+              </el-table>
+            </el-dialog>
             <button class="report-btn" @click="dayReportDownload">下载</button>
             <button class="report-btn" @click="dayReportPrint">在线打印</button>
           </div>
@@ -72,6 +80,14 @@
           <!-- 三个按钮 -->
           <div class="report-con-btn">
             <button class="report-btn" @click="monthReportView">查看</button>
+            <!-- 查看弹窗 -->
+            <el-dialog :title="dialogTitle" :visible.sync="dialogTableVisible2">
+              <el-table border :data="dialogMonthDate">
+                <el-table-column align="center" property="tnm" label="名称"></el-table-column>
+                <el-table-column align="center" property="tds" label="描述"></el-table-column>
+                <el-table-column align="center" property="eds" label="设备描述"></el-table-column>
+              </el-table>
+            </el-dialog>
             <button class="report-btn" @click="monthReportDownload">下载</button>
             <button class="report-btn" @click="monthReportPrint">在线打印</button>
           </div>
@@ -108,6 +124,14 @@
           <!-- 三个按钮 -->
           <div class="report-con-btn">
             <button class="report-btn" @click="yearReportView">查看</button>
+            <!-- 查看弹窗 -->
+            <el-dialog :title="dialogTitle" :visible.sync="dialogTableVisible3">
+              <el-table border :data="dialogYearDate">
+                <el-table-column align="center" property="tnm" label="名称"></el-table-column>
+                <el-table-column align="center" property="tds" label="描述"></el-table-column>
+                <el-table-column align="center" property="eds" label="设备描述"></el-table-column>
+              </el-table>
+            </el-dialog>
             <button class="report-btn" @click="yearReportDownload">下载</button>
             <button class="report-btn" @click="yearReportPrint">在线打印</button>
           </div>
@@ -130,6 +154,14 @@
           <!-- 三个按钮 -->
           <div class="report-con-btn">
             <button class="report-btn" @click="nowReportView">查看</button>
+            <!-- 查看弹窗 -->
+            <el-dialog :title="dialogNowTitle" :visible.sync="dialogTableVisible0">
+              <el-table border :data="dialogNowDate">
+                <el-table-column align="center" property="tnm" label="名称"></el-table-column>
+                <el-table-column align="center" property="tds" label="描述"></el-table-column>
+                <el-table-column align="center" property="eds" label="设备描述"></el-table-column>
+              </el-table>
+            </el-dialog>
             <button class="report-btn" @click="nowReportDownload">下载</button>
             <button class="report-btn" @click="nowReportPrint">在线打印</button>
           </div>
@@ -175,6 +207,14 @@
           <!-- 三个按钮 -->
           <div class="report-con-btn report-con-btn2">
             <button class="report-btn" @click="dayReportView2">查看</button>
+            <!-- 查看弹窗 -->
+            <el-dialog :title="dialogNowTitle" :visible.sync="dialogTableVisible4">
+              <el-table border :data="dialogDayDate2">
+                <el-table-column align="center" property="tnm" label="名称"></el-table-column>
+                <el-table-column align="center" property="tds" label="描述"></el-table-column>
+                <el-table-column align="center" property="eds" label="设备描述"></el-table-column>
+              </el-table>
+            </el-dialog>
             <button class="report-btn" @click="dayReportDownload2">下载</button>
             <button class="report-btn" @click="dayReportPrint2">在线打印</button>
           </div>
@@ -217,6 +257,14 @@
           <!-- 三个按钮 -->
           <div class="report-con-btn">
             <button class="report-btn" @click="monthReportView2">查看</button>
+            <!-- 查看弹窗 -->
+            <el-dialog :title="dialogNowTitle" :visible.sync="dialogTableVisible5">
+              <el-table border :data="dialogMonthDate2">
+                <el-table-column align="center" property="tnm" label="名称"></el-table-column>
+                <el-table-column align="center" property="tds" label="描述"></el-table-column>
+                <el-table-column align="center" property="eds" label="设备描述"></el-table-column>
+              </el-table>
+            </el-dialog>
             <button class="report-btn" @click="monthReportDownload2">下载</button>
             <button class="report-btn" @click="monthReportPrint2">在线打印</button>
           </div>
@@ -259,6 +307,14 @@
           <!-- 三个按钮 -->
           <div class="report-con-btn">
             <button class="report-btn" @click="yearReportView2">查看</button>
+            <!-- 查看弹窗 -->
+            <el-dialog :title="dialogNowTitle" :visible.sync="dialogTableVisible6">
+              <el-table border :data="dialogYearDate2">
+                <el-table-column align="center" property="tnm" label="名称"></el-table-column>
+                <el-table-column align="center" property="tds" label="描述"></el-table-column>
+                <el-table-column align="center" property="eds" label="设备描述"></el-table-column>
+              </el-table>
+            </el-dialog>
             <button class="report-btn" @click="yearReportDownload2">下载</button>
             <button class="report-btn" @click="yearReportPrint2">在线打印</button>
           </div>
@@ -477,11 +533,33 @@ export default {
       dayTime: "",
       monthTime: "",
       yearTime: "",
+      // 今天以后的日期不可选
       pickerOptions: {
         disabledDate(time) {
           return time.getTime() > Date.now() - 8.64e6;
         }
-      }
+      },
+      // 查看弹窗
+      // 日月年累积是否查看
+      dialogTableVisible0: false,
+      dialogTableVisible1: false,
+      dialogTableVisible2: false,
+      dialogTableVisible3: false,
+      dialogTableVisible4: false,
+      dialogTableVisible5: false,
+      dialogTableVisible6: false,
+      dialogTitle: "",
+      // 累积列表弹窗列表
+      dialogNowDate: [],
+      dialogDayDate: [],
+      dialogMonthDate: [],
+      dialogYearDate: [],
+      // 累积列表弹窗标题
+      dialogNowTitle: "",
+      // 分时报表弹窗查看
+      dialogDayDate2: [],
+      dialogMonthDate2: [],
+      dialogYearDate2: []
     };
   },
   created() {
@@ -496,23 +574,31 @@ export default {
     this.categoryCurrentSelected = this.categoryData[0].label;
   },
   methods: {
-    // 实时报表查看
+    // 1.实时报表查看
     nowReportView() {
       let nowSendData = {};
       nowSendData.cycle = 0;
       nowSendData.switchhouse = this.nowCurrentSelected;
       console.log("nowSendData", nowSendData);
+
       // 发送查看请求
       this.$http
         .post("report/amountReports", nowSendData)
         .then(res => {
           console.log("res", res);
+          // 弹窗标题
+          this.dialogNowTitle = this.nowCurrentSelected + "--" + "实时报表";
+          this.dialogTableVisible0 = true;
+          this.dialogNowDate = res.data.data;
         })
         .catch(err => {
           console.log("err", err);
+          this.$alert("请求失败", "列表获取失败", {
+            confirmButtonText: "确定"
+          });
         });
     },
-    // 实时导出下载
+    // 2.实时导出下载
     nowReportDownload() {
       let nowSendData = {};
       nowSendData.cycle = 0;
@@ -523,7 +609,7 @@ export default {
         console.log("res", res);
       });
     },
-    // 实时打印
+    // 3.实时打印
     nowReportPrint() {
       this.$http
         .get("report/printCumulant")
@@ -533,6 +619,9 @@ export default {
         })
         .catch(err => {
           console.log("err", err);
+          this.$alert("请求失败", "列表获取失败", {
+            confirmButtonText: "确定"
+          });
         });
     },
     // 选中的日期
@@ -547,29 +636,49 @@ export default {
     // 1.日报表累积量查看
     dayReportView() {
       if (!this.daySelectTimeData) {
-        alert("您没有选择日期");
-        return false;
-      }
-      let daySendData = {};
-      daySendData.cycle = 1;
-      daySendData.startDate = this.daySelectTimeData[0];
-      daySendData.endDate = this.daySelectTimeData[1];
-      daySendData.switchhouse = this.dayCurrentSelected;
-      console.log("daySendData", daySendData);
-      // 发送查看请求
-      this.$http
-        .post("report/amountReports", daySendData)
-        .then(res => {
-          console.log("res", res);
-        })
-        .catch(err => {
-          console.log("err", err);
+        this.$alert("请先选择日期", "您没有选择日期", {
+          confirmButtonText: "确定"
         });
+        return false;
+      } else {
+        let daySendData = {};
+        daySendData.cycle = 1;
+        daySendData.startDate = this.daySelectTimeData[0];
+        daySendData.endDate = this.daySelectTimeData[1];
+        daySendData.switchhouse = this.dayCurrentSelected;
+        console.log("daySendData", daySendData);
+
+        // 发送查看请求
+        this.$http
+          .post("report/amountReports", daySendData)
+          .then(res => {
+            console.log("res", res);
+            this.dialogDayDate = res.data.data;
+            this.dialogTableVisible1 = true;
+            // 标题
+            this.dialogTitle =
+              this.dayCurrentSelected +
+              " " +
+              this.daySelectTimeData[0] +
+              "至" +
+              this.daySelectTimeData[1] +
+              " " +
+              "日累积量报表";
+          })
+          .catch(err => {
+            console.log("err", err);
+            this.$alert("请求失败", "列表获取失败", {
+              confirmButtonText: "确定"
+            });
+          });
+      }
     },
     // 2.日报表累积量下载
     dayReportDownload() {
       if (!this.daySelectTimeData) {
-        alert("您没有选择日期");
+        this.$alert("请先选择日期", "您没有选择日期", {
+          confirmButtonText: "确定"
+        });
         return false;
       }
       let daySendData = {};
@@ -586,12 +695,17 @@ export default {
         })
         .catch(err => {
           console.log("err", err);
+          this.$alert("请求失败", "列表获取失败", {
+            confirmButtonText: "确定"
+          });
         });
     },
     // 3.日累积量报表打印
     dayReportPrint() {
       if (!this.daySelectTimeData) {
-        alert("您没有选择日期");
+        this.$alert("请先选择日期", "您没有选择日期", {
+          confirmButtonText: "确定"
+        });
         return false;
       }
       this.$http
@@ -604,54 +718,83 @@ export default {
         })
         .catch(err => {
           console.log("err", err);
+          this.$alert("请求失败", "列表获取失败", {
+            confirmButtonText: "确定"
+          });
         });
     },
 
     // 1.月报表累积量查看
     monthReportView() {
       if (!this.monthSelectTimeData) {
-        alert("您没有选择日期");
-        return false;
-      }
-      let monthSendData = {};
-      monthSendData.cycle = 2;
-      monthSendData.startDate = this.monthSelectTimeData[0] + "-01";
-      // 获取选中日期
-      let sdate = new Date(this.monthSelectTimeData[1]);
-      // 月份加一以便获得减一天
-      let sdatemth = sdate.setMonth(sdate.getMonth() + 1);
-      // 加一的月份转换时间格式
-      let sdateday = new Date(sdatemth);
-      // 日期减一天 以便获得上个月的月底日期
-      let sdatelast = sdateday.setDate(sdateday.getDate() - 1);
-      // 获取月底日期
-      let qq = new Date(sdatelast);
-
-      // 月份从0开始需要加一
-      let qqlastMth = qq.getMonth() + 1;
-      console.log("qq.getMonth()", qq.getMonth() + 1);
-      console.log("qq.getDate()", qq.getDate());
-      // 拼接成发送数据所需格式
-      let sendEndDate = qq.getFullYear() + "-" + qqlastMth + "-" + qq.getDate();
-      console.log("sendEndDate", sendEndDate);
-
-      monthSendData.endDate = sendEndDate;
-      monthSendData.switchhouse = this.monthCurrentSelected;
-      console.log("monthSendData", monthSendData);
-      // 发送查看请求
-      this.$http
-        .post("report/amountReports", monthSendData)
-        .then(res => {
-          console.log("res", res);
-        })
-        .catch(err => {
-          console.log("err", err);
+        this.$alert("请先选择日期", "您没有选择日期", {
+          confirmButtonText: "确定"
         });
+        return false;
+      } else {
+        let monthSendData = {};
+        monthSendData.cycle = 2;
+        monthSendData.startDate = this.monthSelectTimeData[0] + "-01";
+        // 获取选中日期
+        let sdate = new Date(this.monthSelectTimeData[1]);
+        // 月份加一以便获得减一天
+        let sdatemth = sdate.setMonth(sdate.getMonth() + 1);
+        // 加一的月份转换时间格式
+        let sdateday = new Date(sdatemth);
+        // 日期减一天 以便获得上个月的月底日期
+        let sdatelast = sdateday.setDate(sdateday.getDate() - 1);
+        // 获取月底日期
+        let qq = new Date(sdatelast);
+
+        // 月份从0开始需要加一
+        let qqlastMth = qq.getMonth() + 1;
+        console.log("qq.getMonth()", qq.getMonth() + 1);
+        console.log("qq.getDate()", qq.getDate());
+        // 拼接成发送数据所需格式
+        let sendEndDate =
+          qq.getFullYear() + "-" + qqlastMth + "-" + qq.getDate();
+        console.log("sendEndDate", sendEndDate);
+
+        monthSendData.endDate = sendEndDate;
+        monthSendData.switchhouse = this.monthCurrentSelected;
+        console.log("monthSendData", monthSendData);
+
+        // 发送查看请求
+        this.$http
+          .post("report/amountReports", monthSendData)
+          .then(res => {
+            console.log("res", res);
+            // 月累积量标题
+            qqlastMth > 9
+              ? (qqlastMth = qqlastMth)
+              : (qqlastMth = "0" + qqlastMth);
+            this.dialogTitle =
+              this.monthCurrentSelected +
+              " " +
+              this.monthSelectTimeData[0] +
+              "至" +
+              qq.getFullYear() +
+              "-" +
+              qqlastMth +
+              " " +
+              "月累积量报表";
+            this.dialogMonthDate = res.data.data;
+            this.dialogTableVisible2 = true;
+          })
+          .catch(err => {
+            console.log("err", err);
+            this.$alert("请求失败", "列表获取失败", {
+              confirmButtonText: "确定"
+            });
+          });
+      }
     },
     // 2.月报表累积量下载
     monthReportDownload() {
       if (!this.monthSelectTimeData) {
-        alert("您没有选择日期");
+        this.$alert("您没有选择日期", "您没有选择日期", {
+          confirmButtonText: "确定"
+        });
         return false;
       }
       let monthSendData = {};
@@ -687,12 +830,17 @@ export default {
         })
         .catch(err => {
           console.log("err", err);
+          this.$alert("请求失败", "列表获取失败", {
+            confirmButtonText: "确定"
+          });
         });
     },
     // 3.月累积量报表打印
     monthReportPrint() {
       if (!this.monthSelectTimeData) {
-        alert("您没有选择日期");
+        this.$alert("您没有选择日期", "您没有选择日期", {
+          confirmButtonText: "确定"
+        });
         return false;
       }
       this.$http
@@ -705,12 +853,17 @@ export default {
         })
         .catch(err => {
           console.log("err", err);
+          this.$alert("请求失败", "列表获取失败", {
+            confirmButtonText: "确定"
+          });
         });
     },
     // 1.年报表累积量查看
     yearReportView() {
       if (!this.yearSelectTimeData) {
-        alert("您没有选择日期");
+        this.$alert("您没有选择日期", "您没有选择日期", {
+          confirmButtonText: "确定"
+        });
         return false;
       }
       let yearSendData = {};
@@ -719,20 +872,37 @@ export default {
       yearSendData.endDate = this.yearSelectTimeData[1] + "-12-31";
       yearSendData.switchhouse = this.yearCurrentSelected;
       console.log("yearSendData", yearSendData);
+
       // 发送查看请求
       this.$http
         .post("report/amountReports", yearSendData)
         .then(res => {
           console.log("res", res);
+          // 年累积量标题
+          this.dialogTitle =
+            this.yearCurrentSelected +
+            " " +
+            this.yearSelectTimeData[0] +
+            "至" +
+            this.yearSelectTimeData[1] +
+            " " +
+            "年累积量报表";
+          this.dialogYearDate = res.data.data;
+          this.dialogTableVisible3 = true;
         })
         .catch(err => {
           console.log("err", err);
+          this.$alert("请求失败", "列表获取失败", {
+            confirmButtonText: "确定"
+          });
         });
     },
     // 2.年报表累积量下载
     yearReportDownload() {
       if (!this.yearSelectTimeData) {
-        alert("您没有选择日期");
+        this.$alert("您没有选择日期", "您没有选择日期", {
+          confirmButtonText: "确定"
+        });
         return false;
       }
       let yearSendData = {};
@@ -749,12 +919,17 @@ export default {
         })
         .catch(err => {
           console.log("err", err);
+          this.$alert("请求失败", "列表获取失败", {
+            confirmButtonText: "确定"
+          });
         });
     },
     // 3.年累积量报表打印
     yearReportPrint() {
       if (!this.yearSelectTimeData) {
-        alert("您没有选择日期");
+        this.$alert("您没有选择日期", "您没有选择日期", {
+          confirmButtonText: "确定"
+        });
         return false;
       }
       this.$http
@@ -767,6 +942,9 @@ export default {
         })
         .catch(err => {
           console.log("err", err);
+          this.$alert("请求失败", "列表获取失败", {
+            confirmButtonText: "确定"
+          });
         });
     },
     // 分时报表
@@ -780,28 +958,41 @@ export default {
     //  1.日报表查看
     dayReportView2() {
       if (!this.dayTime) {
-        alert("您没有选择日期");
-        return false;
-      }
-      let daySendData2 = {};
-      daySendData2.cycle = 1;
-      daySendData2.date = this.dayTime;
-      daySendData2.switchhouse = this.dayCurrentSelected2;
-      console.log("daySendData2", daySendData2);
-      // 发送查看请求
-      this.$http
-        .post("report/yearlyReport", daySendData2)
-        .then(res => {
-          console.log("res", res);
-        })
-        .catch(err => {
-          console.log("err", err);
+        this.$alert("您没有选择日期", "您没有选择日期", {
+          confirmButtonText: "确定"
         });
+        return false;
+      } else {
+        let daySendData2 = {};
+        daySendData2.cycle = 1;
+        daySendData2.date = this.dayTime;
+        daySendData2.switchhouse = this.dayCurrentSelected2;
+        console.log("daySendData2", daySendData2);
+        // 发送查看请求
+        this.$http
+          .post("report/yearlyReport", daySendData2)
+          .then(res => {
+            console.log("res", res);
+            // 弹窗标题
+            this.dialogNowTitle =
+              this.dayCurrentSelected2 + " " + this.dayTime + "报表";
+            this.dialogTableVisible4 = true;
+            this.dialogDayDate2 = res.data.data;
+          })
+          .catch(err => {
+            console.log("err", err);
+            this.$alert("请求失败", "列表获取失败", {
+              confirmButtonText: "确定"
+            });
+          });
+      }
     },
     // 2.日报表下载
     dayReportDownload2() {
       if (!this.dayTime) {
-        alert("您没有选择日期");
+        this.$alert("您没有选择日期", "您没有选择日期", {
+          confirmButtonText: "确定"
+        });
         return false;
       }
       let daySendData2 = {};
@@ -817,12 +1008,17 @@ export default {
         })
         .catch(err => {
           console.log("err", err);
+          this.$alert("请求失败", "列表获取失败", {
+            confirmButtonText: "确定"
+          });
         });
     },
     // 3.日报表打印
     dayReportPrint2() {
       if (!this.dayTime) {
-        alert("您没有选择日期");
+        this.$alert("您没有选择日期", "您没有选择日期", {
+          confirmButtonText: "确定"
+        });
         return false;
       }
       this.$http
@@ -835,33 +1031,49 @@ export default {
         })
         .catch(err => {
           console.log("err", err);
+          this.$alert("请求失败", "列表获取失败", {
+            confirmButtonText: "确定"
+          });
         });
     },
     //  1.月报表查看
     monthReportView2() {
       if (!this.monthTime) {
-        alert("您没有选择日期");
-        return false;
-      }
-      let monthSendData2 = {};
-      monthSendData2.cycle = 2;
-      monthSendData2.date = this.monthTime;
-      monthSendData2.switchhouse = this.monthCurrentSelected2;
-      console.log("monthSendData2", monthSendData2);
-      // 发送查看请求
-      this.$http
-        .post("report/yearlyReport", monthSendData2)
-        .then(res => {
-          console.log("res", res);
-        })
-        .catch(err => {
-          console.log("err", err);
+        this.$alert("您没有选择日期", "您没有选择日期", {
+          confirmButtonText: "确定"
         });
+        return false;
+      } else {
+        let monthSendData2 = {};
+        monthSendData2.cycle = 2;
+        monthSendData2.date = this.monthTime;
+        monthSendData2.switchhouse = this.monthCurrentSelected2;
+        console.log("monthSendData2", monthSendData2);
+        // 发送查看请求
+        this.$http
+          .post("report/yearlyReport", monthSendData2)
+          .then(res => {
+            console.log("res", res);
+            // 弹窗标题
+            this.dialogNowTitle =
+              this.monthCurrentSelected2 + " " + this.monthTime + "报表";
+            this.dialogTableVisible5 = true;
+            this.dialogMonthDate2 = res.data.data;
+          })
+          .catch(err => {
+            console.log("err", err);
+            this.$alert("请求失败", "列表获取失败", {
+              confirmButtonText: "确定"
+            });
+          });
+      }
     },
     // 2.月报表下载
     monthReportDownload2() {
       if (!this.monthTime) {
-        alert("您没有选择日期");
+        this.$alert("您没有选择日期", "您没有选择日期", {
+          confirmButtonText: "确定"
+        });
         return false;
       }
       let monthSendData2 = {};
@@ -877,12 +1089,17 @@ export default {
         })
         .catch(err => {
           console.log("err", err);
+          this.$alert("请求失败", "列表获取失败", {
+            confirmButtonText: "确定"
+          });
         });
     },
     // 3.月报表打印
     monthReportPrint2() {
       if (!this.monthTime) {
-        alert("您没有选择日期");
+        this.$alert("您没有选择日期", "您没有选择日期", {
+          confirmButtonText: "确定"
+        });
         return false;
       }
       this.$http
@@ -895,33 +1112,49 @@ export default {
         })
         .catch(err => {
           console.log("err", err);
+          this.$alert("请求失败", "列表获取失败", {
+            confirmButtonText: "确定"
+          });
         });
     },
     // 1.年报表查看
     yearReportView2() {
       if (!this.yearTime) {
-        alert("您没有选择日期");
-        return false;
-      }
-      let yearSendData2 = {};
-      yearSendData2.cycle = 3;
-      yearSendData2.date = this.yearTime;
-      yearSendData2.switchhouse = this.yearCurrentSelected2;
-      console.log("yearSendData2", yearSendData2);
-      // 发送查看请求
-      this.$http
-        .post("report/yearlyReport", yearSendData2)
-        .then(res => {
-          console.log("res", res);
-        })
-        .catch(err => {
-          console.log("err", err);
+        this.$alert("您没有选择日期", "您没有选择日期", {
+          confirmButtonText: "确定"
         });
+        return false;
+      } else {
+        let yearSendData2 = {};
+        yearSendData2.cycle = 3;
+        yearSendData2.date = this.yearTime;
+        yearSendData2.switchhouse = this.yearCurrentSelected2;
+        console.log("yearSendData2", yearSendData2);
+        // 发送查看请求
+        this.$http
+          .post("report/yearlyReport", yearSendData2)
+          .then(res => {
+            console.log("res", res);
+            // 弹窗标题
+            this.dialogNowTitle =
+              this.yearCurrentSelected2 + " " + this.yearTime + "报表";
+            this.dialogTableVisible6 = true;
+            this.dialogYearDate2 = res.data.data;
+          })
+          .catch(err => {
+            console.log("err", err);
+            this.$alert("请求失败", "列表获取失败", {
+              confirmButtonText: "确定"
+            });
+          });
+      }
     },
     // 2.年报表下载
     yearReportDownload2() {
       if (!this.yearTime) {
-        alert("您没有选择日期");
+        this.$alert("您没有选择日期", "您没有选择日期", {
+          confirmButtonText: "确定"
+        });
         return false;
       }
       let yearSendData2 = {};
@@ -937,12 +1170,17 @@ export default {
         })
         .catch(err => {
           console.log("err", err);
+          this.$alert("请求失败", "列表获取失败", {
+            confirmButtonText: "确定"
+          });
         });
     },
     // 3.年报表打印
     yearReportPrint2() {
       if (!this.yearTime) {
-        alert("您没有选择日期");
+        this.$alert("您没有选择日期", "您没有选择日期", {
+          confirmButtonText: "确定"
+        });
         return false;
       }
       this.$http
@@ -955,6 +1193,9 @@ export default {
         })
         .catch(err => {
           console.log("err", err);
+          this.$alert("请求失败", "列表获取失败", {
+            confirmButtonText: "确定"
+          });
         });
     }
   }
@@ -978,17 +1219,35 @@ export default {
   background: #25292e;
   border: 1px solid #535960;
   color: #adb6c2;
-  width: 258px;
 }
 /* 层联输入框 */
 .report .el-cascader .el-input__inner {
   background: #25292e;
   border: 1px solid #535960;
   color: #adb6c2;
-  width: 258px;
 }
 /* 层联选中 */
 .report .el-cascader .el-cascader__label {
   color: #adb6c2;
+}
+
+/* 弹窗样式 */
+.report .el-dialog__headerbtn .el-dialog__close {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  color: #fff;
+  background-color: #0073ea;
+  position: absolute;
+  left: -5px;
+  top: -15px;
+}
+.report .el-dialog__header {
+  background-color: #dfdfdf;
+  padding: 10px;
+  position: relative;
+}
+.report .el-table th {
+  color: #2b8adc;
 }
 </style>

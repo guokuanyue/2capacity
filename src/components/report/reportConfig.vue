@@ -107,10 +107,11 @@ export default {
 
       checkedRow: [], //选中行
       checkedSelect: [], //选中下拉框
-      currrentRoleId: "Root"
+      currrentRoleId: "Root" //用户id
     };
   },
   created() {
+    // 列表数据
     this.getTableList();
   },
   methods: {
@@ -119,26 +120,30 @@ export default {
       this.reportData.splice(0); //this.reportData.length = 0
       let obj = { eid: this.currrentRoleId }; //动态设置请求id
       //  判断接口案例
-      //  this.$http.get("dffdsf").then(res => {
-      //     let url = "";
-      //     if (res) {
-      //       url = "set/equipmentListByEid";
-      //     } else {
-      //       url = "dsadasd";
-      //     }
-      //     this.$http
-      //       // 获取列表
-      //       .get(url, { params: obj })
-      //       .then(res => {
-      //         if (res.data.code == 0) {
-      //           //成功渲染
-      //           this.reportData = JSON.parse(JSON.parse(res.data.data[0]).data);
-      //           console.log("this.reportData", this.reportData);
-      //         } else {
-      //           alert("获取列表失败");
-      //         }
-      //       });
-      //   });
+      this.$http.get("set/getUrl").then(res => {
+        console.log("res1", res);
+
+        let url = "";
+        if (res.data.data == 0) {
+          url = "set/equipmentListByEid";
+        } else if (res.data.data == 1) {
+          console.log("res.data.data", res.data.data);
+
+          url = "set/equipmentList";
+        }
+        this.$http
+          // 获取列表
+          // .get(url, { params: obj })
+          .get(url)
+          .then(res => {
+            if (res.data.code == 0) {
+              console.log("res2", res);
+              this.reportData = res.data.data;
+            } else {
+              alert("获取列表失败");
+            }
+          });
+      });
     },
 
     // 级联选择器change事件
@@ -152,7 +157,10 @@ export default {
     handleEdit(h) {
       //判断是否选择了数据
       if (this.checkedRow.length == 0) {
-        alert("你没有选择数据");
+        // alert("你没有选择数据");
+        this.$alert("请先勾选数据", {
+          confirmButtonText: "确定"
+        });
         return false;
       }
       let sendData = []; //要发送的数据

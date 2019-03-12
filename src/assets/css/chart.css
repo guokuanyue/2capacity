@@ -1,172 +1,195 @@
-/* 通用的大盒子结构 */
-.general-box {
-  width: 32.34%;
-  margin-left: 0.631%;
-  margin-bottom: 0.65%;
-  min-width: 238px;
-
-}
-
-.general-wrap {
-  position: relative;
-  min-width: 238px;
-
-}
-
-.general {
-  min-width: 238px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-
-}
-
-.general .general-top {
-  padding-left: 5.65%;
-  width: 94.35%;
+.general-top {
+  height: 40px;
+  color: #ddd;
+  line-height: 40px;
+  padding-left: 20px;
   background-color: #303740;
-  color: #fff;
-  height: 40px;
-  line-height: 40px;
 }
-
-/* 通用样式结束 */
-/* 项目概况部分的样式开始 */
-.item-choice {
-  padding-top: 3.5%;
-  background-color: #24292F;
+.chart {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #212429;
 }
-
-.item-choice span {
-  width: 56px;
-  text-align: right;
-  height: 25px;
-  line-height: 25px;
-  color: #adb6c2;
-  margin-bottom: 2.5%;
+.chart .chart-up {
+  display: flex;
+  min-width: 700px;
 }
-
-.item-choice .name-box {
-  color: #fff;
-  height: 25px;
-  line-height: 25px;
-  width: 250px;
+.chart .chart-up .chart-general {
+  background-color: #25292E;
+  width: 33%;
 }
-
-/* 动画旋转 */
-.turn-wrap {
-  position: relative;
-  padding-top: 3%;
-  background-color: #24292F;
-  padding-bottom: 12%;
+.chart .chart-up .chart-general .general-banner .general-banner-title {
+  padding-left: 20px;
+  height: 50px;
+  line-height: 50px;
 }
-
-.turn-wrap ul li {
+.chart .chart-up .chart-general .general-banner .banner-wrap .banner-wrap-box-con {
+  margin: 5% 0;
+  display: flex;
+}
+.chart .chart-up .chart-general .general-banner .banner-wrap .banner-wrap-box-con .banner-wrap-box {
+  margin: 0 15%;
   text-align: center;
-  float: left;
-  width: 31%;
-  margin-left: 13%;
-  background-color: #24292F;
 }
-
-/* 运行状态 */
-.run-progress {
-  background-color: #24292F;
+.chart .chart-up .chart-general .general-banner .banner-wrap .banner-wrap-box-con .banner-wrap-box p {
+  height: 30px;
+  line-height: 30px;
 }
-
-.run-progress img {
+.chart .chart-up .chart-general .general-banner .banner-wrap .banner-wrap-box-con .banner-wrap-box img {
   width: 100%;
 }
-
-/* 事件记录 */
-.event-log {
-  margin-top: -2.2%;
-  text-align: center;
+.chart .chart-up .chart-progress {
   background-color: #25292E;
+  width: 33%;
+  margin: 0 0.5%;
 }
-
-#event-log-three-box {
-  padding-bottom: 2%;
+.chart .chart-up .chart-progress .progress-banner {
+  padding-top: 8%;
+}
+.chart .chart-up .chart-progress .progress-banner .banner-first {
+  display: flex;
+}
+.chart .chart-up .chart-progress .progress-banner .banner-first .circle {
+  border-radius: 50%;
+  margin-left: 15px;
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
   text-align: center;
 }
-
-#event-log-three-box>ul>li {
-  float: left;
-  margin-left: 10%;
+.chart .chart-up .chart-progress .progress-banner .banner-first .circle:first-child {
+  background-color: #38A3CB;
+}
+.chart .chart-up .chart-progress .progress-banner .banner-first .circle:nth-child(2) {
+  background-color: #3A76CB;
+}
+.chart .chart-up .chart-progress .progress-banner .banner-first .circle:nth-child(3) {
+  background-color: #E3863D;
+}
+.chart .chart-up .chart-progress .progress-banner .banner-first .circle:nth-child(4) {
+  background-color: #D43879;
+}
+.chart .chart-up .chart-progress .progress-banner .banner-first .circle > p {
+  font-size: 20px;
+}
+.chart .chart-up .chart-progress .progress-banner .banner-second {
+  padding-top: 8%;
+  display: flex;
+}
+.chart .chart-up .chart-progress .progress-banner .banner-second .second-p {
+  width: 25%;
+  margin-left: 4%;
+}
+.chart .chart-up .chart-progress .progress-banner .banner-second .second-p:nth-child(1) {
+  padding-left: 5%;
+  background: url("../../../static/images/chart/icon-05.png") no-repeat;
+}
+.chart .chart-up .chart-progress .progress-banner .banner-second .second-p:nth-child(2) {
+  padding-left: 5%;
+  background: url("../../../static/images/chart/icon-06.png") no-repeat;
+}
+.chart .chart-up .chart-progress .progress-banner .banner-second .second-p:nth-child(3) {
+  padding-left: 5%;
+  background: url("../../../static/images/chart/icon-07.png") no-repeat;
+}
+.chart .chart-up .chart-progress .progress-banner .banner-second .second-p:nth-child(4) {
+  padding-left: 5%;
+  background: url("../../../static/images/chart/icon-08.png") no-repeat;
+}
+.chart .chart-up .chart-progress .progress-banner .banner-third {
+  padding-top: 8%;
+  padding-left: 6%;
+  display: flex;
+}
+.chart .chart-up .chart-progress .progress-banner .banner-third .third-img {
   width: 20%;
-
 }
-
-/* 能耗曲线 */
-.power-line {
-  margin-top: 28%;
-  width: 65.3%;
+.chart .chart-up .chart-progress .progress-banner .banner-forth {
+  padding-top: 8%;
+  padding-left: 6%;
+  display: flex;
 }
-
-.pl565 {
-  width: 97.02% !important;
-  padding-left: 2.98% !important;
+.chart .chart-up .chart-progress .progress-banner .banner-forth .forth-img {
+  width: 20%;
 }
-
-
-.power-line .monitor-top {
-  height: 40px;
-  line-height: 40px;
-  width: 90%;
-  margin: 0 auto;
-}
-
-.power-line-canvas {
-  padding: 0 40px;
-  background-color: #24292F;
-}
-
-
-
-/* 用电概况 */
-.user-item {
-  min-width: 479px;
-  margin-left: 66.6%;
-}
-
-.run-progress {
-  height: 438px;
-  background-color: #1F2327;
-}
-
-.run-progress>ul>li {
-  float: left;
+.chart .chart-up .chart-event {
   background-color: #25292E;
-  height: 106px;
-  width: 50%;
+  width: 33%;
+}
+.chart .chart-up .chart-event .event-three {
+  padding-left: 8%;
+  display: flex;
+}
+.chart .chart-up .chart-event .event-three .event-three-box {
+  margin: 0 8%;
   text-align: center;
-  padding-top: 40px;
 }
-
-.run-progress>ul>li:nth-child(2) {
-  background-color: #1F2327;
-
+.chart .chart-up .chart-event .event-three .event-three-box p {
+  height: 30px;
+  line-height: 30px;
 }
-
-.run-progress>ul>li:nth-child(3) {
-  background-color: #1F2327;
-
+.chart .chart-up .chart-event .event-three .event-three-box img {
+  width: 100%;
 }
-
-.run-progress>ul>li:nth-child(6) {
-  background-color: #1F2327;
-
+.chart .chart-down {
+  display: flex;
+  min-width: 700px;
 }
-
-.run-progress>ul>li>h5 {
-  font-weight: 500;
-  font-size: 22px;
-  margin-bottom: 14px;
+.chart .chart-down .chart-line {
+  width: 66.5%;
+  margin-right: 0.5%;
 }
-
-.run-progress>ul>li img {
-  height: 24px;
-  width: 8px;
+.chart .chart-down .chart-power {
+  width: 33%;
+}
+.chart .chart-down .chart-power .power-view .view-first {
+  display: flex;
+}
+.chart .chart-down .chart-power .power-view .view-first .view-first-con1 {
+  padding-top: 10%;
+  height: 60px;
+  text-align: center;
+  width: 50%;
+  background-color: #25292E;
+}
+.chart .chart-down .chart-power .power-view .view-first .view-first-con2 {
+  padding-top: 10%;
+  height: 60px;
+  text-align: center;
+  width: 50%;
+  background-color: #212429;
+}
+.chart .chart-down .chart-power .power-view .view-second {
+  display: flex;
+}
+.chart .chart-down .chart-power .power-view .view-second .view-second-con1 {
+  padding-top: 10%;
+  height: 60px;
+  text-align: center;
+  width: 50%;
+  background-color: #212429;
+}
+.chart .chart-down .chart-power .power-view .view-second .view-second-con2 {
+  padding-top: 10%;
+  height: 60px;
+  text-align: center;
+  width: 50%;
+  background-color: #25292E;
+}
+.chart .chart-down .chart-power .power-view .view-third {
+  display: flex;
+}
+.chart .chart-down .chart-power .power-view .view-third .view-third-con1 {
+  padding-top: 10%;
+  height: 60px;
+  text-align: center;
+  width: 50%;
+  background-color: #25292E;
+}
+.chart .chart-down .chart-power .power-view .view-third .view-third-con2 {
+  padding-top: 10%;
+  height: 60px;
+  text-align: center;
+  width: 50%;
+  background-color: #212429;
 }

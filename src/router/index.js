@@ -14,8 +14,8 @@ import Environment from '../components/environment/environment'
 import FireMoniter from '../components/fireMoniter/fireMoniter'
 import PowerManage from '../components/powerManage/powerManage'
 import PowerAnalyze from '../components/powerAnalyze/powerAnalyze'
-import Roport from '../components/roport/roport'
-import ReportConfig from '../components/roport/reportConfig'
+import Report from '../components/report/report'
+import ReportConfig from '../components/report/reportConfig'
 import AlermManage from '../components/alermManage/alermManage'
 import AlermConfig from '../components/alermConfig/alermConfig'
 import Knowledge from '../components/knowledge/knowledge'
@@ -138,13 +138,10 @@ const router = new Router({
           component: PowerAnalyze,
           name: 'powerAnalyze'
         },
-
-
-
         {
-          path: '/roport',
-          component: Roport,
-          name: 'roport'
+          path: '/report',
+          component: Report,
+          name: 'report'
         },
         {
           path: '/alermManage',

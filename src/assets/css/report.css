@@ -27,6 +27,7 @@
 .report .report-wrap {
   width: 100%;
   margin-bottom: 20px;
+  display: flex;
 }
 .report .report-wrap .report-con-box {
   width: 24%;
