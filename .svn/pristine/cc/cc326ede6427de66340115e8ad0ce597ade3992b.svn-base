@@ -1,0 +1,91 @@
+// 文本颜色
+@text-color: #929BA6;
+// 饼图背景色
+@pie-color: #24292F;
+// 背景色
+@background-color: #212429;
+// 悬停颜色
+@hover-color :#2A84F6;
+
+// 能耗整体
+.powerManage {
+  width: 100%;
+  margin: 0 auto; // 能耗的头部标题
+
+  .powerManage-header {
+    width: 99%;
+    min-width: 880px;
+    background-color: @background-color;
+    height: 60px;
+    line-height: 60px;
+    color: #929ba6;
+    margin-bottom: 10px; // 能耗下拉
+
+    .powerManage-header-viewplace {
+      width: 10%;
+      height: 30px;
+      border: 1px solid #535960;
+      background: #25292e;
+      color: #ddd;
+    }
+  }
+
+  // 下半部总体 
+  .powerManage-wrap {
+    width: 99%;
+    background-color: @background-color; // 饼图和数据列表总体
+
+    .powerManage-topCon {
+      background-color: @background-color;
+      margin-bottom: 10px;
+      height: 400px;
+      display: flex; // 饼图
+
+      .topCon-pie {
+        width: 56.5%;
+        min-width: 600px;
+        background-color: @pie-color;
+        margin-right: 0.5%;
+      }
+
+      // 列表
+      .topCon-table {
+        width: 43%;
+        min-width: 400px;
+      }
+    }
+
+    // 条形图和折线图总体
+    .powerManage-banner {
+      background-color: @background-color;
+      margin-bottom: 10px;
+      height: 400px;
+      display: flex; // 条形图
+
+      .banner-bar {
+        background-color: @pie-color; // background-color: #ddd;
+        width: 49.75%;
+        margin-right: 0.5%;
+      }
+
+      // 折线图部分
+      .banner-line {
+        background-color: @pie-color; // background-color: #fff;
+        width: 49.75%;
+      }
+    }
+
+    // 底部全年耗电量(柱状图)
+    .powerManage-footer {
+      background-color: @background-color;
+      margin-bottom: 10px;
+      height: 400px;
+      display: flex; // 柱状图绑定部分
+
+      .footer-bar {
+        width: 100%;
+        background-color: @pie-color;
+      }
+    }
+  }
+}
